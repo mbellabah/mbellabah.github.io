@@ -1,14 +1,14 @@
 ---
 layout: page
-title: 👋🏿 Hey, I'm Bella 
+title: Hi! I'm Bella. 👋🏿
 subtitle: 
 use-site-title: false
 show-avatar: true
 ---
 
 <!-- Typed.js --> 
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="js/typed.js" type="text/javascript"></script>
+<script src="/../../js/jquery-1.11.2.min.js"></script>
+<script src="/../../js/typed.js" type="text/javascript"></script>
 <script>
   $(function(){
     $(".typed").typed({
@@ -23,13 +23,13 @@ show-avatar: true
 <div class="row">
   <div class="col-sm-12">
       <div class="text-center">
-          <h1>I am a <span class="typed" style="color:#2962FF";></span></h1>
+            <h1>I am a <span class="typed" style="color:#2962FF";></span></h1>
       </div>
   </div>
 </div>
 
-
 <div class="posts-list">
+  <link href="wave.css" rel="stylesheet" type="text/css" />
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">

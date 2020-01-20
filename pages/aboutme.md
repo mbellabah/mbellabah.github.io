@@ -3,7 +3,9 @@ layout: page
 title: About Me
 subtitle: Why you wanna work with me
 show-avatar: false
----
+--- 
+  
+<link href="/../../wave.css" rel="stylesheet" type="text/css" />
 
 > I've wrestled with alligators. I've tussled with a whale. I done handcuffed lightning. And thrown thunder in jail. -- **Muhammad Ali**
 
@@ -11,7 +13,7 @@ show-avatar: false
 
 ![image](/img/avatar-icon.png){: style="float: right"}{:height="40%" width="40%"}
 
-Hey hey 👋🏿 My name is **Mohamadou Bella Bah**! 
+Hey hey <span class="wave">👋🏿</span> My name is **Mohamadou Bella Bah**! 
 
 I'm a junior (2021) at [MIT](http://www.mit.edu) pursuing my bachelors (SB) and masters (MEng) in [Electrical Engineering and Computer Science](https://www.eecs.mit.edu). 
 
