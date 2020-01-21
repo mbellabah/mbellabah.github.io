@@ -6,7 +6,11 @@ tags: [economics, essay]
 show-avatar: false
 ---
 
-I had written this on Janurary 7 2017 while I was in Freetown, Sierra Leone. I believe this was written shortly after reading "The Wealth and Poverty of Nations" by David Landes for the second time. Looking back, I really don't know what to think of this unfinished, and largely unresearched essay. I'm posting it here unedited for the sake of posterity, so that I may look back at it 10 years from now, just as I am now, shaking my head saying "what the hell was I thinking". 
+I had written this on Janurary 7 2017 while I was in Freetown, Sierra Leone. I believe this was written shortly after reading "The Wealth and Poverty of Nations" by David Landes for the second time. 
+
+The essay's content is pretty much what the title states. It's an economic essay on Sierra Leone, her manufactures, and how to propel her to a modern economy with a strong, domestic manufacturing base. 
+
+Looking back, I really don't know what to think of this unfinished, and largely unresearched essay. I'm posting it here unedited for the sake of posterity, so that I may look back at it 10 years from now, just as I am now, shaking my head saying "what the hell was I thinking". (I suspect my future self is also going to judge 2020 Bella, lol.)
 
 ---
 
@@ -25,8 +29,9 @@ Within the nation’s capital Freetown, street markets dominate the economy. Suc
  - Furniture 
  - Jewelry [Espionage][^1]
  - Clothing 
+  
 Fluid credit (float government bonds) – government and the national bank – undermine and remove black market, strengthen foreign exchange  
- 
+
 Fluid credit must exist if any nation wishes to find itself competitive. As of now, the credit within Sierra Leone is informal, relying on familial ties more so than banking and government institutions. While the government seeks foreign institutions such as the IMF and World Bank, its citizens experience more difficulty in establishing formal lines of credit leaving them prone to predatory lending: usurious rates, profligacy fueled by credit and unwise lending practices.  
 
 Sierra Leone’s debt is roughly a billion US dollars at the time of print. Such a debt seems easily serviceable if proper taxing and manufacturing institutions are put in place.[^2]  
