@@ -13,7 +13,7 @@ show-avatar: true
 
 Hey hey <span class="wave">👋🏿</span> My name is **Mohamadou Bella Bah**.  
 
-I'm an engineer by training, who thinks about energy, electric grids, multiagent-systems, and artificial intelligence. **Alot**. As a system level thinker, I don't shy away from thinking about things globally 🌎. 
+I'm an engineer by training who thinks about energy, electric grids, multiagent-systems, and artificial intelligence. **Alot**. As a system level thinker, I don't shy away from thinking about things globally 🌎. 
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>

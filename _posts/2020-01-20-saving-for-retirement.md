@@ -6,7 +6,9 @@ tags: [finance]
 show-avatar: false
 ---
 
-So, I'd written this last summer for the Muslim Student Association here at MIT. I am by no means a financial expert, but I want to share with you all the things I've learned about saving for retirement in the United States of 'Murica. If I've made mistakes, let me know and I'll correct them -- I invite comments! Without any further ado, let's get into it!
+I'd written this last summer for the Muslim Student Association here at MIT. I am by no means a financial expert, but I want to share with you all the things I've learned about saving for retirement in the United States of 'Murica. If I've made mistakes, let me know and I'll correct them -- I invite comments! Without any further ado, let's get into it!
+
+> Money is a kind of poetry – **Wallace Stevens** 
 
 ## TLDR; 
 Although retirment for the majority of us college kids is a long way off, I think it's worth familarizing ourselves with the process. 
@@ -32,8 +34,7 @@ Alright, before investing in securities (tradable financial assets like bonds, s
    2. Checkings
       1. **Pros**: You can easily access your money, as frequently as you like for the most part. The money is also federally insured in the event of the bank’s failure. 
       2. **Cons**: Lower interest yields, ranging from 0.01% to 0.37% at the time this was written. Because you generally access your checking account via a debit or atm card you're at greater risk for fraud; while the bank investigates, your money will not be available. Make sure you are aware of bank’s fraud protection policy, and aim to avoid using a debit card in lieu of a credit card for day to day purchases.
-
-
+<br/><br/>
 3. What is the degree of your debts? It may be worth allocating some of your cash flow towards servicing the interest on the debts, or paying down the debt principal altogether. If you have “favorable" student loans whose interest payments start only once you’ve graduated, it makes a lot of sense to pay down as much as the principal as possible. I’m not American nor am I outwardly political, but please don’t bet on your student loans being forgiven in the next four or so years. That is, irrespective of what the forgive-college-student-debt, and the opposing camp say, maintain the course, but remain vigilant and flexible. 
 
 Don’t take any of the above as hard requirements (except taxes and any usurious debt 😔). These really are just considerations, and you can pretty much do ‘em all at the same time; especially if you have an income while you're in college; i.e. x% goes towards your emergency fund, y% goes toward paying down debts, and you ‘unlock’ z% after having reduced an expense. 
@@ -60,7 +61,7 @@ Phew, now that disclaimer™ is out of the way, let’s talk Roth. A Roth IRA is
 
 Note that this is not necessarily my desired allocation (read disclaimer™). Also note that you don’t have to purchase ETFs, you can purchase individual stocks, individual bonds and etc. as you’d like. I don’t claim to be an investment expert, so it may be worth looking into what makes the most sense for you. Generally, I strive to add $x to my account every 6 months or so (I lean more towards investing with lump-sum dollars, rather than dollar-cost averaging. See [this](https://investor.vanguard.com/investing/online-trading/invest-lump-sum) Vangurad article discussing the two). 
 
-## Where to Next Capitan? 
+## Where to Next Captain? 
 Going forward, I’d suggest reading the sidebars in the personal finance subreddit [r/personalfinance](https://www.reddit.com/r/personalfinance/), and following and sticking to a [three fund portfolio](https://bogleheads.org/wiki/Three-fund_portfolio). 
 
 That’s pretty much all I have to say on the topic for now. I love investing, finance and such things, so let me know if there's anything you want to discuss! 
