@@ -25,7 +25,7 @@ I'm an engineer by training, who thinks about energy, electric grids, multiagent
 
 I'm from Sierra Leone but was born in Guinea, Conakry. Thanks to my parents' work[^2], I've had the amazing priviledge of having lived in nearly a dozen countries, spanning four of the seven continents. 
 
-Here's a map of where I've lived. To see my life's timeline 👉🏿 [timeline](http://localhost:4000/pages/timeline/timeline.html)
+Here's a map of where I've lived. To see my life's timeline 👉🏿 [timeline](https://www.bellabah.com/pages/timeline/timeline.html)
 
 ![image](/img/world_map.png){:height="100%" width="110%"}
 
