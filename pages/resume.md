@@ -1,5 +1,6 @@
 ---
 title: Resume (2020)
+subtitle: looking for full-time SWE/ML roles for 2021 👀
 layout: page
 show-avatar: false
 ---
