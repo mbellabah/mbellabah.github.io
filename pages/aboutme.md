@@ -29,17 +29,6 @@ Here's a map of where I've lived. To see my life's timeline 👉🏿 [timeline](
 
 ![image](/img/world_map.png){:height="100%" width="110%"}
 
-- Freetown, Sierra Leone
-- Dakar, Senegal 
-- Colombo, Sri Lanka
-- Phnom Penh, Cambodia
-- Rome, Italy
-- Boston, United States 
-- Nairobi, Kenya
-- Dubai, United Arab Emirates
-- Pyongyang, North Korea
-- Beijing, China 
-
 ### Wanna learn more? 
 
 Shoot me an email at either: <bellabah@mit.edu>, or <mobellabah@gmail.com>
