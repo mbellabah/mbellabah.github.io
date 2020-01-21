@@ -1,33 +1,31 @@
 ---
 layout: page
 title: About Me
-subtitle: Why you wanna work with me
+subtitle: Why you wanna work with me...
 show-avatar: false
 --- 
   
 <link href="/../../wave.css" rel="stylesheet" type="text/css" />
 
-> I've wrestled with alligators. I've tussled with a whale. I done handcuffed lightning. And thrown thunder in jail. -- **Muhammad Ali**
+> [Bella has] wrestled with alligators. [He] tussled with a whale. [He] done handcuffed lightning. And thrown thunder in jail. -- **Muhammad Ali**.[^1]
 
 ---
 
-![image](/img/avatar-icon.png){: style="float: right"}{:height="40%" width="40%"}
+![image](/img/avatar-icon.png){:style="float:right; padding:16px"}{:height="40%" width="40%"}
 
-Hey hey <span class="wave">👋🏿</span> My name is **Mohamadou Bella Bah**! 
+Hey hey <span class="wave">👋🏿</span> My name is **Mohamadou Bella Bah**.  
 
-I'm a junior (2021) at [MIT](http://www.mit.edu) pursuing my bachelors (SB) and masters (MEng) in [Electrical Engineering and Computer Science](https://www.eecs.mit.edu). 
+I'm a junior (2021) at [MIT](https://www.mit.edu) pursuing my bachelors (SB) and masters (MEng) in [Electrical Engineering and Computer Science](https://www.eecs.mit.edu). 
 
-- I'm an engineer, and software developer by training.  
-- I think about energy and electric grids, **alot**. 
-- I'm a system level thinker, and I don't hesitate from thinking about things on a **global** level. 
-- I think everything should be treated as a multi-agent system. 
+I'm an engineer by training, who thinks about energy, electric grids, multiagent-systems, and AI. Alot. As a system level thinker, I don't shy away from thinking about things **globally** 🌎. 
 
+---
 
 ### My Background
 
-I'm from Sierra Leone but was born in Guinea, Conakry. Thanks to my parents' work, I've had the amazing priviledge of having lived in nearly a dozen countries, spanning four of the seven continents. 
+I'm from Sierra Leone but was born in Guinea, Conakry. Thanks to my parents' work[^2], I've had the amazing priviledge of having lived in nearly a dozen countries, spanning four of the seven continents. 
 
-Here's a map of where I've lived, along with a list. 
+Here's a map of where I've lived. To see my life's timeline 👉🏿 [timeline](https://www.bellabah.com/pages/timeline/timeline.html)
 
 ![image](/img/world_map.png){:height="100%" width="110%"}
 
@@ -45,3 +43,6 @@ Here's a map of where I've lived, along with a list.
 ### Wanna learn more? 
 
 Shoot me an email at either: <bellabah@mit.edu>, or <mobellabah@gmail.com>
+
+[^1]: Muhammad Ali didn't actually say this about me 😔. You can see the real quote [here](https://www.goodreads.com/quotes/440864-i-ve-wrestled-with-alligators-i-ve-tussled-with-a-whale-i)
+[^2]: My father works for the United Nations World Food Programme, and my mother used to. We're an international, humanitarian family baby!
