@@ -4,6 +4,7 @@ title: Channeling my Inner da Vinci, Miscellaneous Hand Drawings
 subtitle: 
 tags: [drawings]
 show-avatar: false
+social-share: true
 ---
 
 A recurring theme of mine is that shortly after reading a book, particularly a biography, I'll pick up a few things from the story's protagonist and try to implement them in my own life. The drawings you'll see are one such case. After reading (and not finishing) Walter Isaacson's biography on Renaissance man Leonardo da Vinci, "Leonardo da Vinci", I became fascinated with sketching the human anatomy. I tried my **hand** (you'll see why that's funny soon) at replicating famous drawings of the Renaissance period. The following drawings are dated some time my Freshman year at MIT. 

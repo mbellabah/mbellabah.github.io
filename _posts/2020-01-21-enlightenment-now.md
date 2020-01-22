@@ -4,6 +4,7 @@ title: Thoughts on "The Enlightenment Now"
 subtitle: 
 tags: [reading, social philosophy]
 show-avatar: false
+social-share: true
 ---
 
 Here are my thoughts on Steven Pinker's *The Enlightenment Now*. I'd read this sometime in 2018, probably in March, shortly after the book came out. I took some notes while reading the book, and for whatever reason, I chose to take the following quotes from the book: 

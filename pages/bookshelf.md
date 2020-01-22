@@ -31,4 +31,4 @@ As you can probably tell, I read a lot of books at the same time; not sure wheth
 
 | Book title | Author(s) | Type | Rating | Notes |
 | --- | --- | --- | --- |
-| Enlightenment Now | Steven Pinker | Nonfiction (Social Philosophy) | ⭐⭐⭐⭐| [Notes](https:www.bellabah.com/enlightenment-now) |
+| Enlightenment Now | Steven Pinker | Nonfiction (Social Philosophy) | ⭐⭐⭐⭐| [Notes](https:www.bellabah.com/2020-01-21-enlightenment-now) |

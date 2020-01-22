@@ -4,6 +4,7 @@ title: Talk with One's Other, a poem
 subtitle: 
 tags: [poetry]
 show-avatar: false
+social-share: true
 ---
 
 A poem I'd written in early 2017 in a time of teenage anst. It's meant to be uplifting, and was composed as a way to express my feelings of gratitude for having enjoyed something, someone, and someplace well. 

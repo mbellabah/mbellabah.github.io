@@ -4,6 +4,8 @@ title: Sierra Leone and Her Manufactures
 subtitle: 
 tags: [economics, essay]
 show-avatar: false
+comments: true
+social-share: true
 ---
 
 I had written this on Janurary 7 2017 while I was in Freetown, Sierra Leone. I believe this was written shortly after reading "The Wealth and Poverty of Nations" by David Landes for the second time. 

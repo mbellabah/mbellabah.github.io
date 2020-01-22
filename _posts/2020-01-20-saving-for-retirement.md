@@ -4,6 +4,7 @@ title: Saving for Retirement
 subtitle: 
 tags: [finance]
 show-avatar: false
+social-share: true
 ---
 
 I'd written this last summer for the Muslim Student Association here at MIT. I am by no means a financial expert, but I want to share with you all the things I've learned about saving for retirement in the United States of 'Murica. If I've made mistakes, let me know and I'll correct them -- I invite comments! Without any further ado, let's get into it!
