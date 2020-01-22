@@ -786,3 +786,6 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
+
+# My custom css
+ img + em { display: block; text-align: center; } /
