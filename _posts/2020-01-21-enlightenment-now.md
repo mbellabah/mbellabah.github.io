@@ -21,7 +21,7 @@ Here are my thoughts on Steven Pinker's *The Enlightenment Now*. I'd read this s
 
 
 #### On the availability heuristic[^1] and availability cascade[^2]
->The political scientist Kathryn Sikkink calls this the information paradox: as human rights watchdogs admirably look harder for abuse, look in more places for abuse, and classify more acts as abuse, they find more of it -- but if we don’t compensate for their keener powers of detection, we can be misled into thinking that there is more abuse to detect.  
+>The political scientist Kathryn Sikkink calls this the information paradox: as human rights watchdogs admirably look harder for abuse, look in more places for abuse, and classify more acts as abuse, they find more of it -- but if we don’t compensate for their keener powers of detection, we can be misled into thinking that there is more abuse to detect. -- **Steven Pinker**
 
 
 ---
