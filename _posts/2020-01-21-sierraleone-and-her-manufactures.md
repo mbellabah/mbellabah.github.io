@@ -8,11 +8,11 @@ comments: true
 social-share: true
 ---
 
-I had written this on Janurary 7 2017 while I was in Freetown, Sierra Leone. I believe this was written shortly after reading "The Wealth and Poverty of Nations" by David Landes for the second time. 
+I had written this on January 7, 2017 while I was in Freetown, Sierra Leone. I believe this was written shortly after reading "The Wealth and Poverty of Nations" by David Landes for the second time. 
 
 The essay's content is pretty much what the title states. It's an economic essay on Sierra Leone, her manufactures, and how to propel her to a modern economy with a strong, domestic manufacturing base. 
 
-Looking back, I really don't know what to think of this unfinished, and largely unresearched essay. I'm posting it here unedited for the sake of posterity, so that I may look back at it 10 years from now, just as I am now, shaking my head saying "what the hell was I thinking". (I suspect my future self is also going to judge 2020 Bella, lol.)
+Looking back, I really don't know what to think of this unfinished, and largely unresearched essay. I'm posting it here unedited for the sake of posterity, so that I may look back at it 10 years from now, just as I am now, shaking my head saying, "what the hell was I thinking". (I suspect my future self is also going to judge 2020 Bella, lol.)
 
 ---
 
@@ -38,7 +38,7 @@ Fluid credit must exist if any nation wishes to find itself competitive. As of n
 
 Sierra Leone’s debt is roughly a billion US dollars at the time of print. Such a debt seems easily serviceable if proper taxing and manufacturing institutions are put in place.[^2]  
 
-Of equal importance is the strengthening of our foreign exchange. To power her various industries, Sierra Leone must purchase foreign machinery, the result of our inability to produce such capital; straining her foreign exchange reserves. The underground foreign exchanges continue to undermine the efforts of our government. In exchanging Leones for foreign currencies, black market foreign exchanges enrich themselves with currencies at the time more likely to appreciate than decline in value. Foreign currencies are more impactful in the hand of a concentrated government as opposed to many small independents. Strict enforcement is unlikely to vanquish these people. A better policy would be to make it easy (near advantageous) for “JCs” (the main targets)[^3] to convert currencies in respectable banks, giving them a securer alternative to the black market. The government, through its national bank, would withhold foreign currency and reserve it for industrial and commercial capital. How will Sierra Leone makes the Leone a respected continental and international currency? One scheme is the following: make it disadvantageous to convert Leones back to foreign currencies[^3]. When tourists return to their home countries  
+Of equal importance is the strengthening of our foreign exchange. To power her various industries, Sierra Leone must purchase foreign machinery, the result of our inability to produce such capital; straining her foreign exchange reserves. The underground foreign exchanges continue to undermine the efforts of our government. In exchanging Leones for foreign currencies, black market foreign exchanges enrich themselves with currencies at the time more likely to appreciate than decline in value. Foreign currencies are more impactful in the hand of a concentrated government as opposed to many small independents. Strict enforcement is unlikely to vanquish these people. A better policy would be to make it easy (near advantageous) for “JCs” (the main targets)[^3] to convert currencies in respectable banks, giving them a securer alternative to the black market. The government, through its national bank, would withhold foreign currency and reserve it for industrial and commercial capital. How will Sierra Leone make the Leone a respected continental and international currency? One scheme is the following: make it disadvantageous to convert Leones back to foreign currencies[^3]. When tourists return to their home countries  
  
 Labor transfer, remove street markets, labor to power manufactures – harness the moving force of the people to organize  
  
@@ -47,5 +47,5 @@ Creating something revolutionary, first of its kind – government sponsored pla
 ---
 
 [^1]: I don't know what I meant by this. 
-[^2]: Not sure if I still agree that this is ~easy~, but I definetly still thinks it doable for Sierra Leone to rid itself of debt. 
+[^2]: Not sure if I still agree that this is ~easy~, but I definitely still think it's doable for Sierra Leone to rid itself of debt. 
 [^3]: Oof, this is some pretty shady thinking on my part, and I think this was a very poor choice of words. 

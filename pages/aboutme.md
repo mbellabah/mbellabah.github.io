@@ -17,7 +17,7 @@ I'm an engineer by training who thinks about energy, electric grids, multiagent-
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-Currently a junior (2021) pursuing my Bachelors of Science and Masters of Engineering in <strong>Electrical Engineering and Computer Science</strong> at the Massachussetts Institute of Technology (MIT). 
+Currently a junior (2021) pursuing my Bachelors of Science and Masters of Engineering in <strong>Electrical Engineering and Computer Science</strong> at the Massachusetts Institute of Technology (MIT). 
 </p>
 
 <p class="about-text">
@@ -41,7 +41,7 @@ You can take a look at my research poster in the `work/posters` section of this 
 
 ## My Background
 
-I'm from Sierra Leone but was born in Guinea, Conakry. Thanks to my parents' work[^2], I've had the amazing priviledge of living in nearly a dozen countries, spanning four of the seven continents. 
+I'm from Sierra Leone but was born in Guinea, Conakry. Thanks to my parents' work[^2], I've had the amazing privilege of living in nearly a dozen countries, spanning four of the seven continents. 
 
 Here's a map of where I've lived. To see my country hopping as a cool, vertical timeline thingy, click here 👉🏿 [timeline](https://www.bellabah.com/pages/timeline/timeline.html)
 
