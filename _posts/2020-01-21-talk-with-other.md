@@ -7,7 +7,7 @@ show-avatar: false
 social-share: true
 ---
 
-A poem I'd written in early 2017 in a time of teenage anst. It's meant to be uplifting, and was composed as a way to express my feelings of gratitude for having enjoyed something, someone, and someplace well. 
+A poem I'd written in early 2017 in a time of teenage angst. It's meant to be uplifting, and was composed as a way to express my feelings of gratitude for having enjoyed something, someone, and someplace well. 
 
 I debated with myself whether this is something I wanted to share but didn't really see any reason not to. I could keep it private, but I think in the absolute worst case, people will only think I'm a sappy fool (read: romantic) lol. 
 
