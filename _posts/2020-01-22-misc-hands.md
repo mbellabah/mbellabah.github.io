@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Channeling my Inner da Vinci, Miscellaneous Hand Drawings  
+title: Channelling my Inner da Vinci, Miscellaneous Hand Drawings  
 subtitle: 
 tags: [drawings]
 show-avatar: false
