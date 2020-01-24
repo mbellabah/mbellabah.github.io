@@ -22,7 +22,7 @@ Currently a junior (2021) pursuing my Bachelors of Science and Masters of Engine
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-Currently an <strong>undergraduate researcher</strong> at MIT. Incoming <strong>software engineer intern</strong> at Google. 
+Currently an <strong>undergraduate researcher</strong> at MIT.
 </p>
 
 <p class="about-text">
