@@ -12,7 +12,7 @@ I had written this on January 7, 2017 while I was in Freetown, Sierra Leone. I b
 
 The essay's content is pretty much what the title states. It's an economic essay on Sierra Leone, her manufactures, and how to propel her to a modern economy with a strong, domestic manufacturing base. 
 
-Looking back, I really don't know what to think of this unfinished, and largely unresearched essay. I'm posting it here unedited for the sake of posterity, so that I may look back at it 10 years from now, just as I am now, shaking my head saying, "what the hell was I thinking". (I suspect my future self is also going to judge 2020 Bella, lol.)
+Looking back, I really don't know what to think of this unfinished, and largely unresearched essay. I'm posting it here unedited for the sake of posterity, so that I may look back at it 10 years from now, just as I am now, shaking my head saying, "what the hell was I thinking". (I suspect my future self is in turn going to judge 2020 Bella lol.)
 
 ---
 
