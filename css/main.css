@@ -788,5 +788,36 @@ pre {
 }
 
 
+@font-face {
+  font-family: 'Rosarivo';
+  font-style: normal;
+  src: url('../fonts/Rosarivo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rosarivo';
+  font-style: italic;
+  src: url('../fonts/Rosarivo-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  src: url('../fonts/Cardo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cardo';
+  font-style: italic;
+  src: url('../fonts/Cardo-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cardo';
+  font-style: bold;
+  src: url('../fonts/Cardo-Bold.ttf') format('truetype');
+}
+
+
 # My custom css
  img + em { display: block; text-align: center; } /
