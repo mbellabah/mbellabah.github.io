@@ -177,6 +177,7 @@ defaults:
       comments: false  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
       googlefonts: ["Cardo", "Rosarivo"]
+      share-img: "img/desk_bella.png"
   -
     scope:
       path: "" # all files
