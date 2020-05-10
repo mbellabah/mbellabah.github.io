@@ -53,6 +53,9 @@ Here's a map of where I've lived. To see my country hopping as a cool, vertical 
 
 Shoot me an email at either: <bellabah@mit.edu>, or <mobellabah@gmail.com>
 
+<img src="/img/desk_bella.png" alt="Sitting at desk">
+Thank you Wulan Myz for the commissioned artwork! 
+
 ---
 
 [^1]: Muhammad Ali didn't actually say this about me 😔. You can see the real quote [here](https://www.goodreads.com/quotes/440864-i-ve-wrestled-with-alligators-i-ve-tussled-with-a-whale-i)
