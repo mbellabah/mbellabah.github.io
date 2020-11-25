@@ -5,6 +5,9 @@ subtitle: Cozying up with a good book 😌
 show-avatar: false
 ---
 
+{: .box-warning} 
+**Warning** (November 24, 2020) This is very much out of date.
+
 <p style="text-align:center">
 <a href="#2018">2018</a> | <a href="#2019">2019</a> | <a href="#2020">2020</a>
 </p>

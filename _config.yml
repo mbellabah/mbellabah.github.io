@@ -176,7 +176,7 @@ defaults:
       layout: "post"
       comments: false  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-      googlefonts: ["Cardo", "Rosarivo"]
+      googlefonts: ["Roboto", "Cardo", "Rosarivo"]
       share-img: "img/desk_bella.png"
   -
     scope:
@@ -184,7 +184,7 @@ defaults:
     values:
       layout: "page"
       show-avatar: true
-      googlefonts: ["Cardo", "Rosarivo"]
+      googlefonts: ["Roboto", Cardo", "Rosarivo"]
 
 
 # Use tags index page and make tags on each post clickable

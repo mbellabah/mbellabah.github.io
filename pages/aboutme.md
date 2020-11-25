@@ -13,29 +13,42 @@ show-avatar: true
 
 Hey hey <span class="wave">👋🏿</span> My name is **Mohamadou Bella Bah**.  
 
-I'm an engineer by training who thinks about energy, electric grids, multiagent-systems, and artificial intelligence. **Alot**. As a system level thinker, I don't shy away from thinking about things globally 🌎. 
+I'm an engineer by training who thinks about energy, electric grids,
+multiagent-systems, and artificial intelligence. **A lot**. As a system level
+thinker, I don't shy away from thinking about things globally 🌎. 
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-Currently a junior (2021) pursuing my Bachelors of Science and Masters of Engineering in <strong>Electrical Engineering and Computer Science</strong> at the Massachusetts Institute of Technology (MIT). 
+Obtained my Bachelors of Science in <strong>Electrical Engineering and Computer Science</strong> at the Massachusetts Institute of Technology (MIT) in February 2021. 
 </p>
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-Currently an <strong>undergraduate researcher</strong> at MIT.
+Incoming <strong>software engineer</strong> at Google.
 </p>
 
 <p class="about-text">
 <span class="fa fa-heart about-icon"></span>
-I love playing football (soccer to you Americans), travelling, <strong>reading</strong> (see my <a href="https://www.bellabah.com/pages/bookshelf">bookshelf</a>!), and getting to see and hear new perspectives 😊.</p>
+I love playing football (soccer to the Americans), working out, travelling, and <a href="https://www.bellabah.com/pages/bookshelf">reading</a>.</p>
 
 ---
 
-## Research
-I'm currently researching with the [Active Adaptive Control Laboratory](http://aaclab.mit.edu) (AACLAB) at MIT, with funding from the MIT Energy Initiative (MITEI). My work with the lab is concerned with how to pair independent agents together in a multiagent system. More specifically, in the context of an electric grid, the idea is that privately owned solar-panels and batteries ought to automatically pair with one another to form a more flexible and less volatile, hybrid asset. I'm writing a service that imbues a solar-panel, and a battery, with the necessary "intelligence" to engage one another in such a relationship. Now, this would be difficult if I had to build the communications infrastructure and underlying intelligence from the ground up! Fortunately, this service can be run on the Auxo Olympus Platform, which is an "edge-computing" platform that I developed! 
+## What I'm currently up to . . .
+I'm currently researching with the [Active Adaptive Control
+Laboratory](http://aaclab.mit.edu) (AACLAB) at MIT, with funding from the MIT
+Energy Initiative (MITEI). My work with the lab is concerned with how to pair
+independent agents together in a multiagent system. More specifically, in the
+context of an electric grid, the idea is that privately owned solar-panels and
+batteries ought to automatically pair with one another to form a more flexible
+and less volatile, hybrid asset. I'm writing a service that imbues a
+solar-panel, and a battery, with the necessary "intelligence" to engage one
+another in such a relationship. Now, this would be difficult if I had to build
+the communications infrastructure and underlying intelligence from the ground
+up. Fortunately, this service can be run on the Auxo Olympus Platform, which is
+an "edge-computing" platform that I developed.
 
 
-You can take a look at my research poster in the `work/posters` section of this website. It goes into some detail regarding services running on the Auxo platform. To learn more about Auxo itself, visit the `projects/Auxo` section of this website! 
+You can take a look at my research poster in the `work/posters` section of this website. It goes into some detail regarding services running on the Auxo platform. To learn more about Auxo itself, visit `projects/Auxo`. 
 
 ---
 
@@ -51,10 +64,10 @@ Here's a map of where I've lived. To see my country hopping as a cool, vertical 
 
 ## Wanna learn more, collaborate? 
 
-Shoot me an email at either: <bellabah@mit.edu>, or <mobellabah@gmail.com>
+Shoot me an email at either: <mobellabah@gmail.com>
 
 <img src="/img/desk_bella.png" alt="Sitting at desk">
-Thank you Wulan Myz for the commissioned artwork! 
+Huge thanks to my friend Wulan Zschocke ([@wulanink](https://instagram.com/wulanink?igshid=1dp2rf220mj0t)) for the commissioned piece above. 
 
 ---
 
