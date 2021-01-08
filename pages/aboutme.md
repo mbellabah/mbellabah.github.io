@@ -1,17 +1,15 @@
 ---
 layout: page
 title: About Me
-subtitle: Or, why you wanna work with me...
+subtitle: Why you wanna work with me...
 show-avatar: true
 --- 
   
-<link href="/../../wave.css" rel="stylesheet" type="text/css" />
-
 > [Bella has] wrestled with alligators. [He] tussled with a whale. [He] done handcuffed lightning. And thrown thunder in jail. -- **Muhammad Ali**.[^1]
 
 ---
 
-Hey hey <span class="wave">👋🏿</span> My name is **Mohamadou Bella Bah**.  
+Hey hey 👋🏿 My name is **Mohamadou Bella Bah**.  
 
 I'm an engineer by training who thinks about energy, electric grids,
 multiagent-systems, and artificial intelligence. **A lot**. As a system level
@@ -56,7 +54,7 @@ You can take a look at my research poster in the `work/posters` section of this 
 
 I'm from Sierra Leone but was born in Guinea, Conakry. Thanks to my parents' work[^2], I've had the amazing privilege of living in nearly a dozen countries, spanning four of the seven continents. 
 
-Here's a map of where I've lived. To see my country hopping as a cool, vertical timeline thingy, click here 👉🏿 [timeline](https://www.bellabah.com/pages/timeline/timeline.html)
+Here's a map of where I've lived. To see where I've lived as a cool, vertical timeline thingy, click here 👉🏿 [timeline](https://www.bellabah.com/pages/timeline/timeline.html)
 
 ![image](/img/world_map.png){:height="100%" width="110%"}
 
@@ -64,7 +62,7 @@ Here's a map of where I've lived. To see my country hopping as a cool, vertical 
 
 ## Wanna learn more, collaborate? 
 
-Shoot me an email at either: <mobellabah@gmail.com>
+Shoot me an email at <mobellabah@gmail.com>
 
 <img src="/img/desk_bella.png" alt="Sitting at desk">
 Huge thanks to my friend Wulan Zschocke ([@wulanink](https://instagram.com/wulanink?igshid=1dp2rf220mj0t)) for the commissioned piece above. 

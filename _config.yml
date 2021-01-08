@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: MOHAMADOU BELLA BAH
+title: Hi, I'm Bella! 👋🏿
 
 # Short description of your site
-description: THE BLOG OF MOHAMADOU BELLA BAH
+description: bellabah.com
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -24,7 +24,7 @@ navbar-links:
   RESUME: "/pages/resume"
   BOOKSHELF: "/pages/bookshelf"
   WORK: 
-    - VIDEOS: "/pages/videos"
+    - TALKS: "/pages/talks"
     - POSTERS: "/pages/posters"
   PROJECTS:
     - Auxo: "/pages/Auxo"
@@ -145,7 +145,7 @@ staticman:
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 100
+excerpt_length: 50
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
@@ -161,7 +161,7 @@ timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 7
 
 kramdown:
   input: GFM
