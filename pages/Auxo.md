@@ -3,7 +3,7 @@ layout: page
 title: Auxo
 subtitle: Building the grid's intelligent edge
 show-avatar: false
-share-img: img/auxo_transparent.png
+share-img: "img/auxo_transparent.png"
 --- 
 
 <center><img src="/img/auxo_transparent.png" width="50%" height="50%"/></center>
