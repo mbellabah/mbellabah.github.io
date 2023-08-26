@@ -20,7 +20,6 @@ description: bellabah.com
 
 # List of links in the navigation bar
 navbar-links:
-  ABOUT: "/pages/aboutme"
   RESUME: "/pages/resume"
   BOOKSHELF: "/pages/bookshelf"
   WORK: 
@@ -97,7 +96,13 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "bellabah.com"  
+url-pretty: "bellabah.com"
+
+# Add a search button to the navbar
+post_search: true
+
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
 
 # --- Web Statistics Section --- #
 
