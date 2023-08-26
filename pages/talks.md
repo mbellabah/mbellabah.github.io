@@ -3,6 +3,7 @@ layout: page
 title: Talks
 subtitle: I've talked at conferences, universities and schools
 show-avatar: false
+full-width: true
 ---
 
 ---
