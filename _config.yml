@@ -20,11 +20,9 @@ description: bellabah.com
 
 # List of links in the navigation bar
 navbar-links:
-  RESUME: "/pages/resume"
-  BOOKSHELF: "/pages/bookshelf"
+  ABOUT: "/pages/aboutme"
   WORK: 
     - TALKS: "/pages/talks"
-    - POSTERS: "/pages/posters"
   PROJECTS:
     - Auxo: "/pages/Auxo"
 

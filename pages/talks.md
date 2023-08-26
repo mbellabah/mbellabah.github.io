@@ -10,7 +10,7 @@ show-avatar: false
 ---
 
 #### Toward a Service-Oriented Broker Architecture for the Distribution Grid | SmartGridComm 2020 | Mohamadou Bella Bah
-A talk I gave at the 2020 Smart Grid Communications (SmartGridComm 2020) conference. The talk is based on my paper published at the same conference. Here's the link for the [paper](https://ieeexplore.ieee.org/abstract/document/9303011). Heads up! You'll need IEEE access; you can email me for my personal copy.
+A talk I gave at the 2020 Smart Grid Communications (SmartGridComm 2020) conference. The talk is based on my paper published at the same conference. Here's the link for the [paper](https://ieeexplore.ieee.org/abstract/document/9303011). You can email me for my personal copy.
 
 <div align="center">
 <iframe width="761" height="428" src="https://drive.google.com/file/d/1H4H8jCtPYjR3cbMqstvPwjF2933gf4aq/preview" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
