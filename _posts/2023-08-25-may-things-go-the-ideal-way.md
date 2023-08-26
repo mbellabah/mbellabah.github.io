@@ -38,5 +38,5 @@ so I pray,
 
 hands clasped and breath poised for swift exhale—
 
-May things go the ideal way.
+*May things go the ideal way.*
 

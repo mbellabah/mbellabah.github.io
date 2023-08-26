@@ -24,4 +24,4 @@ Two lovers gazing longingly at the other,
     
 Having taken cue from nature
     
-“How I wish we’d tumble into tight embrace”
+*How I wish we’d tumble into tight embrace*

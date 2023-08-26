@@ -46,4 +46,4 @@ The cosmic gameboard flattened—
 
 By the efforts of a man
 
-Mine.
+*Mine.*
