@@ -21,6 +21,7 @@ description: bellabah.com
 # List of links in the navigation bar
 navbar-links:
   ABOUT: "/pages/aboutme"
+  BOOKSHELF: "/pages/bookshelf"
   WORK: 
     - TALKS: "/pages/talks"
   PROJECTS:
