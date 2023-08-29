@@ -22,6 +22,7 @@ datatable: true
 | Common Sense, The Rights of Man and Other Essential Writings           | Thomas Paine                   | Philosophy, History, Nonfiction, Politics |       |
 | The Mind of Napoleon: A Selection of His Written and Spoken Words      | Napoleon Bonaparte             | History, Biography, Nonfiction            |       |
 | Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction              |       |
+
 ---
 
 # Completed
@@ -35,8 +36,6 @@ datatable: true
 
 <a name="2023"></a>
 ## 2023
-
-<div class="datatable-begin"></div>
 
 | Title                              | Author(s)                                      | Type                                  | Notes |
 |------------------------------------|------------------------------------------------|---------------------------------------|-------|
@@ -54,14 +53,10 @@ datatable: true
 | The Justice of Kings               | Richard Swan                                   | Fantasy, Mystery, Fiction             |       |
 | Jingo                              | Terry Pratchett                                | Fantasy, Fiction, Humor               |       |
 | The Brothers Karamazov             | Fyodor Dostoevsky, Richard Pevear (Translator) | Classics, Fiction, Russian Literature |       |
-
-<div class="datatable-end"></div>
+{: .display}
 
 <a name="2019"></a>
-
-# 2019 
-
-<div class="datatable-begin"></div>
+## 2019 
 
 | Title                                                                                      | Author(s)                                    | Type                                    | Notes                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------|----------------------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -81,5 +76,4 @@ datatable: true
 | The Hero of Ages                                                                           | Brandon Sanderson                            | Fantasy, Fiction                        |                                                                                                                                                                                   |
 | Circe                                                                                      | Madeline Miller                              | Fantasy, Historical Fiction, Mythology  | Really touching book. Especially love the author's writing style.                                                                                                                  |
 | The Song of Achilles                                                                       | Madeline Miller                              | Fantasy, Historical Fiction, Mythology  | This book touched on some themes I've never read before. Enlightening read, made me tear up at times.                                                                             |
-
-<div class="datatable-end"></div>
+{: .display}
