@@ -3,6 +3,7 @@ layout: page
 title: Bookshelf
 subtitle:
 show-avatar: false
+datatable: true
 ---
 
 # Currently Reading
@@ -11,6 +12,7 @@ show-avatar: false
 |-----------------------------------------------|------------------|---------------------------------------|-------|
 | Deng Xiaoping and the Transformation of China | Ezra F. Vogel    | History, China, Biography, Nonfiction |       |
 | Kushiel's Dart                                | Jacqueline Carey | Fantasy, Romance, Fiction             |       |
+{: .datatable}
 
 # Shelved
 
@@ -21,6 +23,7 @@ show-avatar: false
 | Common Sense, The Rights of Man and Other Essential Writings           | Thomas Paine                   | Philosophy, History, Nonfiction, Politics |       |
 | The Mind of Napoleon: A Selection of His Written and Spoken Words      | Napoleon Bonaparte             | History, Biography, Nonfiction            |       |
 | Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction              |       |
+{: .datatable}
 
 ---
 
@@ -53,7 +56,7 @@ show-avatar: false
 | The Justice of Kings               | Richard Swan                                   | Fantasy, Mystery, Fiction             |       |
 | Jingo                              | Terry Pratchett                                | Fantasy, Fiction, Humor               |       |
 | The Brothers Karamazov             | Fyodor Dostoevsky, Richard Pevear (Translator) | Classics, Fiction, Russian Literature |       |
-
+{: .datatable}
 
 <a name="2019"></a>
 ## 2019 
@@ -76,3 +79,4 @@ show-avatar: false
 | The Hero of Ages                                                                           | Brandon Sanderson                            | Fantasy, Fiction                        |                                                                                                                                                                                   |
 | Circe                                                                                      | Madeline Miller                              | Fantasy, Historical Fiction, Mythology  | Really touching book. Especially love the author's writing style.                                                                                                                  |
 | The Song of Achilles                                                                       | Madeline Miller                              | Fantasy, Historical Fiction, Mythology  | This book touched on some themes I've never read before. Enlightening read, made me tear up at times.                                                                             |
+{: .datatable}
