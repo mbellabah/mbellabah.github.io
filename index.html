@@ -38,21 +38,6 @@ show-avatar: false
     <a href="/tags" class="list-filter">Index</a>
 </div> -->
 
-<head>
-  <!--The lines below help include JQuery DataTables into Markdown files-->
-  {%- if page.datatable == true -%}
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  <!--Add JQuery-->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css"> <!--add style sheet-->
-  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script> <!--add dataTables-->
-  <script>
-      $(document).ready( function () {
-      $('table.datatable').DataTable();
-      } );
-  </script>
-  {% endif %}
-</head>
-
-
 <div class="posts-list">
   <link href="wave.css" rel="stylesheet" type="text/css" />
   {% for post in paginator.posts %}
