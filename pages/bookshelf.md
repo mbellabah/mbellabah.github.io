@@ -37,6 +37,8 @@ datatable: true
 <a name="2023"></a>
 ## 2023
 
+<div class="datatable-begin"></div>
+
 | Title                              | Author(s)                                      | Type                                  | Notes |
 |------------------------------------|------------------------------------------------|---------------------------------------|-------|
 | The Order of Time                  | Carlo Rovelli                                  | Science, Nonfiction, Physics          |       |
@@ -53,7 +55,8 @@ datatable: true
 | The Justice of Kings               | Richard Swan                                   | Fantasy, Mystery, Fiction             |       |
 | Jingo                              | Terry Pratchett                                | Fantasy, Fiction, Humor               |       |
 | The Brothers Karamazov             | Fyodor Dostoevsky, Richard Pevear (Translator) | Classics, Fiction, Russian Literature |       |
-{: .display}
+
+<div class="datatable-end"></div>
 
 <a name="2019"></a>
 ## 2019 
