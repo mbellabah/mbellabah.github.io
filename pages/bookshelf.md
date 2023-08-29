@@ -3,7 +3,6 @@ layout: page
 title: Bookshelf
 subtitle:
 show-avatar: false
-datatable: true
 ---
 
 # Currently Reading
@@ -37,7 +36,6 @@ datatable: true
 <a name="2023"></a>
 ## 2023
 
-<div class="datatable-begin"></div>
 
 | Title                              | Author(s)                                      | Type                                  | Notes |
 |------------------------------------|------------------------------------------------|---------------------------------------|-------|
@@ -56,7 +54,6 @@ datatable: true
 | Jingo                              | Terry Pratchett                                | Fantasy, Fiction, Humor               |       |
 | The Brothers Karamazov             | Fyodor Dostoevsky, Richard Pevear (Translator) | Classics, Fiction, Russian Literature |       |
 
-<div class="datatable-end"></div>
 
 <a name="2019"></a>
 ## 2019 
@@ -79,4 +76,3 @@ datatable: true
 | The Hero of Ages                                                                           | Brandon Sanderson                            | Fantasy, Fiction                        |                                                                                                                                                                                   |
 | Circe                                                                                      | Madeline Miller                              | Fantasy, Historical Fiction, Mythology  | Really touching book. Especially love the author's writing style.                                                                                                                  |
 | The Song of Achilles                                                                       | Madeline Miller                              | Fantasy, Historical Fiction, Mythology  | This book touched on some themes I've never read before. Enlightening read, made me tear up at times.                                                                             |
-{: .display}
