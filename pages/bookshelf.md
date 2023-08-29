@@ -6,7 +6,7 @@ show-avatar: false
 datatable: true
 ---
 
-# Currently Reading 
+# Currently Reading
 
 | Title                                         | Author(s)        | Type                                  | Notes |
 |-----------------------------------------------|------------------|---------------------------------------|-------|
