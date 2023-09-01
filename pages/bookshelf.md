@@ -8,11 +8,10 @@ datatable: true
 
 # Currently Reading
 
-| Title                                         | Author(s)        | Type                                  | Notes |
-|-----------------------------------------------|------------------|---------------------------------------|-------|
-| Deng Xiaoping and the Transformation of China | Ezra F. Vogel    | History, China, Biography, Nonfiction |       |
-| Kushiel's Dart                                | Jacqueline Carey | Fantasy, Romance, Fiction             |       |
-{: .datatable}
+| Title                                          | Author(s)          | Type                                  | Notes |
+|------------------------------------------------|--------------------|---------------------------------------|-------|
+| Kushiel's Dart                                 | Jacqueline Carey   | Fantasy, Romance, Fiction             |       |
+| Against the Gods: The Remarkable Story of Risk | Peter L. Bernstein | Finance, History, Nonfiction          |       |
 
 # Shelved
 
@@ -23,6 +22,7 @@ datatable: true
 | Common Sense, The Rights of Man and Other Essential Writings           | Thomas Paine                   | Philosophy, History, Nonfiction, Politics |       |
 | The Mind of Napoleon: A Selection of His Written and Spoken Words      | Napoleon Bonaparte             | History, Biography, Nonfiction            |       |
 | Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction              |       |
+| Deng Xiaoping and the Transformation of China  | Ezra F. Vogel      | History, China, Biography, Nonfiction |       |
 {: .datatable}
 
 ---
