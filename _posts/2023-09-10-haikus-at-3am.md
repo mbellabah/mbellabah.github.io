@@ -14,31 +14,34 @@ social-share: true
 ---
 ---
 
-#### Tower of Babel[^3]
+### Tower of Babel
 
-Attempts still thwarted;
-The *resplendence* of heaven,
+Attempts still thwarted;\\
+The resplendence of heaven,\\
 Duly left unmatched.
 
----
-
-#### Rise High
-
-Soul yearns for sky,
-Like creeping vine, smoke, and cloud.
-Icarus, the Blessed.[^4]
+> My interpretation here of the tower of babel is different to what’s usually discussed, i.e the usual case for unity and the sin of pride. My interpretation gets at man’s weakhearted attempts to match the resplendence of heaven. Weakhearted because of God’s active thwarting and man’s own subconscious need not to surpass in beauty that which they turn to for inspiration and without which the human enterprise is all for naught.
 
 ---
 
-#### Lake Tahoe
+### Rise High
 
-Water, fresh and still.
-Upon which some kayaks gather
+Soul yearns for sky,\\
+Like creeping vine, smoke, and cloud.\\
+Icarus, the Blessed.[^3]
+
+---
+
+### Lake Tahoe
+
+Water, fresh and still.\\
+Upon which some kayaks gather\\
 Grateful friends chatter
 
 ---
+---
 
+### Endnotes 
 [^1]: A friend and I made this same observation at the same time a few weeks ago!
 [^2]: https://poets.org/glossary/haiku
-[^3]: My interpretation here of the tower of babel is different to what’s usually discussed, i.e the usual case for unity and the sin of pride. My interpretation gets at man’s weakhearted attempts to match the resplendence of heaven. Weakhearted because of God’s active thwarting and man’s own subconscious need not to surpass in beauty that which they turn to for inspiration and without which the human enterprise is all for naught.
-[^4]: Not technically a haiku given that the last line has 6 rather than 5 syllables.
+[^3]: Not technically a haiku given that the last line has 6 rather than 5 syllables.
