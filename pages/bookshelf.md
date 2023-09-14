@@ -10,8 +10,9 @@ datatable: true
 
 | Title                                          | Author(s)          | Type                                  | Notes |
 |------------------------------------------------|--------------------|---------------------------------------|-------|
-| Kushiel's Dart                                 | Jacqueline Carey   | Fantasy, Romance, Fiction             |       |
+| L'Etranger                                     | Albert Camus       | Classics, Fiction, Philosophy, French |       |
 | Against the Gods: The Remarkable Story of Risk | Peter L. Bernstein | Finance, History, Nonfiction          |       |
+
 
 # Shelved
 
@@ -56,6 +57,7 @@ datatable: true
 | Jingo                                                                                                | Terry Pratchett                                | Fantasy, Fiction, Humor                 |       |
 | The Brothers Karamazov                                                                               | Fyodor Dostoevsky, Richard Pevear (Translator) | Classics, Fiction, Russian Literature   |       |
 | The General and the Genius: Groves and Oppenheimer—The Unlikely Partnership that Built the Atom Bomb | James W. Kunetka                               | History, Nonfiction, Biography, Science |       |
+| Kushiel's Dart                                                                                       | Jacqueline Carey                               | Fantasy, Romance, Fiction               |       |
 {: .datatable}
 
 <a name="2019"></a>
