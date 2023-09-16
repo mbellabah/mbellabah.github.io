@@ -8,10 +8,11 @@ datatable: true
 
 # Currently Reading
 
-| Title                                          | Author(s)          | Type                                  | Notes |
-|------------------------------------------------|--------------------|---------------------------------------|-------|
-| L'Etranger                                     | Albert Camus       | Classics, Fiction, Philosophy, French |       |
-| Against the Gods: The Remarkable Story of Risk | Peter L. Bernstein | Finance, History, Nonfiction          |       |
+| Title                                                                                                                               | Author(s)          | Type                                      | Notes |
+|-------------------------------------------------------------------------------------------------------------------------------------|--------------------|-------------------------------------------|-------|
+| L'Etranger                                                                                                                          | Albert Camus       | Classics, Fiction, Philosophy, French     |       |
+| Against the Gods: The Remarkable Story of Risk                                                                                      | Peter L. Bernstein | Finance, History, Nonfiction              |       |
+| Progress and Poverty: An Inquiry in the Cause of Industrial Depressions and of Increase of Want with Increase of Wealth: The Remedy | Henry George       | Political Economy, Nonfiction, Philosophy |       |
 
 
 # Shelved
