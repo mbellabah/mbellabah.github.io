@@ -59,6 +59,7 @@ datatable: true
 | The Brothers Karamazov                                                                               | Fyodor Dostoevsky, Richard Pevear (Translator) | Classics, Fiction, Russian Literature   |       |
 | The General and the Genius: Groves and Oppenheimer—The Unlikely Partnership that Built the Atom Bomb | James W. Kunetka                               | History, Nonfiction, Biography, Science |       |
 | Kushiel's Dart                                                                                       | Jacqueline Carey                               | Fantasy, Romance, Fiction               |       |
+| Big Panda and Tiny Dragon                                                                            | James Norbury                                  | Graphic Novel, Philosophy, Self Help    |       |
 {: .datatable}
 
 <a name="2019"></a>
