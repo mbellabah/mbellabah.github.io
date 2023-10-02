@@ -12,7 +12,6 @@ datatable: true
 |-------------------------------------------------------------------------------------------------------------------------------------|-----------------------|------------------------------------------------|-------|
 | L'Etranger                                                                                                                          | Albert Camus          | Classics, Fiction, Philosophy, French          |       |
 | Against the Gods: The Remarkable Story of Risk                                                                                      | Peter L. Bernstein    | Finance, History, Nonfiction                   |       |
-| Progress and Poverty: An Inquiry in the Cause of Industrial Depressions and of Increase of Want with Increase of Wealth: The Remedy | Henry George          | Political Economy, Nonfiction, Philosophy      |       |
 | Pattern Recognition and Machine Learning                                                                                            | Christopher M. Bishop | Computer Science, Machine Learning, Nonfiction |       |
 
 
@@ -42,25 +41,27 @@ datatable: true
 <a name="2023"></a>
 ## 2023
 
-| Title                                                                                                | Author(s)                                      | Type                                    | Notes |
-|------------------------------------------------------------------------------------------------------|------------------------------------------------|-----------------------------------------|-------|
-| The Order of Time                                                                                    | Carlo Rovelli                                  | Science, Nonfiction, Physics            |       |
-| Alexander of Macedon, 356-323 B.C.                                                                   | Peter Green                                    | Biography, Nonfiction, Ancient History  |       |
-| The Fifth Elephant                                                                                   | Terry Pratchett                                | Fantasy, Fiction, Humor                 |       |
-| A Court of Thorns and Roses                                                                          | Sarah J. Maas                                  | Fantasy, Romance, Fiction               |       |
-| A Court of Mist and Fury                                                                             | Sarah J. Maas                                  | Fantasy, Romance, Fiction               |       |
-| A Court of Wings and Ruin                                                                            | Sarah J. Maas                                  | Fantasy, Romance, Fiction               |       |
-| A Court of Frost and Starlight                                                                       | Sarah J. Maas                                  | Fantasy, Romance, Fiction               |       |
-| A Court of Silver Flames                                                                             | Sarah J. Maas                                  | Fantasy, Romance, Fiction               |       |
-| Daughter of the Moon Goddess                                                                         | Sue Lynn Tan                                   | Fantasy, Romance, Mythology, Fiction    |       |
-| Tiger Woods                                                                                          | Jeff Benedict, Armen Keteyian                  | Sports, Biography, Nonfiction           |       |
-| The Tower of Fools                                                                                   | Andrzej Sapkowski, David French (Translator)   | Fantasy, Historical Fiction             |       |
-| The Justice of Kings                                                                                 | Richard Swan                                   | Fantasy, Mystery, Fiction               |       |
-| Jingo                                                                                                | Terry Pratchett                                | Fantasy, Fiction, Humor                 |       |
-| The Brothers Karamazov                                                                               | Fyodor Dostoevsky, Richard Pevear (Translator) | Classics, Fiction, Russian Literature   |       |
-| The General and the Genius: Groves and Oppenheimer—The Unlikely Partnership that Built the Atom Bomb | James W. Kunetka                               | History, Nonfiction, Biography, Science |       |
-| Kushiel's Dart                                                                                       | Jacqueline Carey                               | Fantasy, Romance, Fiction               |       |
-| Big Panda and Tiny Dragon                                                                            | James Norbury                                  | Graphic Novel, Philosophy, Self Help    |       |
+| Title                                                                                                                                 | Author(s)                                      | Type                                      | Notes |
+|---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|-------------------------------------------|-------|
+| The Order of Time                                                                                                                     | Carlo Rovelli                                  | Science, Nonfiction, Physics              |       |
+| Alexander of Macedon, 356-323 B.C.                                                                                                    | Peter Green                                    | Biography, Nonfiction, Ancient History    |       |
+| The Fifth Elephant                                                                                                                    | Terry Pratchett                                | Fantasy, Fiction, Humor                   |       |
+| A Court of Thorns and Roses                                                                                                           | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| A Court of Mist and Fury                                                                                                              | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| A Court of Wings and Ruin                                                                                                             | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| A Court of Frost and Starlight                                                                                                        | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| A Court of Silver Flames                                                                                                              | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| Daughter of the Moon Goddess                                                                                                          | Sue Lynn Tan                                   | Fantasy, Romance, Mythology, Fiction      |       |
+| Tiger Woods                                                                                                                           | Jeff Benedict, Armen Keteyian                  | Sports, Biography, Nonfiction             |       |
+| The Tower of Fools                                                                                                                    | Andrzej Sapkowski, David French (Translator)   | Fantasy, Historical Fiction               |       |
+| The Justice of Kings                                                                                                                  | Richard Swan                                   | Fantasy, Mystery, Fiction                 |       |
+| Jingo                                                                                                                                 | Terry Pratchett                                | Fantasy, Fiction, Humor                   |       |
+| The Brothers Karamazov                                                                                                                | Fyodor Dostoevsky, Richard Pevear (Translator) | Classics, Fiction, Russian Literature     |       |
+| The General and the Genius: Groves and Oppenheimer—The Unlikely Partnership that Built the Atom Bomb                                  | James W. Kunetka                               | History, Nonfiction, Biography, Science   |       |
+| Kushiel's Dart                                                                                                                        | Jacqueline Carey                               | Fantasy, Romance, Fiction                 |       |
+| Big Panda and Tiny Dragon                                                                                                             | James Norbury                                  | Graphic Novel, Philosophy, Self Help      |       |
+| Honey, the Fed Shrunk the Equity Premium: Asset Allocation in a Higher-Rate World                                                     | AQR                                            | Paper, Finance                            |       |
+| Progress and Poverty: An Inquiry into the Cause of Industrial Depressions and of Increase of Want with Increase of Wealth: The Remedy | Henry George                                   | Political Economy, Nonfiction, Philosophy |       |
 {: .datatable}
 
 <a name="2019"></a>
