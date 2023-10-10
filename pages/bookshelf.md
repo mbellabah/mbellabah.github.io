@@ -64,6 +64,7 @@ datatable: true
 | Progress and Poverty: An Inquiry into the Cause of Industrial Depressions and of Increase of Want with Increase of Wealth: The Remedy | Henry George                                   | Political Economy, Nonfiction, Philosophy |       |
 | Red Rising                                                                                                                            | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
 | Golden Son                                                                                                                            | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
+| The Three-Body Problem                                                                                                                | Cixin Liu, Ken Liu (Translator)                | Science Fiction, Fantasy                  |       |
 {: .datatable}
 
 <a name="2019"></a>
