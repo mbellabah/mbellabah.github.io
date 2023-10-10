@@ -63,6 +63,7 @@ datatable: true
 | Honey, the Fed Shrunk the Equity Premium: Asset Allocation in a Higher-Rate World                                                     | AQR                                            | Paper, Finance                            |       |
 | Progress and Poverty: An Inquiry into the Cause of Industrial Depressions and of Increase of Want with Increase of Wealth: The Remedy | Henry George                                   | Political Economy, Nonfiction, Philosophy |       |
 | Red Rising                                                                                                                            | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
+| Golden Son                                                                                                                            | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
 {: .datatable}
 
 <a name="2019"></a>
