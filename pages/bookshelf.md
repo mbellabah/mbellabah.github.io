@@ -41,16 +41,16 @@ datatable: true
 <a name="2023"></a>
 ## 2023
 
-| Title                                                                                                                                 | Author(s)                                      | Type                                      | Notes |
+| | Title                                                                                                                                 | Author(s)                                      | Type                                      | Notes |
 |---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|-------------------------------------------|-------|
 | The Order of Time                                                                                                                     | Carlo Rovelli                                  | Science, Nonfiction, Physics              |       |
 | Alexander of Macedon, 356-323 B.C.                                                                                                    | Peter Green                                    | Biography, Nonfiction, Ancient History    |       |
 | The Fifth Elephant                                                                                                                    | Terry Pratchett                                | Fantasy, Fiction, Humor                   |       |
-| A Court of Thorns and Roses                                                                                                           | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
-| A Court of Mist and Fury                                                                                                              | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
-| A Court of Wings and Ruin                                                                                                             | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
-| A Court of Frost and Starlight                                                                                                        | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
-| A Court of Silver Flames                                                                                                              | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| A Court of Thorns and Roses (A Court of Thorns and Roses Series)                                                                      | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| A Court of Mist and Fury (A Court of Thorns and Roses Series)                                                                         | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| A Court of Wings and Ruin (A Court of Thorns and Roses Series)                                                                        | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| A Court of Frost and Starlight (A Court of Thorns and Roses Series)                                                                   | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
+| A Court of Silver Flames (A Court of Thorns and Roses Series)                                                                         | Sarah J. Maas                                  | Fantasy, Romance, Fiction                 |       |
 | Daughter of the Moon Goddess                                                                                                          | Sue Lynn Tan                                   | Fantasy, Romance, Mythology, Fiction      |       |
 | Tiger Woods                                                                                                                           | Jeff Benedict, Armen Keteyian                  | Sports, Biography, Nonfiction             |       |
 | The Tower of Fools                                                                                                                    | Andrzej Sapkowski, David French (Translator)   | Fantasy, Historical Fiction               |       |
@@ -62,8 +62,9 @@ datatable: true
 | Big Panda and Tiny Dragon                                                                                                             | James Norbury                                  | Graphic Novel, Philosophy, Self Help      |       |
 | Honey, the Fed Shrunk the Equity Premium: Asset Allocation in a Higher-Rate World                                                     | AQR                                            | Paper, Finance                            |       |
 | Progress and Poverty: An Inquiry into the Cause of Industrial Depressions and of Increase of Want with Increase of Wealth: The Remedy | Henry George                                   | Political Economy, Nonfiction, Philosophy |       |
-| Red Rising                                                                                                                            | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
-| Golden Son                                                                                                                            | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
+| Red Rising (Red Rising Series)                                                                                                        | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
+| Golden Son (Red Rising Series)                                                                                                        | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
+| Morning Star (Red Rising Series)                                                                                                      | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
 | The Three-Body Problem                                                                                                                | Cixin Liu, Ken Liu (Translator)                | Science Fiction, Fantasy                  |       |
 {: .datatable}
 
