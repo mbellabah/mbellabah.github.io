@@ -41,7 +41,7 @@ datatable: true
 <a name="2023"></a>
 ## 2023
 
-| | Title                                                                                                                                 | Author(s)                                      | Type                                      | Notes |
+| Title                                                                                                                                 | Author(s)                                      | Type                                      | Notes |
 |---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|-------------------------------------------|-------|
 | The Order of Time                                                                                                                     | Carlo Rovelli                                  | Science, Nonfiction, Physics              |       |
 | Alexander of Macedon, 356-323 B.C.                                                                                                    | Peter Green                                    | Biography, Nonfiction, Ancient History    |       |
