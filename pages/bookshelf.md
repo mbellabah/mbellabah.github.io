@@ -8,12 +8,13 @@ datatable: true
 
 # Currently Reading
 
-| Title                                                                                                                               | Author(s)             | Type                                           | Notes |
-|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------|------------------------------------------------|-------|
-| L'Etranger                                                                                                                          | Albert Camus          | Classics, Fiction, Philosophy, French          |       |
-| Against the Gods: The Remarkable Story of Risk                                                                                      | Peter L. Bernstein    | Finance, History, Nonfiction                   |       |
-| Pattern Recognition and Machine Learning                                                                                            | Christopher M. Bishop | Computer Science, Machine Learning, Nonfiction |       |
-
+| Title                                          | Author(s)             | Type                                           | Notes |
+|------------------------------------------------|-----------------------|------------------------------------------------|-------|
+| L'Etranger                                     | Albert Camus          | Classics, Fiction, Philosophy, French          |       |
+| Against the Gods: The Remarkable Story of Risk | Peter L. Bernstein    | Finance, History, Nonfiction                   |       |
+| Pattern Recognition and Machine Learning       | Christopher M. Bishop | Computer Science, Machine Learning, Nonfiction |       |
+| A Man for All Markets                          | Edward O. Thorp       | Finance, Nonfiction, Memoir                    |       |
+| The End of History and the Last Man            | Francis Fukuyama      | History, Nonfiction, Political Science         |       |
 
 # Shelved
 
