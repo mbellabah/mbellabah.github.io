@@ -1,6 +1,6 @@
 ---
 layout: null
-googlefonts: ["Roboto", "Cardo", "Rosarivo"]
+googlefonts: ["Roboto", "Rosarivo"]
 ---
 
 @import url("pygment_highlights.css");
@@ -8,7 +8,7 @@ googlefonts: ["Roboto", "Cardo", "Rosarivo"]
 /* --- General --- */
 
 body {
-  font-family: 'Roboto', 'Cardo', 'Lato', 'Lora', 'Times New Roman', serif;
+  font-family: 'Roboto', 'Lato', 'Lora', 'Times New Roman', serif;
   font-size: 18px;
   color: #404040;
   position: relative;
@@ -58,7 +58,7 @@ hr.small {
 }
 
 .main-explain-area {
-  font-family: 'Roboto', 'Cardo', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   padding: 15px inherit;
 }
 
@@ -352,7 +352,7 @@ footer .theme-by {
   margin: 0 0 10px;
 }
 .post-preview .post-entry {
-  font-family: 'Roboto', 'Cardo', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .post-entry-container {
   display: inline-block;
@@ -591,7 +591,7 @@ footer .theme-by {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: 'Roboto', 'Cardo', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -771,7 +771,7 @@ pre {
 }
 
 #full-tags-list {
-  font-family: 'Roboto', 'Cardo', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #full-tags-list .tag-entry {
@@ -800,25 +800,6 @@ pre {
   font-style: italic;
   src: url('../fonts/Rosarivo-Italic.ttf') format('truetype');
 }
-
-@font-face {
-  font-family: 'Cardo';
-  font-style: normal;
-  src: url('../fonts/Cardo-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Cardo';
-  font-style: italic;
-  src: url('../fonts/Cardo-Italic.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Cardo';
-  font-style: bold;
-  src: url('../fonts/Cardo-Bold.ttf') format('truetype');
-}
-
 
 # My custom css
  img + em { display: block; text-align: center; } /
