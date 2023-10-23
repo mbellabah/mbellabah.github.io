@@ -13,8 +13,8 @@ datatable: true
 | L'Etranger                                     | Albert Camus          | Classics, Fiction, Philosophy, French          |       |
 | Against the Gods: The Remarkable Story of Risk | Peter L. Bernstein    | Finance, History, Nonfiction                   |       |
 | Pattern Recognition and Machine Learning       | Christopher M. Bishop | Computer Science, Machine Learning, Nonfiction |       |
-| A Man for All Markets                          | Edward O. Thorp       | Finance, Nonfiction, Memoir                    |       |
 | The End of History and the Last Man            | Francis Fukuyama      | History, Nonfiction, Political Science         |       |
+| The Little Book of Deep Learning               | Francois Fleuret      | Computer Science, Machine Learning, Nonfiction |       |
 
 # Shelved
 
@@ -67,6 +67,7 @@ datatable: true
 | Golden Son (Red Rising Series)                                                                                                        | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
 | Morning Star (Red Rising Series)                                                                                                      | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
 | The Three-Body Problem                                                                                                                | Cixin Liu, Ken Liu (Translator)                | Science Fiction, Fantasy                  |       |
+| A Man for All Markets                                                                                                                 | Edward O. Thorp                                | Finance, Nonfiction, Memoir               |       |
 {: .datatable}
 
 <a name="2019"></a>
