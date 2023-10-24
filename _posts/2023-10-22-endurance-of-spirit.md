@@ -12,7 +12,7 @@ Man is first pliable,
 
 Only when compelled to run through nature’s course,
 
-Through her crags and bramble, and under angry sun and an inhospitable cold,
+Through her crags and bramble, and under an angry sun and an inhospitable cold,
 
 Is he made firm, sharp, and with purpose,
 
