@@ -16,6 +16,7 @@ datatable: true
 | The End of History and the Last Man            | Francis Fukuyama      | History, Nonfiction, Political Science         |       |
 | The Little Book of Deep Learning               | Francois Fleuret      | Computer Science, Machine Learning, Nonfiction |       |
 | Augustus: First Emperor of Rome                | Adrian Goldsworthy    | History, Biography, Nonfiction                 |       |
+| Lightbringer (Red Rising Series)               | Pierce Brown          | Fantasy, Science Fiction                       |       |
 
 # Shelved
 
@@ -68,6 +69,7 @@ datatable: true
 | Golden Son (Red Rising Series)                                                                                                        | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
 | Morning Star (Red Rising Series)                                                                                                      | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
 | Iron Gold (Red Rising Series)                                                                                                         | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
+| Dark Age (Red Rising Series)                                                                                                          | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
 | The Three-Body Problem                                                                                                                | Cixin Liu, Ken Liu (Translator)                | Science Fiction, Fantasy                  |       |
 | A Man for All Markets                                                                                                                 | Edward O. Thorp                                | Finance, Nonfiction, Memoir               |       |
 {: .datatable}
