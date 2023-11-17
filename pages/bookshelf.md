@@ -16,7 +16,6 @@ datatable: true
 | The End of History and the Last Man            | Francis Fukuyama      | History, Nonfiction, Political Science         |       |
 | The Little Book of Deep Learning               | Francois Fleuret      | Computer Science, Machine Learning, Nonfiction |       |
 | Augustus: First Emperor of Rome                | Adrian Goldsworthy    | History, Biography, Nonfiction                 |       |
-| Lightbringer (Red Rising Series)               | Pierce Brown          | Fantasy, Science Fiction                       |       |
 
 # Shelved
 
@@ -72,6 +71,7 @@ datatable: true
 | Dark Age (Red Rising Series)                                                                                                          | Pierce Brown                                   | Fantasy, Science Fiction                  |       |
 | The Three-Body Problem                                                                                                                | Cixin Liu, Ken Liu (Translator)                | Science Fiction, Fantasy                  |       |
 | A Man for All Markets                                                                                                                 | Edward O. Thorp                                | Finance, Nonfiction, Memoir               |       |
+| Lightbringer (Red Rising Series)               | Pierce Brown          | Fantasy, Science Fiction                       |       |
 {: .datatable}
 
 <a name="2019"></a>
