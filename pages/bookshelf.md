@@ -37,8 +37,16 @@ datatable: true
 **Warning** (August 28, 2023) I've only been properly tracking the books I've read in 2023 onwards. I include 2019 since I appear to have tracked some of the books that year, take it as a best-effort.
 
 <p style="text-align:center">
-<a href="#2023">2023</a> | <a href="#2019">2019</a>
+<a href="#2024">2024</a> | <a href="#2023">2023</a> | <a href="#2019">2019</a>
 </p>
+
+<a name="2024"></a>
+## 2024
+
+| Title                | Author(s)                                         | Type                                  | Notes |
+|----------------------|---------------------------------------------------|---------------------------------------|-------|
+| Crime and Punishment | Fyodor Dostoevsky, Constance Garnett (Translator) | Classics, Fiction, Russian Literature |       |
+{: .datatable}
 
 <a name="2023"></a>
 ## 2023
