@@ -8,14 +8,9 @@ datatable: true
 
 # Currently Reading
 
-| Title                                          | Author(s)             | Type                                           | Notes |
-|------------------------------------------------|-----------------------|------------------------------------------------|-------|
-| L'Etranger                                     | Albert Camus          | Classics, Fiction, Philosophy, French          |       |
-| Against the Gods: The Remarkable Story of Risk | Peter L. Bernstein    | Finance, History, Nonfiction                   |       |
-| Pattern Recognition and Machine Learning       | Christopher M. Bishop | Computer Science, Machine Learning, Nonfiction |       |
-| The End of History and the Last Man            | Francis Fukuyama      | History, Nonfiction, Political Science         |       |
-| The Little Book of Deep Learning               | Francois Fleuret      | Computer Science, Machine Learning, Nonfiction |       |
-| Augustus: First Emperor of Rome                | Adrian Goldsworthy    | History, Biography, Nonfiction                 |       |
+| Title                                      | Author(s)          | Type                           | Notes |
+|--------------------------------------------|--------------------|--------------------------------|-------|
+| Philip and Alexander, Kings and Conquerors | Adrian Goldsworthy | History, Nonfiction, Biography |       |
 
 # Shelved
 
@@ -27,6 +22,12 @@ datatable: true
 | The Mind of Napoleon: A Selection of His Written and Spoken Words      | Napoleon Bonaparte             | History, Biography, Nonfiction            |       |
 | Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction              |       |
 | Deng Xiaoping and the Transformation of China  | Ezra F. Vogel      | History, China, Biography, Nonfiction |       |
+| L'Etranger                                     | Albert Camus          | Classics, Fiction, Philosophy, French          |       |
+| Against the Gods: The Remarkable Story of Risk | Peter L. Bernstein    | Finance, History, Nonfiction                   |       |
+| Pattern Recognition and Machine Learning       | Christopher M. Bishop | Computer Science, Machine Learning, Nonfiction |       |
+| The End of History and the Last Man            | Francis Fukuyama      | History, Nonfiction, Political Science         |       |
+| The Little Book of Deep Learning               | Francois Fleuret      | Computer Science, Machine Learning, Nonfiction |       |
+| Augustus: First Emperor of Rome                | Adrian Goldsworthy    | History, Biography, Nonfiction                 |       |
 {: .datatable}
 
 ---
@@ -46,6 +47,7 @@ datatable: true
 | Title                | Author(s)                                         | Type                                  | Notes |
 |----------------------|---------------------------------------------------|---------------------------------------|-------|
 | Crime and Punishment | Fyodor Dostoevsky, Constance Garnett (Translator) | Classics, Fiction, Russian Literature |       |
+| Throne of Glass      | Sarah J. Maas                                     | Fantasy                               |       |
 {: .datatable}
 
 <a name="2023"></a>
