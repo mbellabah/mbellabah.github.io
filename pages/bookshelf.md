@@ -8,9 +8,10 @@ datatable: true
 
 # Currently Reading
 
-| Title                                      | Author(s)          | Type                           | Notes |
-|--------------------------------------------|--------------------|--------------------------------|-------|
-| Philip and Alexander, Kings and Conquerors | Adrian Goldsworthy | History, Nonfiction, Biography |       |
+| Title          | Author(s)    | Type    | Notes |
+|----------------|--------------|---------|-------|
+| Fahrenheit 451 | Ray Bradbury | Fiction |       |
+
 
 # Shelved
 
@@ -44,10 +45,11 @@ datatable: true
 <a name="2024"></a>
 ## 2024
 
-| Title                | Author(s)                                         | Type                                  | Notes |
-|----------------------|---------------------------------------------------|---------------------------------------|-------|
-| Crime and Punishment | Fyodor Dostoevsky, Constance Garnett (Translator) | Classics, Fiction, Russian Literature |       |
-| Throne of Glass      | Sarah J. Maas                                     | Fantasy                               |       |
+| Title                                      | Author(s)                                         | Type                                  | Notes |
+|--------------------------------------------|---------------------------------------------------|---------------------------------------|-------|
+| Crime and Punishment                       | Fyodor Dostoevsky, Constance Garnett (Translator) | Classics, Fiction, Russian Literature |       |
+| Throne of Glass                            | Sarah J. Maas                                     | Fantasy                               |       |
+| Philip and Alexander, Kings and Conquerors | Adrian Goldsworthy                                | History, Nonfiction, Biography        |       |
 {: .datatable}
 
 <a name="2023"></a>
