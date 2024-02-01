@@ -45,11 +45,12 @@ datatable: true
 <a name="2024"></a>
 ## 2024
 
-| Title                                      | Author(s)                                         | Type                                  | Notes |
-|--------------------------------------------|---------------------------------------------------|---------------------------------------|-------|
-| Crime and Punishment                       | Fyodor Dostoevsky, Constance Garnett (Translator) | Classics, Fiction, Russian Literature |       |
-| Throne of Glass                            | Sarah J. Maas                                     | Fantasy                               |       |
-| Philip and Alexander, Kings and Conquerors | Adrian Goldsworthy                                | History, Nonfiction, Biography        |       |
+| Title                                                                    | Author(s)                                         | Type                                  | Notes |
+|--------------------------------------------------------------------------|---------------------------------------------------|---------------------------------------|-------|
+| Crime and Punishment                                                     | Fyodor Dostoevsky, Constance Garnett (Translator) | Classics, Fiction, Russian Literature |       |
+| Throne of Glass                                                          | Sarah J. Maas                                     | Fantasy                               |       |
+| Philip and Alexander, Kings and Conquerors                               | Adrian Goldsworthy                                | History, Nonfiction, Biography        |       |
+| Glossy: Ambition, Beauty, and the Inside Story of Emily Weiss's Glossier | Marisa Meltzer                                    | Nonfiction, Business                  |       |
 {: .datatable}
 
 <a name="2023"></a>
