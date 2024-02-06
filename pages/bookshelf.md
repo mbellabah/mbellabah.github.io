@@ -51,6 +51,7 @@ datatable: true
 | Throne of Glass                                                          | Sarah J. Maas                                     | Fantasy                               |       |
 | Philip and Alexander, Kings and Conquerors                               | Adrian Goldsworthy                                | History, Nonfiction, Biography        |       |
 | Glossy: Ambition, Beauty, and the Inside Story of Emily Weiss's Glossier | Marisa Meltzer                                    | Nonfiction, Business                  |       |
+| Thief of Time                                                            | Terry Pratchett                                   | Fantasy, Fiction                      |       |
 {: .datatable}
 
 <a name="2023"></a>
