@@ -52,6 +52,7 @@ datatable: true
 | Philip and Alexander, Kings and Conquerors                               | Adrian Goldsworthy                                | History, Nonfiction, Biography        |       |
 | Glossy: Ambition, Beauty, and the Inside Story of Emily Weiss's Glossier | Marisa Meltzer                                    | Nonfiction, Business                  |       |
 | Thief of Time                                                            | Terry Pratchett                                   | Fantasy, Fiction                      |       |
+| The Mind of Napoleon: A Selection of His Written and Spoken Words        | Napoleon, Herold, J. Christopher                  | History, Nonfiction                   |       |
 {: .datatable}
 
 <a name="2023"></a>
