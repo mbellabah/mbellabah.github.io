@@ -20,7 +20,6 @@ datatable: true
 | Patton: A Genius for War                                               | Carlo D'Este                   | Biography, Military History, Nonfiction   |       |
 | Augustus: The Life of Rome's First Emperor                             | Anthony Everitt                | History, Biography, Nonfiction            |       |
 | Common Sense, The Rights of Man and Other Essential Writings           | Thomas Paine                   | Philosophy, History, Nonfiction, Politics |       |
-| The Mind of Napoleon: A Selection of His Written and Spoken Words      | Napoleon Bonaparte             | History, Biography, Nonfiction            |       |
 | Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction              |       |
 | Deng Xiaoping and the Transformation of China  | Ezra F. Vogel      | History, China, Biography, Nonfiction |       |
 | L'Etranger                                     | Albert Camus          | Classics, Fiction, Philosophy, French          |       |
