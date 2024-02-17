@@ -12,20 +12,20 @@ There is a certain arrogance in man,
 
 That has him believe,
 
-That despite it all, he will make it happen,
+Despite all, that he will make it happen,
 
-But like a deluge wherefor man fixes a dam in prevention,
+But like a deluge wherefor man would fix a dam in prevention,
 
 God humbles him,
 
-For God intended that man prostrate and not command the universe,
+For God intended man prostrate and not dictate the universe.
 
 But there are times,
 
-When the will of man is so concentrated and thus made potent,
+When the will of man is so concentrated as to be made potent,
 
 And his soul cries so loud,
 
-That God, while he need not, observes the covenant that exchanges His favor for man’s unbridled passion
+That the hearing God obligingly observes the covenant that exchanges man’s unbridled passion for His favor,
 
 So that all that which need not happen, is rewritten to be.
