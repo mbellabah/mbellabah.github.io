@@ -8,9 +8,10 @@ datatable: true
 
 # Currently Reading
 
-| Title          | Author(s)    | Type    | Notes |
-|----------------|--------------|---------|-------|
-| Fahrenheit 451 | Ray Bradbury | Fiction |       |
+| Title              | Author(s)    | Type                           | Notes |
+|--------------------|--------------|--------------------------------|-------|
+| Fahrenheit 451     | Ray Bradbury | Fiction                        |       |
+| Washington: A Life | Ron Chernow  | Nonfiction, Biography, History |       |
 
 
 # Shelved
@@ -53,6 +54,7 @@ datatable: true
 | Thief of Time                                                            | Terry Pratchett                                   | Fantasy, Fiction                      |       |
 | The Mind of Napoleon: A Selection of His Written and Spoken Words        | Napoleon, Herold, J. Christopher                  | History, Nonfiction                   |       |
 | Braiding Sweetgrass                                                      | Robin Wall Kimmerer                               | Nonfiction, Nature, Memoir            |       |
+| GPT-Driver: Learning to Drive with GPT                                   | Mao, Jiageng, Yuxi Qian, Hang Zhao, and Yue Wang  | Technical paper                       |       |
 {: .datatable}
 
 <a name="2023"></a>
