@@ -14,7 +14,9 @@ social-share: true
 ---
 ---
 
-Enchanted by their beloved, focus affixed at their cosmic center,
+Enchanted by their beloved,
+
+Focus affixed at their cosmic center,
 
 Eight celestial suitors waltz in accordance to their elliptic,
 
