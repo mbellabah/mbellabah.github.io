@@ -45,6 +45,8 @@ datatable: true
 <a name="2024"></a>
 ## 2024
 
+### Books 
+
 | Title                                                                    | Author(s)                                         | Type                                  | Notes |
 |--------------------------------------------------------------------------|---------------------------------------------------|---------------------------------------|-------|
 | Crime and Punishment                                                     | Fyodor Dostoevsky, Constance Garnett (Translator) | Classics, Fiction, Russian Literature |       |
@@ -54,7 +56,16 @@ datatable: true
 | Thief of Time                                                            | Terry Pratchett                                   | Fantasy, Fiction                      |       |
 | The Mind of Napoleon: A Selection of His Written and Spoken Words        | Napoleon, Herold, J. Christopher                  | History, Nonfiction                   |       |
 | Braiding Sweetgrass                                                      | Robin Wall Kimmerer                               | Nonfiction, Nature, Memoir            |       |
-| GPT-Driver: Learning to Drive with GPT                                   | Mao, Jiageng, Yuxi Qian, Hang Zhao, and Yue Wang  | Technical paper                       |       |
+{: .datatable}
+
+### Technical Papers
+
+| Title                                                                            | Author(s)                                        | Type                              | Notes |
+|----------------------------------------------------------------------------------|--------------------------------------------------|-----------------------------------|-------|
+| GPT-Driver: Learning to Drive with GPT                                           | Mao, Jiageng, Yuxi Qian, Hang Zhao, and Yue Wang | Technical paper, Machine Learning |       |
+| Halfway Between Kyoto and 2050: Zero Carbon is a Highly Unlikely Outcome         | Vaclav Smil                                      | Technical paper, Energy           |       |
+| Cost of Capital and Capital Allocation                                           | Michael J Mauboussin, Dan Callahan               | Article, Finance                  |       |
+| Increasing Returns: Identifying Forms of Increasing Returns and What Drives Them | Michael J Mauboussin, Dan Callahan               | Article, Finance                  |       |
 {: .datatable}
 
 <a name="2023"></a>
