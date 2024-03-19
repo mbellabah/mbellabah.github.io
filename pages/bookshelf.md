@@ -8,11 +8,10 @@ datatable: true
 
 # Currently Reading
 
-| Title              | Author(s)    | Type                           | Notes |
-|--------------------|--------------|--------------------------------|-------|
-| Fahrenheit 451     | Ray Bradbury | Fiction                        |       |
-| Washington: A Life | Ron Chernow  | Nonfiction, Biography, History |       |
-
+| Title                            | Author(s)        | Type                                           | Notes |
+|----------------------------------|------------------|------------------------------------------------|-------|
+| Fahrenheit 451                   | Ray Bradbury     | Fiction                                        |       |
+| The Little Book of Deep Learning | Francois Fleuret | Computer Science, Machine Learning, Nonfiction |       |
 
 # Shelved
 
@@ -27,7 +26,6 @@ datatable: true
 | Against the Gods: The Remarkable Story of Risk | Peter L. Bernstein    | Finance, History, Nonfiction                   |       |
 | Pattern Recognition and Machine Learning       | Christopher M. Bishop | Computer Science, Machine Learning, Nonfiction |       |
 | The End of History and the Last Man            | Francis Fukuyama      | History, Nonfiction, Political Science         |       |
-| The Little Book of Deep Learning               | Francois Fleuret      | Computer Science, Machine Learning, Nonfiction |       |
 | Augustus: First Emperor of Rome                | Adrian Goldsworthy    | History, Biography, Nonfiction                 |       |
 {: .datatable}
 
@@ -56,6 +54,7 @@ datatable: true
 | Thief of Time                                                            | Terry Pratchett                                   | Fantasy, Fiction                      |       |
 | The Mind of Napoleon: A Selection of His Written and Spoken Words        | Napoleon, Herold, J. Christopher                  | History, Nonfiction                   |       |
 | Braiding Sweetgrass                                                      | Robin Wall Kimmerer                               | Nonfiction, Nature, Memoir            |       |
+| Washington: A Life                                                       | Ron Chernow                                       | Nonfiction, Biography, History        |       |
 {: .datatable}
 
 ### Technical Papers
