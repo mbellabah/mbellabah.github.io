@@ -55,6 +55,7 @@ datatable: true
 | The Mind of Napoleon: A Selection of His Written and Spoken Words        | Napoleon, Herold, J. Christopher                  | History, Nonfiction                   |       |
 | Braiding Sweetgrass                                                      | Robin Wall Kimmerer                               | Nonfiction, Nature, Memoir            |       |
 | Washington: A Life                                                       | Ron Chernow                                       | Nonfiction, Biography, History        |       |
+| The Art of the Good Life                                                 | Rolf Dobelli                                      | Self Help, Personal Development       |       |
 {: .datatable}
 
 ### Technical Papers
