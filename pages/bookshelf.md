@@ -8,25 +8,24 @@ datatable: true
 
 # Currently Reading
 
-| Title                            | Author(s)        | Type                                           | Notes |
-|----------------------------------|------------------|------------------------------------------------|-------|
-| Fahrenheit 451                   | Ray Bradbury     | Fiction                                        |       |
-| The Little Book of Deep Learning | Francois Fleuret | Computer Science, Machine Learning, Nonfiction |       |
+| Title                           | Author(s)          | Type                           | Notes |
+|---------------------------------|--------------------|--------------------------------|-------|
+| Fahrenheit 451                  | Ray Bradbury       | Fiction                        |       |
+| Augustus: First Emperor of Rome | Adrian Goldsworthy | History, Biography, Nonfiction |       |
 
 # Shelved
 
-| Title                                                                  | Author(s)                      | Type                                      | Notes |
-|------------------------------------------------------------------------|--------------------------------|-------------------------------------------|-------|
-| Patton: A Genius for War                                               | Carlo D'Este                   | Biography, Military History, Nonfiction   |       |
-| Augustus: The Life of Rome's First Emperor                             | Anthony Everitt                | History, Biography, Nonfiction            |       |
-| Common Sense, The Rights of Man and Other Essential Writings           | Thomas Paine                   | Philosophy, History, Nonfiction, Politics |       |
-| Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction              |       |
-| Deng Xiaoping and the Transformation of China  | Ezra F. Vogel      | History, China, Biography, Nonfiction |       |
-| L'Etranger                                     | Albert Camus          | Classics, Fiction, Philosophy, French          |       |
-| Against the Gods: The Remarkable Story of Risk | Peter L. Bernstein    | Finance, History, Nonfiction                   |       |
-| Pattern Recognition and Machine Learning       | Christopher M. Bishop | Computer Science, Machine Learning, Nonfiction |       |
-| The End of History and the Last Man            | Francis Fukuyama      | History, Nonfiction, Political Science         |       |
-| Augustus: First Emperor of Rome                | Adrian Goldsworthy    | History, Biography, Nonfiction                 |       |
+| Title                                                                  | Author(s)                      | Type                                           | Notes |
+|------------------------------------------------------------------------|--------------------------------|------------------------------------------------|-------|
+| Patton: A Genius for War                                               | Carlo D'Este                   | Biography, Military History, Nonfiction        |       |
+| Augustus: The Life of Rome's First Emperor                             | Anthony Everitt                | History, Biography, Nonfiction                 |       |
+| Common Sense, The Rights of Man and Other Essential Writings           | Thomas Paine                   | Philosophy, History, Nonfiction, Politics      |       |
+| Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction                   |       |
+| Deng Xiaoping and the Transformation of China                          | Ezra F. Vogel                  | History, China, Biography, Nonfiction          |       |
+| L'Etranger                                                             | Albert Camus                   | Classics, Fiction, Philosophy, French          |       |
+| Against the Gods: The Remarkable Story of Risk                         | Peter L. Bernstein             | Finance, History, Nonfiction                   |       |
+| Pattern Recognition and Machine Learning                               | Christopher M. Bishop          | Computer Science, Machine Learning, Nonfiction |       |
+| The End of History and the Last Man                                    | Francis Fukuyama               | History, Nonfiction, Political Science         |       |
 {: .datatable}
 
 ---
@@ -56,6 +55,7 @@ datatable: true
 | Braiding Sweetgrass                                                      | Robin Wall Kimmerer                               | Nonfiction, Nature, Memoir            |       |
 | Washington: A Life                                                       | Ron Chernow                                       | Nonfiction, Biography, History        |       |
 | The Art of the Good Life                                                 | Rolf Dobelli                                      | Self Help, Personal Development       |       |
+| The Little Book of Deep Learning                                         | Francois Fleuret                                  | Nonfiction, Machine Learning          |       |
 {: .datatable}
 
 ### Technical Papers
