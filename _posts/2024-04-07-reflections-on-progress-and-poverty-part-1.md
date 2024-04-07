@@ -2,7 +2,7 @@
 layout: post
 title: Reflections on Progress and Poverty - Part I
 subtitle: 
-tags: [philosophy, essay]
+tags: [economics, essay]
 show-avatar: false
 comments: false
 social-share: true
