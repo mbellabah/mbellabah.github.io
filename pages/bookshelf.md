@@ -56,6 +56,7 @@ datatable: true
 | Washington: A Life                                                       | Ron Chernow                                       | Nonfiction, Biography, History        |       |
 | The Art of the Good Life                                                 | Rolf Dobelli                                      | Self Help, Personal Development       |       |
 | The Little Book of Deep Learning                                         | Francois Fleuret                                  | Nonfiction, Machine Learning          |       |
+| The Sword of Kaigen                                                      | M. L. Wang                                        | Fantasy, Fiction                      |       |
 {: .datatable}
 
 ### Technical Papers
