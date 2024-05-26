@@ -8,10 +8,9 @@ datatable: true
 
 # Currently Reading
 
-| Title                           | Author(s)          | Type                           | Notes |
-|---------------------------------|--------------------|--------------------------------|-------|
-| Fahrenheit 451                  | Ray Bradbury       | Fiction                        |       |
-| Augustus: First Emperor of Rome | Adrian Goldsworthy | History, Biography, Nonfiction |       |
+| Title                | Author(s)        | Type             | Notes |
+|----------------------|------------------|------------------|-------|
+| The Name of the Wind | Patrick Rothfuss | Fiction, Fantasy |       |
 
 # Shelved
 
@@ -57,6 +56,7 @@ datatable: true
 | The Art of the Good Life                                                 | Rolf Dobelli                                      | Self Help, Personal Development       |       |
 | The Little Book of Deep Learning                                         | Francois Fleuret                                  | Nonfiction, Machine Learning          |       |
 | The Sword of Kaigen                                                      | M. L. Wang                                        | Fantasy, Fiction                      |       |
+| The Three Musketeers                                                     | Alexandre Dumas                                   | Classics, Fiction, French Literature  |       |
 {: .datatable}
 
 ### Technical Papers
