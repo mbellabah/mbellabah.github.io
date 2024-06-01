@@ -31,7 +31,7 @@ Spilling forth something that is melodious, solid and full-bellied,
 
 Distinct from that which only ping-pongs the sides of a hollow soul,
 
-That become fainter and fainter, eventually lost, left for dead;
+That becomes fainter and fainter, eventually lost, left for dead;
 
 
 All belongs to those with sincere hearts,
