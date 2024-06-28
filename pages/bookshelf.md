@@ -56,6 +56,7 @@ datatable: true
 | The Art of the Good Life                                                 | Rolf Dobelli                                      | Self Help, Personal Development       |       |
 | The Little Book of Deep Learning                                         | Francois Fleuret                                  | Nonfiction, Machine Learning          |       |
 | The Sword of Kaigen                                                      | M. L. Wang                                        | Fantasy, Fiction                      |       |
+| The Name of the Wind                                                     | Patrick Rothfuss                                  | Fantasy, Fiction                      |       |
 | The Three Musketeers                                                     | Alexandre Dumas                                   | Classics, Fiction, French Literature  |       |
 {: .datatable}
 
