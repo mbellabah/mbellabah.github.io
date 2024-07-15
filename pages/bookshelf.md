@@ -8,9 +8,10 @@ datatable: true
 
 # Currently Reading
 
-| Title                | Author(s)        | Type             | Notes |
-|----------------------|------------------|------------------|-------|
-| The Name of the Wind | Patrick Rothfuss | Fiction, Fantasy |       |
+| Title                   | Author(s)           | Type                           | Notes |
+|-------------------------|---------------------|--------------------------------|-------|
+| The Box                 | Marc Levinson       | Nonfiction, Industrial         |       |
+| The Man from the Future | Ananyo Bhattacharya | Biography, Science, Nonfiction |       |
 
 # Shelved
 
