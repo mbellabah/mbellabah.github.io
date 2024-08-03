@@ -15,3 +15,5 @@ Bachelors of Science in Electrical Engineering and Computer Science at the Massa
 <span class="fa fa-briefcase about-icon"></span>
 Software Engineer at Google, Google TV
 </p>
+
+![](/../../img/desk_bella.png)
