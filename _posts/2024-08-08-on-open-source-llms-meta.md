@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Open Source Large Language Models (LLMs) and Meta
+title: Open Source Large Language Models (LLMs) and Meta
 subtitle: 
 tags: [essay, business]
 show-avatar: false
