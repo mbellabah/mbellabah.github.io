@@ -30,9 +30,9 @@ His fingers, once deft and sure, now stumble,
 
 On ivory keys yellowed by disuse,
 
-Notes that once flowed in Music’s exhalation,
+Notes that once flowed in Music’s exaltation,
 
-Choke on thick cobwebs woven as a permanent burial shroud.<br><br><br>
+Choke on thick cobwebs woven as a burial shroud.<br><br><br>
 
 Silence, the usurper, draws him to her breast,
 
