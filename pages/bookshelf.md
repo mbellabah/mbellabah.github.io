@@ -8,10 +8,10 @@ datatable: true
 
 # Currently Reading
 
-| Title                | Author(s)       | Type                   | Notes |
-|----------------------|-----------------|------------------------|-------|
-| The Box              | Marc Levinson   | Nonfiction, Industrial |       |
-| The Will of the Many | James Islington | Fantasy, Fiction       |       |
+| Title      | Author(s)         | Type                   | Notes |
+|------------|-------------------|------------------------|-------|
+| The Box    | Marc Levinson     | Nonfiction, Industrial |       |
+| Warbreaker | Brandon Sanderson | Fantasy, Fiction       |       |
 
 # Shelved
 
@@ -59,6 +59,7 @@ datatable: true
 | The Sword of Kaigen                                                      | M. L. Wang                                        | Fantasy, Fiction                      |       |
 | The Name of the Wind                                                     | Patrick Rothfuss                                  | Fantasy, Fiction                      |       |
 | The Three Musketeers                                                     | Alexandre Dumas                                   | Classics, Fiction, French Literature  |       |
+| The Will of the Many                                                     | James Islington                                   | Fantasy, Fiction                      |       |
 | The Man from the Future                                                  | Annoy Bhattacharya                                | Biography, Science, Nonfiction        |       |
 {: .datatable}
 
