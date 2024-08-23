@@ -9,7 +9,9 @@ social-share: true
 ---
 
 {: .box-note}
-**Author's note:** I went backpacking with a couple of friends up in Desolation wilderness (southwest of Lake Tahoe) this past weekend. The timing was fortuitous because I've recently gotten really into "thinking", and there's no
+**Author's note:** I went backpacking with a couple of friends up in Desolation
+wilderness (southwest of Lake Tahoe) this past weekend. The timing was
+fortuitous because I've recently really gotten into "thinking", and there's no
 better time and place to do that than out in nature. Over three days: we hiked
 well past midnight, drank lake water (filtered courtesy of my friend's filter),
 swam in lakes and quite nearly succumbed to wind chill after, eagerly prayed
