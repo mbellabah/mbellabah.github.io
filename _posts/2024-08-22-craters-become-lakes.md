@@ -37,18 +37,18 @@ Grateful, now a lake, yet still
 dreams of being sea.<br><br><br><br>
 
 
-Lofty Mountain sighs,
-
-While Lake's depths echoes with want,
-
-Siblings share in ache.<br><br><br><br>
-
-
 Granite envies grass,
 
 Grass wishes to be like man,
 
-Stardust in his eyes.
+Stardust in his eyes.<br><br><br><br>
+
+
+Lofty Mountain sighs,
+
+While Lake's depths echoes with want,
+
+Lovers share in ache.
 
 
 
