@@ -17,7 +17,7 @@ Last month, I went on a backpacking trip in Zion National Park with some friends
 
 On the second night, in keeping with tradition, I woke up for my nightly pee-and-stroll. What I clearly remember is having first looked up at the stars in the 5am dark, and reflecting on whether or not it was the first time I’d ever seen three stars vertically stacked atop each other. Calvin and Hobbes best describes my feelings then.
 
-![](/../../img/thinking_in_zion_post/calvin_and_hobbes_stars.jpeg){ width="800" height="600" style="display: block; margin: 0 auto" }
+![](/../../img/thinking_in_zion_post/calvin_and_hobbes_stars.jpeg)
 
 ## Payments in AR
 As I paced about, I thought about a couple things according to an agenda of sorts. The first thing on said agenda was AR glasses, “arGlasses”, but from a techno-optimistic lens. For whatever reason, payments specifically came to mind.
