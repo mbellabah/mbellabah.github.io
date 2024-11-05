@@ -8,6 +8,8 @@ comments: false
 social-share: true
 ---
 
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 {: .box-note}
 **Author's note**: Author’s note: This article is unstructured, so handle with care as things won’t transition or segue as nicely as they could. I didn’t bother very hard to change that, it’d have been more work than it’s worth to corral everything into greater coherence. Regrettably, I made the decision to not pack a journal this trip, so I found myself forced to painstakingly ration my phone’s battery. It was just as glaringly obvious then as it is now why the written record—through pen and paper—sits nigh uncontested in the pantheon of man’s greatest inventions. All that said, everything below is inspired by my raw recollection of various trains of thought over that weekend; unsurprisingly, not every train safely made its way to a destination in the weeks that have since passed. Either way, let’s begin!
 
@@ -32,6 +34,7 @@ The above ticked off only the first part of a three-part thinking agenda. Next f
  Wounded with a spear, dedicated to Odin,<br>
  Myself to myself,<br>
  On that tree of which no man knows from where its roots run.
+{: style="text-align: center"}
 
 There’s something about “myself to myself”, the implied offering of a god to himself, that so held my attention—it’s circular and feels paradoxical … it's irresistibly intriguing! Like many others, I see the parallels here between Odin and Jesus’ crucifixion in the Christian tradition. Either way, the show had me thinking of Valhalla and this idea that you fight in this world for the honor of fighting again (and again and again and again...) in the next. When I combined the aforementioned with my love for competition and its tumor-like presence in my mind, the draft of a poem materialized in my mind that night.
 
@@ -40,6 +43,7 @@ For what dies on its surface<br>
 Sinks to its depths,<br>
 Where it bloats and rises back up again,<br>
 As the ocean offers itself to itself
+{: style="text-align: center"}
 
 That’s where I ended with that. I didn’t like the imagery and thought it *too* direct, even if that lent itself quite nicely to the circularity of Valhalla and self-offering. As such, my mind moved to thinking about the Earth and competition. Once again, this is a draft, so a lot of the lines could use some work.
 
@@ -57,6 +61,7 @@ But the wise know not they are, so then if you are sure<br>
 Verily you are a coward,<br>
 And so shunned will you be.<br>
 Welcome by the Earth is they who try, win or lose.<br>
+{: style="text-align: center"}
 
 It sucks, I’ll be the first to admit it; although I'm sure there are some interesting enough things that I'll revisit or steal for another poem or short story down the line. But as it stood, I gave up thinking about it in that night’s pacing. The stars were very beautiful to look at and I could spare no more time in my head.
 
