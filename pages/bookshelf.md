@@ -60,6 +60,8 @@ datatable: true
 | The Three Musketeers                                                     | Alexandre Dumas                                   | Classics, Fiction, French Literature  |       |
 | The Will of the Many                                                     | James Islington                                   | Fantasy, Fiction                      |       |
 | The Man from the Future                                                  | Annoy Bhattacharya                                | Biography, Science, Nonfiction        |       |
+| Fourth Wing                                                              | Rebecca Yaros                                     | Fantasy, Romance                      |       |
+| Iron Flame                                                               | Rebecca Yaros                                     | Fantasy, Romance                      |       |
 | The Metamorphosis                                                        | Franz Kafka                                       | Classics, Fiction, Philosophy         |       |
 | Warbreaker                                                               | Brandon Sanderson                                 | Fantasy, Fiction                      |       |
 {: .datatable}
