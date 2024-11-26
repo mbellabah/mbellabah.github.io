@@ -22,7 +22,6 @@ datatable: true
 | Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction                   |       |
 | Deng Xiaoping and the Transformation of China                          | Ezra F. Vogel                  | History, China, Biography, Nonfiction          |       |
 | L'Etranger                                                             | Albert Camus                   | Classics, Fiction, Philosophy, French          |       |
-| Against the Gods: The Remarkable Story of Risk                         | Peter L. Bernstein             | Finance, History, Nonfiction                   |       |
 | Pattern Recognition and Machine Learning                               | Christopher M. Bishop          | Computer Science, Machine Learning, Nonfiction |       |
 | The End of History and the Last Man                                    | Francis Fukuyama               | History, Nonfiction, Political Science         |       |
 {: .datatable}
@@ -64,6 +63,7 @@ datatable: true
 | Iron Flame                                                               | Rebecca Yaros                                     | Fantasy, Romance                      |       |
 | The Metamorphosis                                                        | Franz Kafka                                       | Classics, Fiction, Philosophy         |       |
 | Warbreaker                                                               | Brandon Sanderson                                 | Fantasy, Fiction                      |       |
+| Against the Gods: The Remarkable Story of Risk                           | Peter L. Bernstein                                | Finance, History, Nonfiction          |       |
 {: .datatable}
 
 ### Technical Papers
