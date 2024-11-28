@@ -6,28 +6,6 @@ show-avatar: false
 datatable: true
 ---
 
-# Currently Reading
-
-| Title      | Author(s)         | Type                   | Notes |
-|------------|-------------------|------------------------|-------|
-| The Box    | Marc Levinson     | Nonfiction, Industrial |       |
-
-# Shelved
-
-| Title                                                                  | Author(s)                      | Type                                           | Notes |
-|------------------------------------------------------------------------|--------------------------------|------------------------------------------------|-------|
-| Patton: A Genius for War                                               | Carlo D'Este                   | Biography, Military History, Nonfiction        |       |
-| Augustus: The Life of Rome's First Emperor                             | Anthony Everitt                | History, Biography, Nonfiction                 |       |
-| Common Sense, The Rights of Man and Other Essential Writings           | Thomas Paine                   | Philosophy, History, Nonfiction, Politics      |       |
-| Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction                   |       |
-| Deng Xiaoping and the Transformation of China                          | Ezra F. Vogel                  | History, China, Biography, Nonfiction          |       |
-| L'Etranger                                                             | Albert Camus                   | Classics, Fiction, Philosophy, French          |       |
-| Pattern Recognition and Machine Learning                               | Christopher M. Bishop          | Computer Science, Machine Learning, Nonfiction |       |
-| The End of History and the Last Man                                    | Francis Fukuyama               | History, Nonfiction, Political Science         |       |
-{: .datatable}
-
----
-
 # Completed
 
 {: .box-warning} 
@@ -61,6 +39,7 @@ datatable: true
 | The Man from the Future                                                  | Annoy Bhattacharya                                | Biography, Science, Nonfiction        |       |
 | Fourth Wing                                                              | Rebecca Yaros                                     | Fantasy, Romance                      |       |
 | Iron Flame                                                               | Rebecca Yaros                                     | Fantasy, Romance                      |       |
+| White Nights                                                             | Fyodor Dostoevsky, Olga Shartse (Translator)      | Fiction, Russian Literature           |       |
 | The Metamorphosis                                                        | Franz Kafka                                       | Classics, Fiction, Philosophy         |       |
 | Warbreaker                                                               | Brandon Sanderson                                 | Fantasy, Fiction                      |       |
 | Against the Gods: The Remarkable Story of Risk                           | Peter L. Bernstein                                | Finance, History, Nonfiction          |       |
@@ -131,4 +110,19 @@ datatable: true
 | The Hero of Ages                                                                           | Brandon Sanderson                            | Fantasy, Fiction                        |                                                                                                                                                                                   |
 | Circe                                                                                      | Madeline Miller                              | Fantasy, Historical Fiction, Mythology  | Really touching book. Especially love the author's writing style.                                                                                                                  |
 | The Song of Achilles                                                                       | Madeline Miller                              | Fantasy, Historical Fiction, Mythology  | This book touched on some themes I've never read before. Enlightening read, made me tear up at times.                                                                             |
+{: .datatable}
+
+---
+# Shelved
+
+| Title                                                                  | Author(s)                      | Type                                           | Notes |
+|------------------------------------------------------------------------|--------------------------------|------------------------------------------------|-------|
+| Patton: A Genius for War                                               | Carlo D'Este                   | Biography, Military History, Nonfiction        |       |
+| Augustus: The Life of Rome's First Emperor                             | Anthony Everitt                | History, Biography, Nonfiction                 |       |
+| Common Sense, The Rights of Man and Other Essential Writings           | Thomas Paine                   | Philosophy, History, Nonfiction, Politics      |       |
+| Special Relativity and Classical Field Theory: The Theoretical Minimum | Leonard Susskind, Art Friedman | Physics, Science, Nonfiction                   |       |
+| Deng Xiaoping and the Transformation of China                          | Ezra F. Vogel                  | History, China, Biography, Nonfiction          |       |
+| L'Etranger                                                             | Albert Camus                   | Classics, Fiction, Philosophy, French          |       |
+| Pattern Recognition and Machine Learning                               | Christopher M. Bishop          | Computer Science, Machine Learning, Nonfiction |       |
+| The End of History and the Last Man                                    | Francis Fukuyama               | History, Nonfiction, Political Science         |       |
 {: .datatable}
