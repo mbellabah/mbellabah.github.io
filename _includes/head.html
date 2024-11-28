@@ -138,7 +138,7 @@
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script> <!--add dataTables-->
   <script>
       $(document).ready( function () {
-      $('table.datatable').DataTable();
+      $('table.datatable').DataTable("", {pageLength: 15});
       } );
   </script>
   {% endif %}
