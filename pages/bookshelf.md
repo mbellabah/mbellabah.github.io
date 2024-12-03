@@ -40,6 +40,7 @@ datatable: true
 | Fourth Wing                                                              | Rebecca Yaros                                     | Fantasy, Romance                      |       |
 | Iron Flame                                                               | Rebecca Yaros                                     | Fantasy, Romance                      |       |
 | White Nights                                                             | Fyodor Dostoevsky, Olga Shartse (Translator)      | Fiction, Russian Literature           |       |
+| Flowers for Algernon                                                     | Daniel Keyes                                      | Classics, Fiction                     |       |
 | The Metamorphosis                                                        | Franz Kafka                                       | Classics, Fiction, Philosophy         |       |
 | Warbreaker                                                               | Brandon Sanderson                                 | Fantasy, Fiction                      |       |
 | Against the Gods: The Remarkable Story of Risk                           | Peter L. Bernstein                                | Finance, History, Nonfiction          |       |
