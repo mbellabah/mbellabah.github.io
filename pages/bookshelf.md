@@ -36,7 +36,7 @@ datatable: true
 | The Name of the Wind                                                     | Patrick Rothfuss                                  | Fantasy, Fiction                      |       |
 | The Three Musketeers                                                     | Alexandre Dumas                                   | Classics, Fiction, French Literature  |       |
 | The Will of the Many                                                     | James Islington                                   | Fantasy, Fiction                      |       |
-| The Man from the Future                                                  | Annoy Bhattacharya                                | Biography, Science, Nonfiction        |       |
+| The Man from the Future: The Visionary Life of John von Neumann          | Ananyo Bhattacharya                               | Biography, Science, Nonfiction        |       |
 | Fourth Wing                                                              | Rebecca Yaros                                     | Fantasy, Romance                      |       |
 | Iron Flame                                                               | Rebecca Yaros                                     | Fantasy, Romance                      |       |
 | White Nights                                                             | Fyodor Dostoevsky, Olga Shartse (Translator)      | Fiction, Russian Literature           |       |
