@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Of Worlds Becoming
+title: Of A World Becoming
 subtitle: 
 tags: [poetry]
 show-avatar: false
