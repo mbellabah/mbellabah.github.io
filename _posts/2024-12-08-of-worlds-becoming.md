@@ -8,7 +8,6 @@ comments: false
 social-share: true
 ---
 
-
 Heavy is the head that wears the crown,
 
 Forged of lofty expectations,
