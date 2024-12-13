@@ -30,7 +30,7 @@ And failing that, gladly give whatever I possess in my lungs.”
 
 But of course, the butterfly’s visit was brief,
 
-Drifting from his garden almost as soon as it’d arrived,
+Drifting from his garden almost as soon as it’d arrived,<br><br><br>
 
 And so goes how a man, true to his promise,
 
