@@ -40,6 +40,7 @@ datatable: true
 | Fourth Wing                                                              | Rebecca Yaros                                     | Fantasy, Romance                      |
 | Iron Flame                                                               | Rebecca Yaros                                     | Fantasy, Romance                      |
 | White Nights                                                             | Fyodor Dostoevsky, Olga Shartse (Translator)      | Fiction, Russian Literature           |
+| Lessons from the Titans                                                  | Scott Davis, Carter Copeland, Rob Wertheimer      | Business, Nonfiction, Management      |
 | Flowers for Algernon                                                     | Daniel Keyes                                      | Classics, Fiction                     |
 | The Metamorphosis                                                        | Franz Kafka                                       | Classics, Fiction, Philosophy         |
 | Warbreaker                                                               | Brandon Sanderson                                 | Fantasy, Fiction                      |
