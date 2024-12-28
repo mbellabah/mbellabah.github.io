@@ -20,31 +20,33 @@ datatable: true
 
 ### Books 
 
-| Title                                                                    | Author(s)                                         | Type                                  |
-|--------------------------------------------------------------------------|---------------------------------------------------|---------------------------------------|
-| Crime and Punishment                                                     | Fyodor Dostoevsky, Constance Garnett (Translator) | Classics, Fiction, Russian Literature |
-| Throne of Glass                                                          | Sarah J. Maas                                     | Fantasy                               |
-| Philip and Alexander, Kings and Conquerors                               | Adrian Goldsworthy                                | History, Nonfiction, Biography        |
-| Glossy: Ambition, Beauty, and the Inside Story of Emily Weiss's Glossier | Marisa Meltzer                                    | Nonfiction, Business                  |
-| Thief of Time                                                            | Terry Pratchett                                   | Fantasy, Fiction                      |
-| The Mind of Napoleon: A Selection of His Written and Spoken Words        | Napoleon, Herold, J. Christopher                  | History, Nonfiction                   |
-| Braiding Sweetgrass                                                      | Robin Wall Kimmerer                               | Nonfiction, Nature, Memoir            |
-| Washington: A Life                                                       | Ron Chernow                                       | Nonfiction, Biography, History        |
-| The Art of the Good Life                                                 | Rolf Dobelli                                      | Self Help, Personal Development       |
-| The Little Book of Deep Learning                                         | Francois Fleuret                                  | Nonfiction, Machine Learning          |
-| The Sword of Kaigen                                                      | M. L. Wang                                        | Fantasy, Fiction                      |
-| The Name of the Wind                                                     | Patrick Rothfuss                                  | Fantasy, Fiction                      |
-| The Three Musketeers                                                     | Alexandre Dumas                                   | Classics, Fiction, French Literature  |
-| The Will of the Many                                                     | James Islington                                   | Fantasy, Fiction                      |
-| The Man from the Future: The Visionary Life of John von Neumann          | Ananyo Bhattacharya                               | Biography, Science, Nonfiction        |
-| Fourth Wing                                                              | Rebecca Yaros                                     | Fantasy, Romance                      |
-| Iron Flame                                                               | Rebecca Yaros                                     | Fantasy, Romance                      |
-| White Nights                                                             | Fyodor Dostoevsky, Olga Shartse (Translator)      | Fiction, Russian Literature           |
-| Lessons from the Titans                                                  | Scott Davis, Carter Copeland, Rob Wertheimer      | Business, Nonfiction, Management      |
-| Flowers for Algernon                                                     | Daniel Keyes                                      | Classics, Fiction                     |
-| The Metamorphosis                                                        | Franz Kafka                                       | Classics, Fiction, Philosophy         |
-| Warbreaker                                                               | Brandon Sanderson                                 | Fantasy, Fiction                      |
-| Against the Gods: The Remarkable Story of Risk                           | Peter L. Bernstein                                | Finance, History, Nonfiction          |
+| Title                                                                       | Author(s)                                         | Type                                  |
+|-----------------------------------------------------------------------------|---------------------------------------------------|---------------------------------------|
+| Crime and Punishment                                                        | Fyodor Dostoevsky, Constance Garnett (Translator) | Classics, Fiction, Russian Literature |
+| Throne of Glass                                                             | Sarah J. Maas                                     | Fantasy                               |
+| Philip and Alexander, Kings and Conquerors                                  | Adrian Goldsworthy                                | History, Nonfiction, Biography        |
+| Glossy: Ambition, Beauty, and the Inside Story of Emily Weiss's Glossier    | Marisa Meltzer                                    | Nonfiction, Business                  |
+| Thief of Time                                                               | Terry Pratchett                                   | Fantasy, Fiction                      |
+| The Mind of Napoleon: A Selection of His Written and Spoken Words           | Napoleon, Herold, J. Christopher                  | History, Nonfiction                   |
+| Braiding Sweetgrass                                                         | Robin Wall Kimmerer                               | Nonfiction, Nature, Memoir            |
+| The Patriarch: The Remarkable Life and Turbulent Times of Joseph P. Kennedy | David Nasaw                                       | Nonfiction, Biography, Politics       |
+| Berserk, Vols 1-42                                                          | Kentaro Miura                                     | Manga, Dark Fantasy                   |
+| Washington: A Life                                                          | Ron Chernow                                       | Nonfiction, Biography, History        |
+| The Art of the Good Life                                                    | Rolf Dobelli                                      | Self Help, Personal Development       |
+| The Little Book of Deep Learning                                            | Francois Fleuret                                  | Nonfiction, Machine Learning          |
+| The Sword of Kaigen                                                         | M. L. Wang                                        | Fantasy, Fiction                      |
+| The Name of the Wind                                                        | Patrick Rothfuss                                  | Fantasy, Fiction                      |
+| The Three Musketeers                                                        | Alexandre Dumas                                   | Classics, Fiction, French Literature  |
+| The Will of the Many                                                        | James Islington                                   | Fantasy, Fiction                      |
+| The Man from the Future: The Visionary Life of John von Neumann             | Ananyo Bhattacharya                               | Biography, Science, Nonfiction        |
+| Fourth Wing                                                                 | Rebecca Yaros                                     | Fantasy, Romance                      |
+| Iron Flame                                                                  | Rebecca Yaros                                     | Fantasy, Romance                      |
+| White Nights                                                                | Fyodor Dostoevsky, Olga Shartse (Translator)      | Fiction, Russian Literature           |
+| Lessons from the Titans                                                     | Scott Davis, Carter Copeland, Rob Wertheimer      | Business, Nonfiction, Management      |
+| Flowers for Algernon                                                        | Daniel Keyes                                      | Classics, Fiction                     |
+| The Metamorphosis                                                           | Franz Kafka                                       | Classics, Fiction, Philosophy         |
+| Warbreaker                                                                  | Brandon Sanderson                                 | Fantasy, Fiction                      |
+| Against the Gods: The Remarkable Story of Risk                              | Peter L. Bernstein                                | Finance, History, Nonfiction          |
 {: .datatable}
 
 ### Technical Papers
