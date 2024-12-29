@@ -9,11 +9,25 @@ datatable: true
 # Completed
 
 {: .box-warning} 
-**Warning** (August 28, 2023) I've only been properly tracking the books I've read in 2023 onwards. I include 2019 since I appear to have tracked some of the books that year, take it as a best-effort.
+**Warning** (August 28, 2023) I've only been properly tracking the books I've read in 2023 onwards. My Goodreads is up to date since 2024. I include 2019 since I appear to have tracked some of the books that year, take it as a best-effort.
 
 <p style="text-align:center">
-<a href="#2024">2024</a> | <a href="#2023">2023</a> | <a href="#2019">2019</a>
+<a href="https://www.goodreads.com/user/show/181060917-bella-bah">goodreads.com/bellabah</a>
 </p>
+
+<p style="text-align:center">
+<a href="#2025">2025</a> | <a href="#2024">2024</a> | <a href="#2023">2023</a> | <a href="#2019">2019</a>
+</p>
+
+<a name="2025"></a>
+## 2025
+
+### Books 
+
+| Title | Author(s) | Type |
+|-------|-----------|------|
+{: .datatable}
+
 
 <a name="2024"></a>
 ## 2024
