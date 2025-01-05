@@ -24,8 +24,9 @@ datatable: true
 
 ### Books 
 
-| Title | Author(s) | Type |
-|-------|-----------|------|
+| Title                                                          | Author(s)    | Type                |
+|----------------------------------------------------------------|--------------|---------------------|
+| Destiny Disrupted: A History of the World Through Islamic Eyes | Tamim Ansary | History, Nonfiction |
 {: .datatable}
 
 
