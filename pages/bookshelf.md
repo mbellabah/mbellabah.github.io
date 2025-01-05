@@ -9,7 +9,7 @@ datatable: true
 # Completed
 
 {: .box-warning} 
-**Warning** (August 28, 2023) I've only been properly tracking the books I've read in 2023 onwards. My Goodreads is up to date since 2024. I include 2019 since I appear to have tracked some of the books that year, take it as a best-effort.
+**Note** I've only been properly tracking the books I've read in 2023 onwards. I include 2019 here since I appear to have tracked some of the books that year, take it as a best-effort. For those who prefer it, my Goodreads is up to date since 2024. Recommendations are always welcome!
 
 <p style="text-align:center">
 <a href="https://www.goodreads.com/user/show/181060917-bella-bah">goodreads.com/bellabah</a>
