@@ -8,8 +8,6 @@ comments: false
 social-share: true
 ---
 
-# Quick Note: On the Beginning of Things
-
 I had an interesting discussion this past weekend on the "beginning of things." Someone making their case implied early on that "all things have a beginning". One way or another, I got to thinking: *do **all** things necessarily have a beginning?*
 
 For all physical things and processes, we can confidently say there is a beginning. The laptop on which I write this had, in some sense, a beginning—assembled from components, those from raw materials, and those from the Earth. My own corporeal self began at birth, preceded by my conception, preceded by my parents, and so on. Concepts are trickier, but they too seem to originate somewhere: the concept of love, for instance, could be said to arise when sentient, social beings first experience attachment, care, and longing. Time too, often thought a concept, I've read characterized through physical terms; that it is the direction of the increase of entropy within a system. (Carlo Rovelli's "The Order of Time" was a fascinating read.)
