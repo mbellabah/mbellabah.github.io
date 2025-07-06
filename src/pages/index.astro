@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts', ({ data }) => {
+  return data.draft !== true;
+});
+
+// Sort posts by date (newest first)
+const sortedPosts = posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+// Function to extract plain text and create excerpt
+function createExcerpt(content: string, maxLength: number = 200): string {
+  // Remove markdown syntax and HTML tags
+  const plainText = content
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Remove markdown links
+    .replace(/\[\^[^\]]+\]/g, '') // Remove footnote references
+    .replace(/\*\*([^*]+)\*\*/g, '$1') // Remove bold
+    .replace(/\*([^*]+)\*/g, '$1') // Remove italic
+    .replace(/#+ /g, '') // Remove headers
+    .replace(/\n+/g, ' ') // Replace newlines with spaces
+    .trim();
+  
+  if (plainText.length <= maxLength) return plainText;
+  
+  // Find the last complete word within the limit
+  const truncated = plainText.substring(0, maxLength);
+  const lastSpace = truncated.lastIndexOf(' ');
+  return truncated.substring(0, lastSpace) + '...';
+}
+---
+
+<BaseLayout title="Mohamadou Bella Bah">
+  <div class="max-w-4xl mx-auto">
+    <div class="space-y-8">
+      {sortedPosts.map(async (post) => {
+        const { remarkPluginFrontmatter } = await post.render();
+        const rawContent = post.body;
+        const excerpt = createExcerpt(rawContent);
+        
+        return (
+          <article class="border-gray-200 pb-8 last:border-b-0">
+            <header class="mb-3">
+              <h2 class="text-2xl font-semibold mb-2">
+                <a href={`/posts/${post.slug}`} class="hover:text-gray-600">
+                  {post.data.title}
+                </a>
+              </h2>
+              <time class="text-gray-600 text-sm">
+                {post.data.date.toLocaleDateString('en-US', { 
+                  year: 'numeric', 
+                  month: 'long', 
+                  day: 'numeric' 
+                })}
+              </time>
+            </header>
+            
+            <div class="mb-4">
+              <p class="text-gray-700 leading-relaxed max-w-2xl">{excerpt}</p>
+            </div>
+            
+            <div class="flex items-center justify-between">
+              <a href={`/posts/${post.slug}`} class="text-blue-600 hover:underline text-sm">
+                [read more]
+              </a>
+              
+              {post.data.tags && post.data.tags.length > 0 && (
+                <div class="flex items-center">
+                  <span class="text-sm text-gray-500 mr-2">tags:</span>
+                  <div class="flex gap-1">
+                    {post.data.tags.map(tag => (
+                      <a 
+                        href={`/tags/${tag}`}
+                        class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-200 transition-colors"
+                      >
+                        {tag}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </div>
+</BaseLayout>

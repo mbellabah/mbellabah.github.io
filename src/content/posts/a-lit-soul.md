@@ -1,0 +1,28 @@
+---
+title: A Lit Soul
+date: 2023-12-19
+tags: ["poetry"]
+---
+
+**Author's note:** This poem was inspired by a quote I came across online that I now know came from Werner Herzog's memoir. I know nothing of the man, but the following quote had me thinking: "I'd rather die than go to an analyst, because it's my view that something fundamentally wrong happens there. If you harshly light every last corner of a house, the house will be uninhabitable. It's like that with your soul; if you light it up, shadows and darkness and all, people will become "uninhabitable."" I proceeded to have a similar discussion with my little sister about his point. While I'm not yet sure the degree to which I agree, I find it interesting to think about nonetheless.
+
+---
+---
+
+Rationalization to the point of total illumination is ruinous,
+
+For light can be an oppressive and harsh thing,
+
+And one’s soul is not a thing to be spotlighted under a sterilizing scrutiny,
+
+For only in a prison is every last corner condemned to be permanently lit, 
+
+And the cameras turned in, surveilling, watchful and analytical.
+
+You are neither an inmate nor a warden,
+
+So hold not your soul captive,
+
+For it is the mark of a good and hospitable home,
+
+That the unoccupied rooms be allowed to remain dark.

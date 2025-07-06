@@ -1,0 +1,90 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/global.css">
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Find all footnote references
+        const footnoteRefs = document.querySelectorAll('a[href^="#user-content-fn-"], a[href^="#fn"], sup a');
+        
+        let footnoteCounter = 0;
+        
+        footnoteRefs.forEach(function(ref) {
+          const href = ref.getAttribute('href');
+          
+          if (href && (href.startsWith('#fn') || href.startsWith('#user-content-fn-'))) {
+            footnoteCounter++;
+            const footnoteId = href.substring(1);
+            const footnoteDefinition = document.getElementById(footnoteId);
+            
+            if (footnoteDefinition) {
+              // Create a positioned footnote
+              const sideNote = document.createElement('div');
+              sideNote.className = 'footnote-side';
+              
+              // Get footnote content
+              let footnoteContent = '';
+              const contentP = footnoteDefinition.querySelector('p');
+              if (contentP) {
+                footnoteContent = contentP.innerHTML;
+              } else if (footnoteDefinition.parentElement && footnoteDefinition.parentElement.tagName === 'LI') {
+                // Handle case where footnote is in a list item
+                const listItem = footnoteDefinition.parentElement;
+                footnoteContent = listItem.innerHTML.replace(/^<a[^>]*>[^<]*<\/a>\s*/, '');
+              } else {
+                footnoteContent = footnoteDefinition.innerHTML;
+              }
+              
+              // Use the actual footnote number from the reference text or counter
+              const refText = ref.textContent || footnoteCounter.toString();
+              sideNote.innerHTML = `<span class="footnote-number">${refText}</span>${footnoteContent}`;
+              
+              // Position it relative to the reference
+              const refParent = ref.closest('p') || ref.parentElement;
+              if (refParent) {
+                refParent.style.position = 'relative';
+                refParent.appendChild(sideNote);
+              }
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body class="bg-white text-gray-900 font-serif">
+    <nav class="border-b border-gray-200 py-4">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="flex items-center justify-between">
+          <a href="/" class="text-xl font-semibold">Mohamadou Bella Bah</a>
+          <div class="flex space-x-8">
+            <a href="/" class="hover:text-gray-600">main</a>
+            <a href="/about" class="hover:text-gray-600">about</a>
+            <a href="/bookshelf" class="hover:text-gray-600">bookshelf</a>
+            <a href="/tags" class="hover:text-gray-600">tags</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-4xl mx-auto px-6 py-8">
+      <slot />
+    </main>
+  </body>
+</html>

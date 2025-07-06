@@ -1,0 +1,63 @@
+---
+interface Props {
+  content: string;
+}
+
+const { content } = Astro.props;
+
+// Function to process footnotes and position them
+function processFootnotes(htmlContent: string) {
+  // Match footnote references like [^1]
+  const footnoteRefRegex = /\[\^(\d+)\]/g;
+  // Match footnote definitions like [^1]: content
+  const footnoteDefRegex = /\[\^(\d+)\]:\s*(.+?)(?=\n\s*\n|\n\s*\[|\n\s*$|$)/gs;
+  
+  const footnotes: { [key: string]: string } = {};
+  let processedContent = htmlContent;
+  
+  // Extract footnote definitions
+  let match;
+  while ((match = footnoteDefRegex.exec(htmlContent)) !== null) {
+    footnotes[match[1]] = match[2].trim();
+  }
+  
+  // Remove footnote definitions from content
+  processedContent = processedContent.replace(footnoteDefRegex, '');
+  
+  // Replace footnote references with numbered links and add side footnotes
+  let footnoteCounter = 0;
+  processedContent = processedContent.replace(footnoteRefRegex, (match, number) => {
+    footnoteCounter++;
+    const footnoteText = footnotes[number] || 'Footnote not found';
+    
+    return `<span class="footnote-container" style="position: relative;">
+      <a href="#fn${number}" class="footnote-ref">${footnoteCounter}</a>
+      <div class="footnote-side">
+        <span class="footnote-number">${footnoteCounter}</span>
+        ${footnoteText}
+      </div>
+    </span>`;
+  });
+  
+  return processedContent;
+}
+
+const processedContent = processFootnotes(content);
+---
+
+<div set:html={processedContent} />
+
+<style>
+  .footnote-container {
+    position: relative;
+  }
+  
+  .footnote-container:hover .footnote-side {
+    opacity: 1;
+  }
+  
+  .footnote-side {
+    opacity: 0.9;
+    transition: opacity 0.2s ease-in-out;
+  }
+</style>

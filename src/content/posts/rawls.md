@@ -1,0 +1,287 @@
+---
+title: Rawls and his Two Principles of Justice
+date: 2020-11-24
+tags: ["philosophy", "essay"]
+---
+
+**Author's note:** I'd written this piece for a class on Justice at MIT in
+response to a prompt---however, as per the professor's request, I will not be sharing the
+prompt; that said, the article remains readable even without prior
+knowledge of the prompt I'm responding to. (Note that because this article
+was written for a class, with very minor edits, the style and structure of writing is different to other
+articles on my blog, i.e. it's a lot more academic than usual.) 
+
+ A
+little bit about [John Rawls](https://en.wikipedia.org/wiki/John_Rawls), from Wikipedia: "Rawls's theory of "justice as fairness" recommends equal basic rights, equality of opportunity and promoting the interests of the least advantaged members of society. Rawls's argument for these principles of social justice uses a thought experiment called the "original position," in which people select what kind of society they would choose to live under if they did not know which social position they would personally occupy. In his later work Political Liberalism (1993), Rawls turned to the question of how political power could be made legitimate given reasonable disagreement about the nature of the good life."
+
+---
+---
+As moral theories related to individual liberty, Utilitarianism and
+Libertarianism fall on opposite ends of the spectrum. With that said, and in
+light of their respective pros and cons, perhaps there’s a balance to be struck
+between extreme equality on one end and extreme individual liberty on the other.
+This is the sort of question asked by John Rawls when it comes to the question
+of justice. In line with the Contractarian tradition, Rawls puts forth his own
+conception of justice---namely, “justice as fairness”, the descriptor of a
+social contract in which notions of fairness and reciprocity are embedded. Like
+the Utilitarians before him, Rawls asks what general principles of justice ought
+to structure a society of free and equal individuals. Stemming from his own
+intuition as to what is reasonable, Rawls says that a just society would be
+founded on two principles of justice: one related to equal rights of liberty,
+and another to equality of opportunity and economic security.[^1]  
+
+In order to mediate between a society of free individuals and his principles of
+justice, Rawls employs a thought experiment from which fair and spontaneous
+agreement on these principles emerges, the so-called original position. In
+brief, Rawls’ thought experiment asserts that when mutually disinterested—but
+not egoist—participants are deprived of knowledge of their personal
+characteristics, circumstances, and conceptions of good, they will rationally
+select his two principles concerning liberty of equality with impartiality and
+unanimity.[^2] That these two principles are selected spontaneously in this
+original position is to Rawls indicative of their role as fundamental principles
+of justice.  
+
+I will first elaborate Rawls’ two principles of justice and provide my own
+commentary as to why they are reasonable. I will then turn my attention to the
+original position and here also argue its reasonableness. For much of this
+article, I will be defending Rawls per my belief that the limitations in his
+principles arise from errors in omission rather than errors in argumentation.
+(Errors made in omission tend to be easily incorporated, so long as the theory
+remains internally consistent and coherent after the fact. Errors in
+argumentation often make one’s conclusions and observations moot.) 
+
+To preempt the criticism that Rawls’ two principles of justice and mediating
+original position are “rigged”, I will first address the basic question of
+whether or not either principle of justice is reasonable. (Reasonable in the
+sense that it is derived from a set of uncontroversial and coherent basic
+premises, and that it would survive the scrutiny of any reasonable person.)
+Formally, Rawls two principles of justice are given as: 
+
+1. First principle. Referred to as the *greatest equal liberty principle*, Rawls
+   declares that “each person is to have an equal right to the most extensive
+   total system of equal basic liberties compatible with a similar system of
+   liberty for all.”[^3]  
+
+2. Second principle: Rawls isn’t allergic to social and economic inequalities the way strict egalitarians are, in fact, he asserts that social and economic inequalities are permissible provided they are arranged: 
+   - (a) “Attached to offices and positions open to all under conditions of
+     equality of opportunity.” We commonly refer to this as the *equal
+     opportunity principle*.[^4]
+
+   - (b) “To the greatest benefit of the least advantaged, consistent with the
+     *just savings principle*.” (The just savings principle can be taken to mean
+     having a material respect for later generations.) We commonly refer to this
+     as the *difference principle*.[^5]  
+
+These two principles are prioritized in the order that they appear---**(1)**,
+**(2a)**, **(2b)**. Rawls states quite literally that “a principle does not come
+into play until those previous to it are either fully met or do not apply.”[^6]
+As such, the basic liberties described in **(1)** cannot be compromised on the
+grounds that there are social and economic gains to be made from **(2a)** and
+**(2b)**. This ordering follows as a matter of coherence, e.g. **(1)**
+necessarily comes before **(2b)** because **(2b)** would be ineffective without
+**(1)**. Space will not permit me to justify the reason for this ordering
+carefully; that said, something of a justification should become apparent as I
+defend the reasonability of the principles themselves.  
+
+The basic liberties that Rawls is concerned with are those of civic
+liberties---namely, freedom of speech, thought, and assembly. I will demonstrate
+that the greatest equal liberty principle is reasonable by way of contradiction.
+Without loss of generality, I will use the freedom of speech to arrive at a
+contradiction. Suppose that freedom of speech is not in fact necessary to
+justice; that is, any just situation wherein someone is subsequently denied
+their freedom of speech remains just. Let us consider the most general
+definition for justice: what is just is to be whatever it means to the affected
+individual at a given time. That we hold the affected individual to be the
+final—but not necessarily best—arbiter of whether or not he personally suffers
+an injustice ought to be an uncontroversial premise.[^7] Suppose further that if
+the affected individual believes he suffers an injustice---the sort brought upon
+him by the actions of others---he need only announce his grievance for it to
+stop. From the former two premises together, it logically follows that if we
+prevent the aggrieved from announcing their displeasure, and thus removing their
+ability to vocalize and end such displeasure, we are doing an injustice upon
+them. This result contradicts the supposition that the situation remains just
+and concludes the argument. Although this argument doesn’t demonstrate that
+freedom of speech alone is sufficient to constitute a just society, it does show
+that a lack of freedom of speech precludes justice. A similar argument can be
+made for the remaining basic liberties. 
+
+As for why a just society ought to be one of equal rights over basic liberties
+is to me an uncontroversial and reasonable premise in itself. Nevertheless, my
+own reasoning mirrors that of Rawls’ comments on the original position and the
+veil of ignorance: when in a position where one’s future prospects and social
+status is presumably assigned according to an unknown probability distribution,
+i.e. behind the veil of ignorance in the original position, it is rational to
+seek downside protection in the form of accepting equal chances across said
+possible prospects. The logic is that because each participant is equally
+vulnerable to being the least-advantaged, they ought to, individually, have some
+interest in protecting the least-advantaged. (Thomas Hobbes provides an
+alternative view as to why equality prevails as we are all equal in the sense
+that “the weakest has [physical] strength enough to kill the strongest.”[^8])
+
+The second principle is somewhat more controversial. The equality of opportunity
+is somewhat vague, although I choose to interpret it to mean “fair competition”
+---which appears to also be Rawls’ own interpretation---it could just as well
+mean “random assignment under equal chance”. Some of Rawls’ objectors assert
+that, given one has knowledge of the degree of their talents relative to others,
+the less-able would rationally opt for random assignments, whereas the more
+capable would rationally opt for fair competition, resulting in a standoff that
+eventuates the equality of opportunity principle to only be adopted by the
+society with a probability of $$\frac{1}{2}$$. This was an objection raised by
+Paul Wolff.[^9] This particular objection, however, has already been answered in
+Rawls’ later revisions, wherein he insists quite forcefully that, behind the
+veil of ignorance, participants in the original position have no knowledge as to
+where they fall with respect to others on the scale of natural talent and
+ability.  
+
+My own reasoning for the equal opportunity principle closely resembles the veil
+of ignorance justification for the equal right to basic liberties already
+explored. That said, there is an additional reason for equal opportunity: equal
+opportunities to offices and positions protects an individual’s right to agency
+and autonomy over their own circumstances. Why is this desirable? I think an
+economic argument applies here. Our (free-market) understanding of economics
+says that high barriers to entry and unearned privilege encourage
+anticompetitive behavior, waste, and other economic inefficiencies that damage
+society (and eventually the individual). Conversely, low barriers to entry offer
+the sort of competition and signaling mechanisms that most efficiently allocate
+the capital and talents of enterprises (i.e., only the most deserving (and
+possibly most lucky) succeed). Similar meritocratic thinking applies to
+**(2a)**, open access to offices and positions ideally leads to the most
+efficient (and societally beneficial) allocation of people’s talents, with the
+added advantage that it leads to more engaged and enterprising peoples.[^10]
+
+The difference principle is even more difficult to justify. Rather than
+calibrate entitlements against the state of nature, wherein life is rudimentary,
+like Libertarians suggest, Rawls’ difference principle would have us frequently
+adjudicate in favor of the least advantaged. The absurdity of the Libertarian
+decision to calibrate against the state of nature is easily apparent. For
+example, it leads to the erroneous belief that full private property claims on
+natural resources—land, for one---is just, even if private labor has only
+marginally altered the state of nature.[^11] Certain Libertarians criticize
+Rawls on the charge that his difference principle promotes laziness by taking
+from the hardworking to give to the allegedly “lazy” poor. Such a criticism is
+unfounded, in part because the Libertarian claims over certain types of property
+(and their concomitant unearned returns, e.g. rent) tend to be themselves
+unjust, hypocritically invalidating their claim to “hard work”, and in part
+because it is based on a superficial understanding of the psychology regarding
+human incentives and motivation to work. 
+
+According to Rawls, any more inequality than allowed by the difference principle
+places demands on the least advantaged to accept inequalities that, at best, do
+not benefit them and, at worst, leave them worse off---in turn violating the
+reciprocity that he seeks for his social contract. All this is well, an
+egalitarian might say; but in the same breath she might ask: “why is *any*
+inequality permitted?” To me, the answer for this lies in a basic fact of
+biology, with which Rawls appears to agree: an agent is only inclined to act in
+a way that is antagonistic to their wants now if doing so would confer them
+greater advantages later---upon deciding to act thusly, the agent creates some
+*value differential* across time, and to the extent that this investment is
+expected to yield a return for the sake of its survival or comfort, the agent is
+well within its right to make such efforts. Because all agents are at any time
+creating differentials between themselves in the future and as they are now,
+agents will occasionally find themselves better-off or worse-off relative to
+other agents. This is a sort of inequality that is permitted (and inevitable)
+because it arises from the day-to-day decisions of agents, decisions for which
+we can neither say are definitively just or unjust. Rawls abstracts further: the
+alternative of inequality, strict equality, might hamper economic growth that
+could potentially benefit all, by reducing the incentive to apply one’s talents
+to productive ends.[^12] (Many capitalist economists believe that a rising tide
+is to the benefit of all. In my opinion, this is a sensible belief only when
+injustices related to economic rents are compensated for.) Nevertheless, Rawls
+is in some sense more of an egalitarian than some self-described egalitarian for
+the difference principle is motivated by the need to compensate for naturally
+occurring inequalities, e.g. inborn talents/ characteristics. Thus, despite the
+objections of some of his critics, Rawls indeed takes into account the issue of
+the natural lottery and its negative impact on justice. 
+
+More or less convinced that Rawls’ principles of justice are themselves
+reasonable, let us now consider the thought experiment which he holds gives rise
+to them. As I alluded to earlier, the original position is the mediating device
+employed by Rawls to justify his two principles of justice. The original
+position is: (1) inherently contractualist—--according to Rawls, principles of
+justice originate in social contracts because “justice as fairness assigns a
+certain primacy to the social”;[^13] (2) consensual, in that no one is forced to
+join, and the participants have the right to justification as to why it is in
+their interest to participate.   
+
+Rawls’ own intuition is that political, social, and economic justice are
+grounded in notions of fairness, social cooperation, and reciprocity,
+backdropped by a social contract. He is not unique in his use of social
+contracts to justify certain principles of justice. For example, the social
+contract espoused by Locke “transpires in a state of nature among free and equal
+persons who know everything about themselves that you and I know about ourselves
+and each other.”[^14] The issue with this construction, says Rawls, is that it
+inevitably “legitimate[s] a constitutional monarchy that is in effect a
+gender-and-racially biased class state”; this remains the case even when we
+allow for the participants to start from positions of equal political rights and
+liberties. (Minority groups exchange these liberties for some of the advantages
+to be gained from civic organization and social hierarchy.) I need not explain
+the problem in this arrangement, for it is almost a given nowadays that gender,
+social class, and racial classifications are not reason enough to deprive people
+of their political rights and ability to attain offices.[^15] Rawls sees an obvious
+remedy: remove the factors that are morally irrelevant or antithetical to
+determining just political arrangements and principles of justice. Formally,
+Rawls says that when these persons are behind a “veil of ignorance” that
+deprives them of any knowledge about their own particular characteristics,
+position in society, and personal conceptions of good and those of others, they
+will invariably settle on the aforementioned two principles of justice.[^16] Because
+no person can take advantage of their position to extract for themselves
+favorable terms of cooperation, their decisions as to which principles of
+justice they wish to live under are sufficiently impartial and thus indicative
+that these are indeed fundamental principles of justice.  
+
+Some consider the veil of ignorance to be overly restrictive to the point of
+foreclosing rational behavior. That is, if an individual has no knowledge of
+their fundamental values, they are supposedly psychologically incapable of
+behaving rationally insofar that they wish to maximize their own advantage. This
+leaves Rawls’ theory of justice in something of a predicament: either the veil
+of ignorance is overly restrictive and impedes rational behavior, or it is not
+restrictive enough to avoid the unsavory classist conclusions of Locke. I don’t
+believe this charge is fair; it is unclear just how necessary the knowledge of
+one’s fundamental values is to achieving rational and coherent *group* behavior
+under a social contract---consider that, whatever our fundamental values, we all
+recognize the importance of downside protection and need for personal security
+for the sake of social harmony.
+
+Let us conclude by recalling Rawls’ two principles of justice: **(1)** the
+greatest equality principle states that all should have equal guarantees of the
+same basic liberties, **(2a)** the equal opportunity principle asserts that
+social and economic inequalities be attached to positions and offices that are
+open to all, and **(2b)** the difference principle claims that an inequality is
+permissible if and only if it is to the advantage of the least-advantaged. In my
+justification of the equal opportunity principle, I gave a proof by
+contradiction argument as to why, without loss of generality, the lack of basic
+liberties such as freedom of speech constitute an injustice. On the point of
+equal access to these basic liberties, I argued that the veil of ignorance leads
+one, rationally, to seek downside protection. I made a similar point to justify
+the equal opportunity principle. As for the difference principle, I argued that
+the Libertarian intuition to calibrate against the state of nature is wrong, and
+that a demand for greater inequality without compensation violates reciprocity
+and places undue demands on the least-advantaged. I argued that neither strict
+equality or unbridled inequality is desirable and just on the basis of biology.
+With that, and more or less moved by these arguments, I went on to describe
+Rawls’ original position, the motivations for it, and how this social contract
+compared to those put forth by John Locke. Although I usually sided with Rawls
+in my considerations of his critics, I did so per my belief that Rawls’
+argumentation for his two principles of justice, and his original position
+argument, contain few errors beyond those made in omission.  
+
+---
+---
+
+### Footnotes 
+[^1]: Rawls, John. A Theory of Justice. Harvard University Press, 2009. p.14
+[^2]: Ibid., p. 12-13
+[^3]: Ibid., p. 14-15
+[^4]: Ibid., p. 60-61
+[^5]: Ibid., p. 60-61
+[^6]: Ibid., p. 302
+[^7]: Even if I believe that you suffer some indignity or injustice, either from my own understanding/ experience or what I take to be your own understanding/experience, the final say as to whether you suffer an injustice is yours alone.
+[^8]: Hobbes, Thomas. "Of the natural condition of mankind as concerning their felicity and misery." Classics of International Relations (1996). p.1
+[^9]: Wolff, Robert Paul. "A refutation of Rawls' theorem on justice." the Journal of Philosophy 63.7 (1966). p. 188-189
+[^10]: Some believe meritocracy (the sort claimed by many Western institutions) is itself a myth when we take into account the sordid history of many of these institutions. 
+[^11]: There is some infighting in the Libertarian camp on this issue. Left Libertarians, in particular, agree with me that the private appropriation of natural resources without some form of taxation on the “unearned” rents is unjust.
+[^12]: Rawls, John. A Theory of Justice. Harvard University Press, 2009. p.151.
+[^13]: Freeman, Samuel, "Original Position", The Stanford Encyclopedia of Philosophy (Summer 2019  Edition), Edward N. Zalta (ed.)
+[^14]: Freeman, Samuel, "Original Position", The Stanford Encyclopedia of Philosophy (Summer 2019 Edition), Edward N. Zalta (ed.) 16 Ibid.
+[^15]: We don’t act like it all the time, but there is usually a normative pressure to espouse the view that we are indeed all equal. 
+[^16]: Rawls, John. A Theory of Justice. Harvard University Press, 2009. p. 137

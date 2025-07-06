@@ -1,0 +1,45 @@
+---
+title: Come Home
+date: 2023-09-16
+tags: ["poetry"]
+---
+
+If it's true, as oft they claim,\\
+That one's eyes are windows to one's soul,\\
+Then come close, peer deep within,\\
+Glimpse the depths of this restless heart of mine.
+
+Hear you my heart?\\
+How fiercely it roars,\\
+Defying stillness and silence,\\
+Beneath the gaze of the one it adores.
+
+It proclaims love,\\
+Finding its rhythm in destiny's tune,\\
+So come closer still, join in merriment,\\
+Bestow upon it accolades, of gentle caress and tender kiss,\\
+That you may watch as lion bows to grace,\\
+And so carouse merrily with lamb and babe,\\
+Presiding over Eden's garden with strength renewed,\\
+Love's guardian: fierce, tamed, and good.
+
+O, come home,\\
+Behold the walls adorned,\\
+With paintings and portraits,\\
+Familiar scenes, our reflections therein contained,\\
+Better than any mirror,\\
+Will in my eyes our grand story be told.
+
+Feel you the warmth?\\
+Waves of it pouring from a hearth long lit,\\
+Born from a touch, thusly fated to burn greedily for more,\\
+Warm breath from parted lips should stoke it further,\\
+Give it yours,\\
+Make hot, red flame lick mantle's roof--\\
+And flood this home with light aglow.
+
+Come closer, come home,\\
+An invitation, the door ajar,\\
+Push it open,\\
+Be you welcome beloved,\\
+Us together in this home.

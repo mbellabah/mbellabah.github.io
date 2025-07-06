@@ -1,0 +1,51 @@
+---
+interface Props {
+  content: string;
+}
+
+const { content } = Astro.props;
+
+// Extract footnotes from content and create side footnotes
+function extractFootnotes(htmlContent: string) {
+  const footnoteRegex = /<sup[^>]*><a[^>]*href="#fn(\d+)"[^>]*>(\d+)<\/a><\/sup>/g;
+  const footnoteDefRegex = /<div[^>]*class="footnote-definition"[^>]*id="fn(\d+)"[^>]*>(.*?)<\/div>/gs;
+  
+  const footnoteRefs: { id: string; number: string; position: number }[] = [];
+  const footnoteContent: { [key: string]: string } = {};
+  
+  let match;
+  while ((match = footnoteRegex.exec(htmlContent)) !== null) {
+    footnoteRefs.push({
+      id: match[1],
+      number: match[2],
+      position: match.index
+    });
+  }
+  
+  while ((match = footnoteDefRegex.exec(htmlContent)) !== null) {
+    footnoteContent[match[1]] = match[2];
+  }
+  
+  return { footnoteRefs, footnoteContent };
+}
+
+const { footnoteRefs, footnoteContent } = extractFootnotes(content);
+
+// Clean content by removing footnote definitions
+const cleanContent = content.replace(/<div[^>]*class="footnote-definition"[^>]*>.*?<\/div>/gs, '');
+---
+
+<div class="post-content">
+  <div set:html={cleanContent} />
+  
+  {footnoteRefs.length > 0 && (
+    <div class="footnotes">
+      {footnoteRefs.map(({ id, number }) => (
+        <div class="footnote-item" id={`footnote-${id}`}>
+          <sup class="text-blue-600 font-semibold mr-1">{number}</sup>
+          <span set:html={footnoteContent[id]} />
+        </div>
+      ))}
+    </div>
+  )}
+</div>

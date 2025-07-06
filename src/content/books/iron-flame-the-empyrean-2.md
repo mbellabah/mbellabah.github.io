@@ -1,0 +1,7 @@
+---
+title: "Iron Flame (The Empyrean, #2)"
+author: "Rebecca Yarros"
+genre: "Unknown"
+dateCompleted: 2024-01-01
+---
+
