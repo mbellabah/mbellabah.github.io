@@ -21,50 +21,96 @@ const { title } = Astro.props;
     <link rel="stylesheet" href="/src/styles/global.css">
     
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Find all footnote references
-        const footnoteRefs = document.querySelectorAll('a[href^="#user-content-fn-"], a[href^="#fn"], sup a');
-        
-        let footnoteCounter = 0;
-        
-        footnoteRefs.forEach(function(ref) {
+      document.addEventListener('DOMContentLoaded', () => {
+        const postContent = document.querySelector('.post-content') as HTMLElement | null;
+        if (!postContent) return;
+
+        const footnoteRefs = Array.from(
+          document.querySelectorAll('a[href^="#user-content-fn-"], a[href^="#fn"], sup a')
+        );
+
+        const references: HTMLElement[] = [];
+        const sideNotes: HTMLElement[] = [];
+
+        footnoteRefs.forEach((ref, idx) => {
           const href = ref.getAttribute('href');
-          
-          if (href && (href.startsWith('#fn') || href.startsWith('#user-content-fn-'))) {
-            footnoteCounter++;
-            const footnoteId = href.substring(1);
-            const footnoteDefinition = document.getElementById(footnoteId);
-            
-            if (footnoteDefinition) {
-              // Create a positioned footnote
-              const sideNote = document.createElement('div');
-              sideNote.className = 'footnote-side';
-              
-              // Get footnote content
-              let footnoteContent = '';
-              const contentP = footnoteDefinition.querySelector('p');
-              if (contentP) {
-                footnoteContent = contentP.innerHTML;
-              } else if (footnoteDefinition.parentElement && footnoteDefinition.parentElement.tagName === 'LI') {
-                // Handle case where footnote is in a list item
-                const listItem = footnoteDefinition.parentElement;
-                footnoteContent = listItem.innerHTML.replace(/^<a[^>]*>[^<]*<\/a>\s*/, '');
-              } else {
-                footnoteContent = footnoteDefinition.innerHTML;
-              }
-              
-              // Use the actual footnote number from the reference text or counter
-              const refText = ref.textContent || footnoteCounter.toString();
-              sideNote.innerHTML = `<span class="footnote-number">${refText}</span>${footnoteContent}`;
-              
-              // Position it relative to the reference
-              const refParent = ref.closest('p') || ref.parentElement;
-              if (refParent) {
-                refParent.style.position = 'relative';
-                refParent.appendChild(sideNote);
+          if (!href) return;
+
+          // Accept both #fnX and #user-content-fn-X formats
+          if (!(href.startsWith('#fn') || href.startsWith('#user-content-fn-'))) return;
+
+          const footnoteId = href.slice(1);
+          const footnoteDefinition = document.getElementById(footnoteId);
+          if (!footnoteDefinition) return;
+
+          // Build the side note element
+          const sideNote = document.createElement('div');
+          sideNote.className = 'footnote-side';
+
+          // Extract footnote definition content (support <p> inside, list items, etc.)
+          let footnoteContent = '';
+          const contentP = footnoteDefinition.querySelector('p');
+          if (contentP) {
+            footnoteContent = contentP.innerHTML;
+          } else if (
+            footnoteDefinition.parentElement &&
+            footnoteDefinition.parentElement.tagName === 'LI'
+          ) {
+            const listItem = footnoteDefinition.parentElement;
+            footnoteContent = listItem.innerHTML.replace(/^<a[^>]*>[^<]*<\/a>\s*/, '');
+          } else {
+            footnoteContent = footnoteDefinition.innerHTML;
+          }
+
+          const refText = ref.textContent || String(idx + 1);
+          sideNote.innerHTML = `<span class="footnote-number">${refText}</span>${footnoteContent}`;
+
+          // Append the side note to the main post container so all share the same positioning context
+          postContent.appendChild(sideNote);
+
+          references.push(ref as HTMLElement);
+          sideNotes.push(sideNote);
+        });
+
+        // Positioning algorithm to keep side notes aligned and non-overlapping
+        function positionFootnotes() {
+          if (!postContent) return;
+          const postRect = postContent.getBoundingClientRect();
+          const occupied: { top: number; bottom: number }[] = [];
+
+          sideNotes.forEach((note, i) => {
+            const refRect = references[i].getBoundingClientRect();
+            // Ideal top relative to postContent
+            let idealTop = refRect.top - postRect.top;
+
+            const noteHeight = note.offsetHeight;
+            const minSpacing = 10;
+
+            let finalTop = idealTop;
+            for (const range of occupied) {
+              if (
+                finalTop < range.bottom + minSpacing &&
+                finalTop + noteHeight > range.top
+              ) {
+                finalTop = range.bottom + minSpacing;
               }
             }
-          }
+
+            occupied.push({ top: finalTop, bottom: finalTop + noteHeight });
+            note.style.top = `${finalTop}px`;
+          });
+        }
+
+        // Initial positioning after a brief delay (let fonts/images settle)
+        setTimeout(positionFootnotes, 200);
+
+        // Recalculate on viewport changes
+        window.addEventListener('resize', () => {
+          clearTimeout((window as any)._footnoteResizeTimer);
+          (window as any)._footnoteResizeTimer = setTimeout(positionFootnotes, 100);
+        });
+        window.addEventListener('scroll', () => {
+          requestAnimationFrame(positionFootnotes);
         });
       });
     </script>

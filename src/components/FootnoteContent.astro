@@ -30,9 +30,9 @@ function processFootnotes(htmlContent: string) {
     footnoteCounter++;
     const footnoteText = footnotes[number] || 'Footnote not found';
     
-    return `<span class="footnote-container" style="position: relative;">
+    return `<span class="footnote-container" data-footnote-index="${footnoteCounter}">
       <a href="#fn${number}" class="footnote-ref">${footnoteCounter}</a>
-      <div class="footnote-side">
+      <div class="footnote-side" data-footnote-index="${footnoteCounter}">
         <span class="footnote-number">${footnoteCounter}</span>
         ${footnoteText}
       </div>
@@ -45,11 +45,103 @@ function processFootnotes(htmlContent: string) {
 const processedContent = processFootnotes(content);
 ---
 
-<div set:html={processedContent} />
+<div class="footnote-content-wrapper" set:html={processedContent} />
+
+<script>
+  let lastPositionTime = 0;
+  const POSITION_DELAY = 50; // Throttle positioning calls
+
+  function positionFootnotes() {
+    const now = Date.now();
+    if (now - lastPositionTime < POSITION_DELAY) {
+      return;
+    }
+    lastPositionTime = now;
+
+    const wrapper = document.querySelector('.footnote-content-wrapper');
+    if (!wrapper) return;
+
+    const footnotes = wrapper.querySelectorAll('.footnote-side') as NodeListOf<HTMLElement>;
+    const occupiedRanges: { top: number; bottom: number }[] = [];
+
+    const sortedFootnotes = Array.from(footnotes).sort((a, b) => {
+      const aIndex = parseInt(a.dataset.footnoteIndex || '0');
+      const bIndex = parseInt(b.dataset.footnoteIndex || '0');
+      return aIndex - bIndex;
+    });
+
+    sortedFootnotes.forEach((footnote) => {
+      const container = footnote.closest('.footnote-container') as HTMLElement;
+      if (!container) return;
+
+      const idealTop = container.offsetTop;
+
+      const footnoteHeight = footnote.offsetHeight;
+      const minSpacing = 10;
+
+      let finalTop = idealTop;
+      let adjusted = false;
+
+      do {
+        adjusted = false;
+        for (const range of occupiedRanges) {
+          if (finalTop < range.bottom + minSpacing && finalTop + footnoteHeight > range.top) {
+            finalTop = range.bottom + minSpacing;
+            adjusted = true;
+          }
+        }
+      } while (adjusted);
+
+      occupiedRanges.push({
+        top: finalTop,
+        bottom: finalTop + footnoteHeight,
+      });
+
+      footnote.style.top = `${finalTop}px`;
+    });
+  }
+
+  function handleResize() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(positionFootnotes, 100);
+  }
+  let resizeTimeout: ReturnType<typeof setTimeout>;
+
+  function initFootnotes() {
+    setTimeout(positionFootnotes, 200);
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', () => {
+      requestAnimationFrame(positionFootnotes);
+    });
+
+    const observer = new MutationObserver(() => {
+      setTimeout(positionFootnotes, 100);
+    });
+
+    const contentWrapper = document.querySelector('.footnote-content-wrapper');
+    if (contentWrapper) {
+      observer.observe(contentWrapper, { childList: true, subtree: true });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFootnotes);
+  } else {
+    initFootnotes();
+  }
+</script>
 
 <style>
-  .footnote-container {
+  .footnote-content-wrapper {
     position: relative;
+  }
+  
+  .footnote-container {
+    /* Removed relative positioning so side footnotes are positioned
+       relative to the nearest ancestor with `position: relative`,
+       which is `.footnote-content-wrapper`. */
+    display: inline;
   }
   
   .footnote-container:hover .footnote-side {

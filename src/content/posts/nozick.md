@@ -176,10 +176,6 @@ In light of the aforementioned assertions, the Chamberlain example can be made u
 ## Conclusion
 This concludes two of Nozick’s argument against the redistributive state and my appurtenant thoughts. My conclusions are a refutation of Nozick only to the extent that they draw attention to some errors made in omission. With the appropriate revisions, some of which I’ve made suggestions for, Nozick’s two arguments---that redistribution violates the rights of the individual, and that just executions inevitably lead to just distributions---against the redistributive state will be strengthened.  
 
----
----
-
-### Footnotes 
 [^1]: Robert Nozick 1974: Anarchy, State, and Utopia. New York: Basic Books: ix (Preface)
 [^2]: Ibid., p. 151 
 [^3]: Ibid., p. 172 
