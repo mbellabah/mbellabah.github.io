@@ -5,7 +5,7 @@ tags: ["philosophy", "essay"]
 ---
 
 **Author's note:** I'd written this piece for a class on Justice at MIT in
-response to a prompt---however, as per the professor's request, I will not be sharing the
+response to a prompt--however, as per the professor's request, I will not be sharing the
 prompt; that said, the article remains readable even without prior
 knowledge of the prompt I'm responding to. (Note that because this article
 was written for a class, with very minor edits, the style and structure of writing is different to other
@@ -40,7 +40,7 @@ and none is violated, an individual is justly entitled to their wealth:[^2]
    
 3. *Rectification of injustice* concerns how one might deal with wealth that was unjustly acquired or transferred, compensation given to the aggrieved, and other similar questions related to past transgressions. 
 
-Formally, redistribution entails seizing the private earnings of some group $$A$$, to give to some possibly intersecting group $$B$$, i.e. taxation. Assuming $$A$$’s earnings were acquired justly---as defined by the principles above---their nonconsensual appropriation is an injustice in itself, says Nozick, notwithstanding the amount of positive benefit that $$B$$ obtains.[^3] With Nozick’s entitlement theory in mind, I will now explore how “nonconsensual appropriation” constitutes an injustice by examining “consent”. 
+Formally, redistribution entails seizing the private earnings of some group $$A$$, to give to some possibly intersecting group $$B$$, i.e. taxation. Assuming $$A$$’s earnings were acquired justly--as defined by the principles above--their nonconsensual appropriation is an injustice in itself, says Nozick, notwithstanding the amount of positive benefit that $$B$$ obtains.[^3] With Nozick’s entitlement theory in mind, I will now explore how “nonconsensual appropriation” constitutes an injustice by examining “consent”. 
 
 ## II. Inalienable Rights
 According to Nozick, people have certain inalienable rights by virtue of being
@@ -96,7 +96,7 @@ perfect knowledge, consent was not given because the question is binary: an
 “either-or”, rather than an “either-or-maybe” in the imperfect knowledge
 setting. 
 
-Let’s contextualize the argument above by supposing that an individual $$I$$ derives an income of $$x$$ from a subscription-based business model to which there are $$k$$ yearly subscribers. Consider first the situation in which $$I$$ is aware of their tax liability; here $$I$$ indeed renders a service for free and is effectively forced in doing so as Nozick suggests. (Here, one might argue that because $$I$$ continues to labor despite their awareness of a tax, they must be doing so willingly. However, we need only apply this same reasoning to wage agreements to see the deficiency in this argument: an employee may begrudgingly agree to an abysmally low wage out of desperation or an imbalance in power between herself and her employer. In such a case, we intuitively feel that some injustice has been committed “agreement” notwithstanding---consistency demands that similar intuition applies in $$I$$’s case).  
+Let’s contextualize the argument above by supposing that an individual $$I$$ derives an income of $$x$$ from a subscription-based business model to which there are $$k$$ yearly subscribers. Consider first the situation in which $$I$$ is aware of their tax liability; here $$I$$ indeed renders a service for free and is effectively forced in doing so as Nozick suggests. (Here, one might argue that because $$I$$ continues to labor despite their awareness of a tax, they must be doing so willingly. However, we need only apply this same reasoning to wage agreements to see the deficiency in this argument: an employee may begrudgingly agree to an abysmally low wage out of desperation or an imbalance in power between herself and her employer. In such a case, we intuitively feel that some injustice has been committed “agreement” notwithstanding--consistency demands that similar intuition applies in $$I$$’s case).  
 
 Now, consider the situation in which $$I$$ is totally unaware of any tax liability (because they’re not the one paying it). If the tax is levied on the $$k$$ subscribers and not on $$I$$, then, while it is true that $$I$$ takes home a diminished xʹ (due to the tax’s downward effect on demand), from $$I$$’s knowledge-constrained vantage point, they did not “technically” render any of their labor for free. This is one such situation in which some party is taxed, and the other party, due to a lack of knowledge, is not performing any free, forced labor as Nozick would otherwise have us believe—subjectively speaking of course. Therefore, the equivalence Nozick makes between redistribution and forced labor is not universally true; it depends partly on one’s beliefs regarding subjective and objective realities. I will now turn my attention to Nozick’s compelling Wilt Chamberlain example. 
 
@@ -108,8 +108,8 @@ is it the case that I did not steal?"
  Yes, objectively speaking, me not
 knowing that you’ve stolen from me doesn’t eliminate the fact that you stole from
 me, i.e. a tree whose felling no one witnessed is still a felled tree. But so
-what? If you later confessed that you’d robbed me---a robbery I up to that point
-never knew of---then the harm to me (that is attributable to your thievery)
+what? If you later confessed that you’d robbed me--a robbery I up to that point
+never knew of--then the harm to me (that is attributable to your thievery)
 materializes only because I in some way revise my life from the time that the theft purportedly
 happened to the time of your confession, and from there conclude I have indeed been worse
 off because of your theft. If you never confess, then although I might’ve long
@@ -134,7 +134,7 @@ light of receiving a diminished income is: “Huh, I’ve fewer subscribers than
 normally do. Strange. Perhaps they no longer enjoy my content, perhaps some no
 longer have the discretionary funds for my subscription, etc. etc.” Now, I don’t mean
 to claim that all of these speculations are blameless, but none of them have the
-IRS as $$I$$’s “blamee”---mostly because of my stipulation that $$I$$ is not directly
+IRS as $$I$$’s “blamee”--mostly because of my stipulation that $$I$$ is not directly
 taxed. 
 
  I’ve said all this, but I don’t realllllllly buy it, not because I think the
@@ -174,7 +174,7 @@ What does it mean for consent to be given? Consider again the employer and emplo
 In light of the aforementioned assertions, the Chamberlain example can be made unambiguous. I’ll describe one way of doing so. For the purpose of the narrative, suppose that Wilt Chamberlain owns the land on which he’s also paid to play basketball. Further suppose that said land rests upon an oil reserve, and that all other land is similarly held in private. If it were put to a vote, we might observe that those in the community strongly prefer extracting the oil to watching basketball. Therefore, Wilt Chamberlain using the land to play basketball runs contrary to these interests, and so according to assertion 3, imposes an opportunity cost on the game’s attendees (those belonging the community). As a result, the 25 cents, which is merely the assessed value of watching Wilt Chamberlain play basketball, contains an increment which properly belongs to society on account of his private appropriation of common rents. (In fact, the opportunity cost might very well exceed the 25 cents, in which case, Wilt Chamberlain pays the attendees). This, I believe, is the particular injustice which makes me and others hesitant to laud $$\alpha$$ and $$D_2$$ just. An acknowledgment of this land question, and an invocation of the third principle of the entitlement theory, justice in rectification (possibly via a tax on the value of land returned back to society), would strengthen the persuasiveness of Nozick’s Chamberlain example and entitlement theory.  
  
 ## Conclusion
-This concludes two of Nozick’s argument against the redistributive state and my appurtenant thoughts. My conclusions are a refutation of Nozick only to the extent that they draw attention to some errors made in omission. With the appropriate revisions, some of which I’ve made suggestions for, Nozick’s two arguments---that redistribution violates the rights of the individual, and that just executions inevitably lead to just distributions---against the redistributive state will be strengthened.  
+This concludes two of Nozick’s argument against the redistributive state and my appurtenant thoughts. My conclusions are a refutation of Nozick only to the extent that they draw attention to some errors made in omission. With the appropriate revisions, some of which I’ve made suggestions for, Nozick’s two arguments--that redistribution violates the rights of the individual, and that just executions inevitably lead to just distributions--against the redistributive state will be strengthened.  
 
 [^1]: Robert Nozick 1974: Anarchy, State, and Utopia. New York: Basic Books: ix (Preface)
 [^2]: Ibid., p. 151 

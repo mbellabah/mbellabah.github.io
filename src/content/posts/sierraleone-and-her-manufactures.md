@@ -40,7 +40,6 @@ Labor transfer, remove street markets, labor to power manufactures – harness t
  
 Creating something revolutionary, first of its kind – government sponsored platform to find demand for Sierra Leonean goods – government subsidizes the shipping using some type of state distribution company.  
 
----
 
 [^1]: I don't know what I meant by this. 
 [^2]: Not sure if I still agree that this is ~easy~, but I definitely still think it's doable for Sierra Leone to rid itself of debt. 

@@ -93,10 +93,7 @@ Let me be clear, I don't want to be identified by any label whatsoever, e.g. lib
 
 **Thanks** to Mauricio Fortuna (the aforementioned friend) for reading a draft of this and providing much appreciated and insightful commentary. 
 
----
----
 
-### Endnotes 
 [^1]: If you guessed that our Adam is inspired by the same Adam in the Abrahamic religions, you’d be correct. Adam just has to “be” because no human is born in isolation without tacit permission of another human being. 
 [^2]: Speaking of others, go read my poem on a man talking with his [“other”](/2020-01-21-talk-with-other).
 [^3]: Interestingly, there is no such thing as “absolute time”. When moving at relativistic speeds, it apparently becomes nonsensical to discuss time in the normal way. You have Einstein and his theory of relativity to thank for this “strange idea”. 

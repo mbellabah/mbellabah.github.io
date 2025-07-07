@@ -82,10 +82,6 @@ Here’s where I’m stuck. On the one hand, those who have benefitted from ill-
 This concludes Part I. In Part II, I’ll immediately go into deliberating some points made by Marxist friends of mine (e.g. Marx’s labor value theory), and talking about some deserved criticisms of capitalism by adding some criticisms of my own. I’ll also balance out the discussion by giving Marxism credit where it’s due. I’ll then conclude with some observations I’ve made of the archetypal proponents of both Marxism and capitalism, and introduce the beginnings of my "own" system. 
 ### End of Part I
 
----
----
-
-### Endnotes 
 [^1]: Liberalism and the left are distinct political categories. My use of liberal(ism) here is that of the philosophical one discussed in the writings of people like John Locke, Thomas Hobbes, and Immanuel Kant.
 [^2]: For a related discussion on whether natural rights actually exist, read my post ["Musings on Dignity"](/2020-03-23-dignity). 
 [^3]: Risk is a very interesting. Look forward to an article on it! 

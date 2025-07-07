@@ -33,10 +33,6 @@ Water, fresh and still.\\
 Upon which some kayaks gather\\
 Grateful friends chatter
 
----
----
-
-### Endnotes 
 [^1]: A friend and I made this same observation at the same time a few weeks ago!
 [^2]: https://poets.org/glossary/haiku
 [^3]: Not technically a haiku given that the last line has 6 rather than 5 syllables.

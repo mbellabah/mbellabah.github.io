@@ -5,7 +5,7 @@ tags: ["philosophy", "essay"]
 ---
 
 **Author's note:** I'd written this piece for a class on Justice at MIT in
-response to a prompt---however, as per the professor's request, I will not be sharing the
+response to a prompt--however, as per the professor's request, I will not be sharing the
 prompt; that said, the article remains readable even without prior
 knowledge of the prompt I'm responding to. (Note that because this article
 was written for a class, with very minor edits, the style and structure of writing is different to other
@@ -22,7 +22,7 @@ light of their respective pros and cons, perhaps there’s a balance to be struc
 between extreme equality on one end and extreme individual liberty on the other.
 This is the sort of question asked by John Rawls when it comes to the question
 of justice. In line with the Contractarian tradition, Rawls puts forth his own
-conception of justice---namely, “justice as fairness”, the descriptor of a
+conception of justice--namely, “justice as fairness”, the descriptor of a
 social contract in which notions of fairness and reciprocity are embedded. Like
 the Utilitarians before him, Rawls asks what general principles of justice ought
 to structure a society of free and equal individuals. Stemming from his own
@@ -72,7 +72,7 @@ Formally, Rawls two principles of justice are given as:
      having a material respect for later generations.) We commonly refer to this
      as the *difference principle*.[^5]  
 
-These two principles are prioritized in the order that they appear---**(1)**,
+These two principles are prioritized in the order that they appear--**(1)**,
 **(2a)**, **(2b)**. Rawls states quite literally that “a principle does not come
 into play until those previous to it are either fully met or do not apply.”[^6]
 As such, the basic liberties described in **(1)** cannot be compromised on the
@@ -84,7 +84,7 @@ carefully; that said, something of a justification should become apparent as I
 defend the reasonability of the principles themselves.  
 
 The basic liberties that Rawls is concerned with are those of civic
-liberties---namely, freedom of speech, thought, and assembly. I will demonstrate
+liberties--namely, freedom of speech, thought, and assembly. I will demonstrate
 that the greatest equal liberty principle is reasonable by way of contradiction.
 Without loss of generality, I will use the freedom of speech to arrive at a
 contradiction. Suppose that freedom of speech is not in fact necessary to
@@ -94,8 +94,8 @@ definition for justice: what is just is to be whatever it means to the affected
 individual at a given time. That we hold the affected individual to be the
 final—but not necessarily best—arbiter of whether or not he personally suffers
 an injustice ought to be an uncontroversial premise.[^7] Suppose further that if
-the affected individual believes he suffers an injustice---the sort brought upon
-him by the actions of others---he need only announce his grievance for it to
+the affected individual believes he suffers an injustice--the sort brought upon
+him by the actions of others--he need only announce his grievance for it to
 stop. From the former two premises together, it logically follows that if we
 prevent the aggrieved from announcing their displeasure, and thus removing their
 ability to vocalize and end such displeasure, we are doing an injustice upon
@@ -120,7 +120,7 @@ that “the weakest has [physical] strength enough to kill the strongest.”[^8]
 
 The second principle is somewhat more controversial. The equality of opportunity
 is somewhat vague, although I choose to interpret it to mean “fair competition”
----which appears to also be Rawls’ own interpretation---it could just as well
+--which appears to also be Rawls’ own interpretation--it could just as well
 mean “random assignment under equal chance”. Some of Rawls’ objectors assert
 that, given one has knowledge of the degree of their talents relative to others,
 the less-able would rationally opt for random assignments, whereas the more
@@ -155,7 +155,7 @@ like Libertarians suggest, Rawls’ difference principle would have us frequentl
 adjudicate in favor of the least advantaged. The absurdity of the Libertarian
 decision to calibrate against the state of nature is easily apparent. For
 example, it leads to the erroneous belief that full private property claims on
-natural resources—land, for one---is just, even if private labor has only
+natural resources—land, for one--is just, even if private labor has only
 marginally altered the state of nature.[^11] Certain Libertarians criticize
 Rawls on the charge that his difference principle promotes laziness by taking
 from the hardworking to give to the allegedly “lazy” poor. Such a criticism is
@@ -167,13 +167,13 @@ human incentives and motivation to work.
 
 According to Rawls, any more inequality than allowed by the difference principle
 places demands on the least advantaged to accept inequalities that, at best, do
-not benefit them and, at worst, leave them worse off---in turn violating the
+not benefit them and, at worst, leave them worse off--in turn violating the
 reciprocity that he seeks for his social contract. All this is well, an
 egalitarian might say; but in the same breath she might ask: “why is *any*
 inequality permitted?” To me, the answer for this lies in a basic fact of
 biology, with which Rawls appears to agree: an agent is only inclined to act in
 a way that is antagonistic to their wants now if doing so would confer them
-greater advantages later---upon deciding to act thusly, the agent creates some
+greater advantages later--upon deciding to act thusly, the agent creates some
 *value differential* across time, and to the extent that this investment is
 expected to yield a return for the sake of its survival or comfort, the agent is
 well within its right to make such efforts. Because all agents are at any time
@@ -238,7 +238,7 @@ of ignorance is overly restrictive and impedes rational behavior, or it is not
 restrictive enough to avoid the unsavory classist conclusions of Locke. I don’t
 believe this charge is fair; it is unclear just how necessary the knowledge of
 one’s fundamental values is to achieving rational and coherent *group* behavior
-under a social contract---consider that, whatever our fundamental values, we all
+under a social contract--consider that, whatever our fundamental values, we all
 recognize the importance of downside protection and need for personal security
 for the sake of social harmony.
 
@@ -265,10 +265,6 @@ in my considerations of his critics, I did so per my belief that Rawls’
 argumentation for his two principles of justice, and his original position
 argument, contain few errors beyond those made in omission.  
 
----
----
-
-### Footnotes 
 [^1]: Rawls, John. A Theory of Justice. Harvard University Press, 2009. p.14
 [^2]: Ibid., p. 12-13
 [^3]: Ibid., p. 14-15
