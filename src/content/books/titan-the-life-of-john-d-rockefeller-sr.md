@@ -1,7 +1,7 @@
 ---
 title: "Titan: The Life of John D. Rockefeller, Sr."
 author: "Ron Chernow"
-genre: "Unknown"
+genre: "Biography, History"
 dateCompleted: Unknown
 ---
 

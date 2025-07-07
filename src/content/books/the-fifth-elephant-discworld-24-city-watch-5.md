@@ -1,9 +1,7 @@
 ---
 title: "The Fifth Elephant (Discworld, #24; City Watch, #5)"
 author: "Terry Pratchett"
-genre: "Unknown"
-dateCompleted: 2023-06-30
+genre: "Fantasy, Comedy"
+dateCompleted: 2023-01-01
 ---
-
-*Read sometime in 2023*
 

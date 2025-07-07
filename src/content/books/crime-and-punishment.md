@@ -1,7 +1,7 @@
 ---
 title: "Crime and Punishment"
 author: "Fyodor Dostoevsky"
-genre: "Unknown"
+genre: "Classic, Literary Fiction"
 dateCompleted: 2024-01-01
 ---
 

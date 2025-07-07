@@ -1,7 +1,7 @@
 ---
 title: "L'Étranger"
 author: "Albert Camus"
-genre: "Unknown"
+genre: "Classic, Literary Fiction"
 dateCompleted: Unknown
 ---
 

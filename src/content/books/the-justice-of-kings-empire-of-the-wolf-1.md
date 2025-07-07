@@ -1,7 +1,7 @@
 ---
 title: "The Justice of Kings (Empire of the Wolf, #1)"
 author: "Richard  Swan"
-genre: "Unknown"
+genre: "Fantasy"
 dateCompleted: 2023-06-30
 ---
 

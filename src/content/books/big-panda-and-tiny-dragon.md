@@ -1,7 +1,7 @@
 ---
 title: "Big Panda and Tiny Dragon"
 author: "James Norbury"
-genre: "Unknown"
+genre: "Self-help, Philosophy"
 dateCompleted: 2023-06-30
 ---
 

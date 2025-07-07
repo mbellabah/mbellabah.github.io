@@ -1,7 +1,7 @@
 ---
 title: "Daughter of the Moon Goddess (The Celestial Kingdom, #1)"
 author: "Sue Lynn Tan"
-genre: "Unknown"
+genre: "Fantasy, Romance"
 dateCompleted: 2023-06-30
 ---
 

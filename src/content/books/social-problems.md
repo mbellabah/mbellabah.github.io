@@ -1,7 +1,8 @@
 ---
 title: "Social Problems"
 author: "Henry George"
-genre: "Unknown"
+genre: "Non-fiction"
+shelves: ["Non-fiction", "Philosophy"]
 dateCompleted: 2025-03-06
 rating: 5
 ---

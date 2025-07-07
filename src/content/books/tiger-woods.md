@@ -1,7 +1,7 @@
 ---
 title: "Tiger Woods"
 author: "Jeff Benedict"
-genre: "Unknown"
+genre: "Biography"
 dateCompleted: 2023-06-30
 ---
 

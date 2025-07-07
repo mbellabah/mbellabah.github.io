@@ -1,7 +1,7 @@
 ---
 title: "Red Rising (Red Rising, #1)"
 author: "Pierce Brown"
-genre: "Unknown"
+genre: "Science Fiction"
 dateCompleted: 2023-06-30
 ---
 

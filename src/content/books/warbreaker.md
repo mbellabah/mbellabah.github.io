@@ -1,7 +1,7 @@
 ---
 title: "Warbreaker"
 author: "Brandon Sanderson"
-genre: "Unknown"
+genre: "Fantasy"
 dateCompleted: 2024-01-01
 ---
 

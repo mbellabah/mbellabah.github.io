@@ -1,7 +1,7 @@
 ---
 title: "Flowers for Algernon"
 author: "Daniel Keyes"
-genre: "Unknown"
+genre: "Science Fiction"
 dateCompleted: 2024-01-01
 ---
 

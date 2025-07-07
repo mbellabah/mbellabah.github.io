@@ -1,7 +1,8 @@
 ---
 title: "The End of History and the Last Man"
 author: "Francis Fukuyama"
-genre: "Unknown"
+genre: "Philosophy, History"
+shelves: ["Philosophy", "History", "Non-fiction"]
 dateCompleted: Unknown
 ---
 

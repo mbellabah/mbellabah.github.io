@@ -1,7 +1,8 @@
 ---
 title: "The Maniac"
 author: "Benjamín Labatut"
-genre: "Unknown"
+genre: "History, Fiction"
+shelves: ["History", "Non-fiction"]
 dateCompleted: 2025-02-10
 rating: 5
 ---

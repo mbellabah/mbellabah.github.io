@@ -1,7 +1,7 @@
 ---
 title: "The Way of Kings (The Stormlight Archive, #1)"
 author: "Brandon Sanderson"
-genre: "Unknown"
+genre: "Fantasy"
 dateCompleted: 2025-02-08
 rating: 5
 ---

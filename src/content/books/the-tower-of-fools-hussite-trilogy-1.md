@@ -1,9 +1,7 @@
 ---
 title: "The Tower of Fools (Hussite Trilogy, #1)"
 author: "Andrzej Sapkowski"
-genre: "Unknown"
-dateCompleted: 2023-06-30
+genre: "Fantasy, History"
+dateCompleted: 2023-01-01
 ---
-
-*Read sometime in 2023*
 

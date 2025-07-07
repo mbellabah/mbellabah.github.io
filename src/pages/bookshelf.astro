@@ -45,8 +45,14 @@ const sortedBooks = books.sort((a, b) => {
   return dateB.getTime() - dateA.getTime();
 });
 
+// Helper function to split genres
+function splitGenres(genreString: string): string[] {
+  return genreString.split(',').map(genre => genre.trim()).filter(genre => genre.length > 0);
+}
+
 // Get unique genres for filtering
-const genres = [...new Set(books.map(book => book.data.genre))].sort();
+const allGenres = books.flatMap(book => splitGenres(book.data.genre || ''));
+const genres = [...new Set(allGenres)].sort();
 
 // Get reading statistics
 const currentYear = new Date().getFullYear();
@@ -87,7 +93,7 @@ function createExcerpt(content: string | undefined, maxLength: number = 120): st
       </button>
       {genres.map(genre => (
         <button class="filter-btn" data-filter={genre}>
-          {genre} ({books.filter(book => book.data.genre === genre).length})
+          {genre} ({books.filter(book => splitGenres(book.data.genre || '').includes(genre)).length})
         </button>
       ))}
     </div>
@@ -99,7 +105,7 @@ function createExcerpt(content: string | undefined, maxLength: number = 120): st
         const excerpt = createExcerpt(rawContent);
         
         return (
-          <article class="book-item border-b border-gray-200 pb-6 last:border-b-0" data-genre={book.data.genre}>
+          <article class="book-item border-b border-gray-200 pb-6 last:border-b-0" data-genres={splitGenres(book.data.genre || '').join(',')}>
             <div class="flex items-start justify-between mb-2">
               <div class="flex-1">
                 <h2 class="text-xl font-semibold text-gray-900 mb-1">
@@ -111,8 +117,12 @@ function createExcerpt(content: string | undefined, maxLength: number = 120): st
               </div>
               <div class="text-right text-sm text-gray-600 ml-4">
                 <div>{formatBookDate(book)}</div>
-                <div class="text-xs bg-gray-100 px-2 py-1 rounded mt-1">
-                  {book.data.genre}
+                <div class="flex flex-wrap gap-1 mt-1">
+                  {splitGenres(book.data.genre || '').map(genre => (
+                    <span class="text-xs bg-gray-100 px-2 py-1 rounded">
+                      {genre}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -169,8 +179,8 @@ function createExcerpt(content: string | undefined, maxLength: number = 120): st
           // Filter books
           bookItems.forEach(item => {
             const htmlItem = item as HTMLElement;
-            const genre = htmlItem.getAttribute('data-genre');
-            if (filter === 'all' || genre === filter) {
+            const genres = htmlItem.getAttribute('data-genres')?.split(',') || [];
+            if (filter === 'all' || genres.includes(filter)) {
               htmlItem.style.display = 'block';
             } else {
               htmlItem.style.display = 'none';

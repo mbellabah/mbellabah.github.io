@@ -1,9 +1,7 @@
 ---
 title: "Napoleon: A Life"
 author: "Andrew Roberts"
-genre: "Unknown"
-dateCompleted: Unknown
+genre: "Biography, History"
+dateCompleted: 2023-01-01
 ---
-
-*Read date unknown*
 

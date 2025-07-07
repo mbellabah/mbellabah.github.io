@@ -1,7 +1,7 @@
 ---
 title: "White Nights"
 author: "Fyodor Dostoevsky"
-genre: "Unknown"
+genre: "Literary Fiction, Classic"
 dateCompleted: 2024-01-01
 ---
 

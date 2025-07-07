@@ -1,7 +1,7 @@
 ---
 title: "Augustus: First Emperor of Rome"
 author: "Adrian Goldsworthy"
-genre: "Unknown"
+genre: "Biography, History"
 dateCompleted: Unknown
 ---
 

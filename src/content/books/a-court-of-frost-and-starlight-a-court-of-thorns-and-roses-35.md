@@ -1,7 +1,7 @@
 ---
 title: "A Court of Frost and Starlight (A Court of Thorns and Roses, #3.5)"
 author: "Sarah J. Maas"
-genre: "Unknown"
+genre: "Fantasy, Romance"
 dateCompleted: 2023-06-30
 ---
 

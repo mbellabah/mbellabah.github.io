@@ -1,7 +1,7 @@
 ---
 title: "The Metamorphosis"
 author: "Franz Kafka"
-genre: "Unknown"
+genre: "Classic, Literary Fiction"
 dateCompleted: 2024-01-01
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "The Song of Achilles"
 author: "Madeline Miller"
-genre: "Unknown"
+genre: "Literary Fiction, Mythology"
 dateCompleted: Unknown
 ---
 

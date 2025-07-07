@@ -1,7 +1,8 @@
 ---
 title: "Power Failure: The Rise and Fall of an American Icon"
 author: "William D. Cohan"
-genre: "Unknown"
+genre: "Business, History"
+shelves: ["Business", "History", "Non-fiction"]
 dateCompleted: Unknown
 ---
 

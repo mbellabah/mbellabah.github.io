@@ -1,7 +1,7 @@
 ---
 title: "Dark Age (Red Rising Saga, #5)"
 author: "Pierce Brown"
-genre: "Unknown"
+genre: "Science Fiction"
 dateCompleted: 2023-06-30
 ---
 

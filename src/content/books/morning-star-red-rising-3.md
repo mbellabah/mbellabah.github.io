@@ -1,7 +1,7 @@
 ---
 title: "Morning Star (Red Rising, #3)"
 author: "Pierce Brown"
-genre: "Unknown"
+genre: "Science Fiction"
 dateCompleted: 2023-06-30
 ---
 
