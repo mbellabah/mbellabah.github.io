@@ -26,7 +26,7 @@ function processFootnotes(htmlContent: string) {
   
   // Replace footnote references with numbered links and add side footnotes
   let footnoteCounter = 0;
-  processedContent = processedContent.replace(footnoteRefRegex, (match, number) => {
+  processedContent = processedContent.replace(footnoteRefRegex, (_, number) => {
     footnoteCounter++;
     const footnoteText = footnotes[number] || 'Footnote not found';
     
@@ -61,7 +61,25 @@ const processedContent = processFootnotes(content);
     const wrapper = document.querySelector('.footnote-content-wrapper');
     if (!wrapper) return;
 
+    // Check if we're on mobile/tablet (max-width: 1024px)
+    const isMobile = window.innerWidth <= 1024;
+    
     const footnotes = wrapper.querySelectorAll('.footnote-side') as NodeListOf<HTMLElement>;
+    
+    // On mobile, don't position footnotes as they're styled to be inline
+    if (isMobile) {
+      footnotes.forEach(footnote => {
+        footnote.style.top = '';
+        footnote.style.position = 'static';
+      });
+      return;
+    }
+    
+    // Desktop positioning logic
+    footnotes.forEach(footnote => {
+      footnote.style.position = 'absolute';
+    });
+
     const occupiedRanges: { top: number; bottom: number }[] = [];
 
     const sortedFootnotes = Array.from(footnotes).sort((a, b) => {
