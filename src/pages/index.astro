@@ -13,12 +13,26 @@ const sortedPosts = posts.sort((a, b) => b.data.date.getTime() - a.data.date.get
 function createExcerpt(content: string, maxLength: number = 200): string {
   // Remove markdown syntax and HTML tags
   const plainText = content
+    .replace(/^---[\s\S]*?---/gm, '') // Remove frontmatter
+    .replace(/<[^>]+>/g, '') // Remove HTML tags
+    .replace(/```[\s\S]*?```/g, '') // Remove code blocks
+    .replace(/`[^`]+`/g, '') // Remove inline code
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Remove markdown links
     .replace(/\[\^[^\]]+\]/g, '') // Remove footnote references
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '') // Remove images
     .replace(/\*\*([^*]+)\*\*/g, '$1') // Remove bold
     .replace(/\*([^*]+)\*/g, '$1') // Remove italic
-    .replace(/#+ /g, '') // Remove headers
+    .replace(/_{1,2}([^_]+)_{1,2}/g, '$1') // Remove underline emphasis
+    .replace(/~~([^~]+)~~/g, '$1') // Remove strikethrough
+    .replace(/^#{1,6}\s+/gm, '') // Remove headers
+    .replace(/^[-*_]{3,}$/gm, '') // Remove horizontal rules
+    .replace(/^>\s+/gm, '') // Remove blockquotes
+    .replace(/^\s*[-*+]\s+/gm, '') // Remove unordered list markers
+    .replace(/^\s*\d+\.\s+/gm, '') // Remove ordered list markers
+    .replace(/\\\\/g, '') // Remove escaped backslashes
+    .replace(/\\(.)/g, '$1') // Remove other escape characters
     .replace(/\n+/g, ' ') // Replace newlines with spaces
+    .replace(/\s+/g, ' ') // Normalize whitespace
     .trim();
   
   if (plainText.length <= maxLength) return plainText;
