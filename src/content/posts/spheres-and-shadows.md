@@ -10,7 +10,7 @@ A good mathematical puzzle often begins not with a question, but with a statemen
 
 We see it with balls and flashlights, but how can we be certain that the shadow of a sphere is *always* a perfect disk? Not just for a sphere at the origin, or a shadow on a horizontal plane, but for *any* sphere and *any* plane?
 
-This led me to articulate a foundational question: can we prove, with rigorous certainty, that the orthogonal projection of a sphere onto a plane is always a disk? I set out to answer it for myself, in hot pursuit of two distinct mathematical paths.
+Can we prove, with rigorous certainty, that the orthogonal projection of a sphere onto a plane is always a disk? I set out to answer it for myself, in hot pursuit of two distinct mathematical paths.
 
 ## A Crucial Distinction: Intersection vs. Projection
 
@@ -157,7 +157,9 @@ $$
 
 [^4]: The realization that this formula was a known identity came during my exploration of the problem.
 
-Since $|P||n| = r > 0$, the only way for the above expression to be zero is for $\cos(\gamma)$ to be zero; that is, the angle $\gamma$ must be a constant 90 degrees. This forces every point $P$ on the intersection to lie at a fixed 90° angle from the axis defined by $n$. On the surface of a sphere, the set of all points at a constant 90° angle from a central axis is, by definition, a **great circle**[^5].
+Since $|P||n| = r > 0$, the only way for the above expression to be zero is for $\cos(\gamma)$ to be zero; that is, the angle $\gamma$ must be a constant 90 degrees.
+
+This forces every point $P$ on the intersection to lie at a fixed 90° angle from the axis defined by $n$. On the surface of a sphere, the set of all points at a constant 90° angle from a central axis is, by definition, a **great circle**[^5].
 
 [^5]: A **great circle** is a circle on a sphere's surface whose center coincides with the sphere's center. If the plane does not pass through the center, the intersection is a **small circle**, like the Earth's lines of latitude.
 
