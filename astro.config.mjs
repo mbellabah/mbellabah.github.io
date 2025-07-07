@@ -9,7 +9,8 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [
       'remark-math',
-      'remark-gfm'
+      'remark-gfm',
+      'remark-footnotes'
     ],
     rehypePlugins: [
       ['rehype-katex', { 
