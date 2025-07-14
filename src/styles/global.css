@@ -40,6 +40,22 @@ body {
   line-height: 1.3;
 }
 
+/* Subtle link styling for post content */
+.post-content a:not(.footnote-ref) {
+  color: #3b82f6;
+  text-decoration: none;
+  background: linear-gradient(120deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: all 0.25s ease;
+}
+
+.post-content a:not(.footnote-ref):hover {
+  background-size: 100% 100%;
+  background: linear-gradient(120deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.15) 100%);
+}
+
 /* Footnote positioning system */
 .footnote-ref {
   position: relative;
