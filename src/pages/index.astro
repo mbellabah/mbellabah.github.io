@@ -14,6 +14,9 @@ function createExcerpt(content: string, maxLength: number = 200): string {
   // Remove markdown syntax and HTML tags
   const plainText = content
     .replace(/^---[\s\S]*?---/gm, '') // Remove frontmatter
+    .replace(/^import\s+.*$/gm, '') // Remove import statements
+    .replace(/\$\$[\s\S]*?\$\$/g, '') // Remove LaTeX display math blocks
+    .replace(/\$[^$]*\$/g, '') // Remove LaTeX inline math
     .replace(/<[^>]+>/g, '') // Remove HTML tags
     .replace(/```[\s\S]*?```/g, '') // Remove code blocks
     .replace(/`[^`]+`/g, '') // Remove inline code
