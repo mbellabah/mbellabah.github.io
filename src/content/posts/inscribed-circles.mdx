@@ -81,16 +81,16 @@ $$
 The integral within $(3)$ is conveniently in the form $u = \sqrt{a^2 - x^2}$  which has the following solution[^2]
 
 $$
-\int \sqrt{a^2 - x^2} \ dx = \frac{x}{2} \sqrt{a^2 - x^2} + \frac{a^2}{2} \sin^{-1}\left(\frac{x}{a}\right) + C
+\int \sqrt{a^2 - x^2} \ dx = \frac{x}{2} \sqrt{a^2 - x^2} + \frac{a^2}{2} \arcsin\left(\frac{x}{a}\right) + C
 $$
 
 We can then use this to solve the integral within $(3)$:
 
 $$
 \begin{align*}
-\int_{0}^{\frac{r}{2}} \sqrt{r^2 - \left(x-\frac{r}{2}\right)^2} \ dx &= \frac{1}{2}\left(x - \frac{r}{2}\right) \sqrt{r^2 - \left(x-\frac{r}{2}\right)^2} + \frac{r^2}{2} \sin^{-1}\left(\frac{x-\frac{r}{2}}{r}\right) \bigg|_{0}^{\frac{r}{2}} \\
-&= \left[0\right] - \left[-\frac{1}{2}\frac{\sqrt{3}r^2}{4}  +  \frac{r^2}{2}\sin^{-1}\left(-\frac{1}{2}\right)\right] \\
-&= -\frac{r^2}{2}\left(\sin^{-1}\left(-\frac{1}{2}\right) - \frac{\sqrt{3}}{4}\right) \\
+\int_{0}^{\frac{r}{2}} \sqrt{r^2 - \left(x-\frac{r}{2}\right)^2} \ dx &= \frac{1}{2}\left(x - \frac{r}{2}\right) \sqrt{r^2 - \left(x-\frac{r}{2}\right)^2} + \frac{r^2}{2} \arcsin\left(\frac{x-\frac{r}{2}}{r}\right) \bigg|_{0}^{\frac{r}{2}} \\
+&= \left[0\right] - \left[-\frac{1}{2}\frac{\sqrt{3}r^2}{4}  +  \frac{r^2}{2}\arcsin\left(-\frac{1}{2}\right)\right] \\
+&= -\frac{r^2}{2}\left(\arcsin\left(-\frac{1}{2}\right) - \frac{\sqrt{3}}{4}\right) \\
 \end{align*}
 $$
 
@@ -98,9 +98,9 @@ Putting it all together, we can continue with $(3)$:
 
 $$
 \begin{align}
-\text{Area} &= 2\left[\frac{r^2}{2} + \frac{r^2}{2}\left(\sin^{-1}\left(-\frac{1}{2}\right) - \frac{\sqrt{3}}{4}\right)\right] \\
-&= 2\left[\frac{r^2}{2}\left(1 - \frac{\sqrt{3}}{4} - \sin^{-1}\left(\frac{1}{2}\right)\right)\right] \\
-&= r^2\left(1 - \frac{\sqrt{3}}{4} - \sin^{-1}\left(\frac{1}{2}\right)\right) \ \square\\
+\text{Area} &= 2\left[\frac{r^2}{2} + \frac{r^2}{2}\left(\arcsin\left(-\frac{1}{2}\right) - \frac{\sqrt{3}}{4}\right)\right] \\
+&= 2\left[\frac{r^2}{2}\left(1 - \frac{\sqrt{3}}{4} - \arcsin\left(\frac{1}{2}\right)\right)\right] \\
+&= r^2\left(1 - \frac{\sqrt{3}}{4} - \arcsin\left(\frac{1}{2}\right)\right) \ \square\\
 \end{align}
 $$
 
@@ -214,17 +214,17 @@ $$
 We pause here to think through getting an expression for $s$. The triangle we are dealing with is isosceles, and so the angle between the two radii is $\theta$. As we've noted, the arc length $s$ of the sector is then $s = r\theta$. What is also true is that
 
 $$
-\theta = 2\cos^{-1}\left(\frac{h}{r}\right) \Rightarrow s = 2r\cos^{-1}\left(\frac{h}{r}\right)
+\theta = 2\arccos\left(\frac{h}{r}\right) \Rightarrow s = 2r\arccos\left(\frac{h}{r}\right)
 $$
 
 Continuing again, now being careful to eventually substitute $a$ and $h$:
 
 $$
 \begin{align}
-\text{Area of chord } AC &= \frac{1}{2} r^2 \left( \frac{2r\cos^{-1}\left(\frac{h}{r}\right)}{r} - \frac{a}{2r^2} \sqrt{4r^2 - a^2} \right) \\
-&= \frac{1}{2} r^2 \left( 2\cos^{-1}\left(\frac{h}{r}\right) - \frac{a}{2r^2} \sqrt{4r^2 - a^2} \right) \\
-&= r^2\cos^{-1}\left(\frac{h}{r}\right) - \frac{1}{4} a \sqrt{4r^2 - a^2} \\
-&= r^2\cos^{-1}\left(\frac{h}{r}\right) - h\sqrt{r^2 - h^2} \\
+\text{Area of chord } AC &= \frac{1}{2} r^2 \left( \frac{2r\arccos\left(\frac{h}{r}\right)}{r} - \frac{a}{2r^2} \sqrt{4r^2 - a^2} \right) \\
+&= \frac{1}{2} r^2 \left( 2\arccos\left(\frac{h}{r}\right) - \frac{a}{2r^2} \sqrt{4r^2 - a^2} \right) \\
+&= r^2\arccos\left(\frac{h}{r}\right) - \frac{1}{4} a \sqrt{4r^2 - a^2} \\
+&= r^2\arccos\left(\frac{h}{r}\right) - h\sqrt{r^2 - h^2} \\
 \end{align}
 $$
 
@@ -233,8 +233,8 @@ The cropped circle's area is then:
 $$
 \begin{align}
 \text{Area of } C_{cropped} &= \text{Area of semicircle } C_1 - \text{Area of chord } AC \\
-&= \frac{1}{2} \pi r^2 - \left(r^2\cos^{-1}\left(\frac{h}{r}\right) - h\sqrt{r^2 - h^2}\right) \\
-&= \frac{1}{2} \pi r^2 - r^2\cos^{-1}\left(\frac{h}{r}\right) + h\sqrt{r^2 - h^2} \\
+&= \frac{1}{2} \pi r^2 - \left(r^2\arccos\left(\frac{h}{r}\right) - h\sqrt{r^2 - h^2}\right) \\
+&= \frac{1}{2} \pi r^2 - r^2\arccos\left(\frac{h}{r}\right) + h\sqrt{r^2 - h^2} \\
 \end{align}
 $$
 
@@ -243,8 +243,8 @@ And our area of interest is then:
 $$
 \begin{align}
 \text{Area} &= \text{Area of } B - \text{Area of } C_{cropped} \\
-&= r^2 - \left(\frac{1}{2} \pi r^2 - r^2\cos^{-1}\left(\frac{h}{r}\right) + h\sqrt{r^2 - h^2}\right) \\
-&= r^2\left(1 - \frac{\pi}{2} + \cos^{-1}\left(\frac{h}{r}\right)\right) - h\sqrt{r^2 - h^2}\\
+&= r^2 - \left(\frac{1}{2} \pi r^2 - r^2\arccos\left(\frac{h}{r}\right) + h\sqrt{r^2 - h^2}\right) \\
+&= r^2\left(1 - \frac{\pi}{2} + \arccos\left(\frac{h}{r}\right)\right) - h\sqrt{r^2 - h^2}\\
 \end{align}
 $$
 
@@ -252,19 +252,19 @@ Recognizing in our setup that $h = \frac{r}{2}$ we get our final answer:
 
 $$
 \begin{align}
-\text{Area} &= r^2\left(1 - \frac{\pi}{2} + \cos^{-1}\left(\frac{1}{2}\right)\right) - \frac{r}{2}\sqrt{r^2 - \left(\frac{r}{2}\right)^2} \\
-&= r^2\left(1 - \frac{\pi}{2} + \cos^{-1}\left(\frac{1}{2}\right)\right) - \frac{\sqrt{3}r^2}{4}
+\text{Area} &= r^2\left(1 - \frac{\pi}{2} + \arccos\left(\frac{1}{2}\right)\right) - \frac{r}{2}\sqrt{r^2 - \left(\frac{r}{2}\right)^2} \\
+&= r^2\left(1 - \frac{\pi}{2} + \arccos\left(\frac{1}{2}\right)\right) - \frac{\sqrt{3}r^2}{4}
 \end{align}
 $$
 
 Which is really just $(6)$ in disguise! And we can see this by using the fact that
 
 $$
-\sin^{-1}x + \cos^{-1}x = \frac{\pi}{2} \Rightarrow \cos^{-1}x = \frac{\pi}{2} - \sin^{-1}x
+\arcsin x + \arccos x = \frac{\pi}{2} \Rightarrow \arccos x = \frac{\pi}{2} - \arcsin x
 $$
 
 $$
-\text{Area} = r^2\left(1 - \frac{\sqrt{3}}{4} - \sin^{-1}\left(\frac{1}{2}\right)\right) \square
+\text{Area} = r^2\left(1 - \frac{\sqrt{3}}{4} - \arcsin\left(\frac{1}{2}\right)\right) \square
 $$
 
 ## Conclusion
