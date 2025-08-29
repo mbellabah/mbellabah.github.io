@@ -1,8 +1,28 @@
 ---
-title: "Lattices, Not Roots: A Perspective on Industrial Failure"
+title: "Lattices, Not Roots: A Perspective on Industrial Reliability"
 date: 2025-08-25
 tags: ["essay"]
 ---
+
+import AuthorNote from '../../components/AuthorNote.astro';
+
+<AuthorNote title="Executive Summary">
+Root Cause Analysis (RCA) has long been the backbone of reliability and safety programs. It works well when a clear failure can be isolated and explained, but can struggle with the messy, adaptive reality of modern industrial operations.
+
+This article argues that RCA, while necessary, is fundamentally a **lossy compression** of reality. It preserves the simplest path to explanation but discards the invisible adjustments, workarounds, and adaptations that actually keep systems running day to day. Over time, these unrecorded adaptations form an **"invisible economy"** that can either strengthen resilience or quietly sow the seeds of failure.
+
+Every system balances on what I call **adherence effort**; the true effort required to keep procedures and rules working as written. When the required adherence effort rises faster than operators' capacity to adapt, reliability erodes. RCA rarely captures this dynamic, because it focuses on past failures rather than the ongoing cost of keeping the system on track.
+
+I propose a complementary approach: **Lattice Analysis**. Where RCA explains why a failure occurred, lattice analysis maps the space of possible failures and adaptations. It treats operations not as single chains of cause and effect, but as networks of potential trajectories. Recent advances in AI allow this approach to reliably scale beyond traditional human-driven analysis, processing complex operational data to identify interaction patterns and system behaviors that exceed individual cognitive capacity.
+
+Additionally, modern technology enables this analysis to be embedded directly into operations—operators can access insights during shift handovers, engineers can query patterns during investigations, and managers can assess system health at operational checkpoints. This transforms reliability analysis from a post-incident activity into a continuous operational capability.
+
+The goal is not to replace RCA, but to pair it with an intelligent, systems-aware perspective. Together, they allow leaders to answer two critical questions:
+- What went wrong in this specific case? (RCA)
+- What range of things could go wrong tomorrow and what hidden adaptations are keeping us afloat today? (Lattice)
+
+For organizations serious about long-term reliability, this technology-enhanced dual-track approach transforms reactive incident response into predictive resilience management.
+</AuthorNote>
 
 ## The Myth of the Root Cause (Singular)
 
@@ -71,7 +91,7 @@ It's worth repeating that understanding only the realized trajectory provides mi
 - The network of pathways that lead from safe states to dangerous ones
 - The effectiveness of current control strategies in maintaining safe navigation
 
-**Actionable Application:** Modern process historians already collect the data needed for lattice analysis. By applying machine learning (e.g. autoencoders, world models) to this historical data, facilities can:
+**Actionable Application:** Modern process historians already collect the data needed for lattice analysis. By applying machine learning (e.g. autoencoders, world models) *at scale* to this historical or real-time data, facilities can:
 
 - Map safe operating envelopes more precisely than design specifications suggest
 - Identify approaching boundaries before safety systems activate
@@ -100,7 +120,7 @@ As we've previously alluded to, every operational procedure (e.g. SOPs, playbook
 
 But systems naturally tend toward maximum entropy–the state of maximum operational freedom consistent with maintaining functional output. When constraint maintenance energy decreases (due to budget pressure, attention scarcity, or competing priorities), the system explores new regions of its operational space through accumulated small deviations. These new regions aren't necessarily "bad"—they're just different from the ones the system was designed for, and so should be assumed will fail *eventually* and with higher probability.
 
-Drift is not a failure of human discipline—it is a fundamental physical process. Systems will drift unless energy is continuously invested to maintain constraints. The question is not whether drift will occur, but whether it will drift toward regions of greater or lesser resilience. To belabor the point: Drift is inevitable, but its direction is manageable. Some drift improves system performance through learning and optimization. Control your drift!
+Drift is not a failure of human discipline—it is a fundamental physical process. Systems will drift unless energy is continuously invested to maintain constraints. The question is not whether drift will occur, but whether it will drift toward regions of greater or lesser resilience. To belabor the point: Drift is inevitable, but its direction is manageable. Some drift improves system performance through learning and optimization. **Control your drift!**
 
 **Practical Implication:** The most important metric in industrial operations is not uptime or efficiency, but **adherence effort**: how much effort is required to keep the system *adhering* to its designed envelope. It includes training effort, maintenance effort, monitoring effort, and correction effort.
 
@@ -132,12 +152,7 @@ Where:
 
 When the sum of applied effort and adaptations falls below adherence effort, the system becomes vulnerable. Crucially, because many adaptations are volatile and context-dependent, traditional metrics may overestimate robustness, masking hidden fragility. Once a technician leaves, firmware changes, or a temporary workaround disappears, apparent resilience can vanish overnight. Traditional operational metrics measure only applied effort, systematically underestimating total system requirements and creating dangerous blind spots about actual operational fragility.
 
-**The Adaptation Paradox:**
-- Systems that cannot adapt fail quickly and obviously
-- Systems that adapt too well fail slowly and invisibly
-- Optimal systems adapt just enough to handle normal variation while maintaining structural integrity
-
-**Managing the Adaptation Economy:** Modern operational systems can capture and manage adaptations through:
+**Managing the Adaptation Economy[^4]:** Modern operational systems can capture and manage adaptations through:
 
 - Adaptation Detection: Real-time identification of deviations from standard procedures
 - Effectiveness Assessment: Analysis of which adaptations improve vs. degrade system performance
@@ -145,9 +160,11 @@ When the sum of applied effort and adaptations falls below adherence effort, the
 - Boundary Management: Clear limits on acceptable adaptation to prevent dangerous drift
 - Continuous Update: Regular revision of standards to incorporate proven adaptations
 
+[^4]:**The Adaptation Paradox:** (1) Systems that cannot adapt fail quickly and obviously. (2) Systems that adapt too well fail slowly and invisibly. (3) Optimal systems adapt just enough to handle normal variation while maintaining structural integrity
+
 **Bottom Line:** The goal is neither to eliminate adaptation (impossible) nor to allow uncontrolled adaptation (dangerous), but channeling it deliberately. Importantly too is surfacing the useful adaptations to operators at the organizational or team level, i.e., making this invisible economy visible.
 
-**Implementation Example:** A power generation facility implemented an "adaptation capture system" that allowed operators to quickly document and share effective workarounds. Over six months, they identify several informal adaptations, validated some number as beneficial, incorporated some into official procedures, and eliminated the remainder that created safety risks. This transformed invisible expertise into managed organizational knowledge.
+**Implementation Example:** A power generation facility implemented an "adaptation capture system" within lattice that allowed operators to quickly document and share effective workarounds. Over six months, they identify several informal adaptations, validated some number as beneficial, incorporated some into official procedures, and eliminated the remainder that created safety risks. This transformed invisible expertise into managed organizational knowledge.
 
 ## Why Lattice Thinking Complements Traditional Approaches
 
@@ -162,7 +179,7 @@ The shift from exclusive root cause thinking to integrated lattice analysis refl
 - Lattice thinking recognizes **non-linear causation**: small causes can have large effects, and large causes can have small effects, depending on system state
 
 **Static vs. Dynamic Analysis:**
-- RCA provides a **static snapshot** of the failure moment. Often thrown into a folder and forgotten
+- RCA provides a **static snapshot** of the failure moment. Often thrown into a folder and later forgotten or inaccessible
 - Lattice thinking analyzes **dynamic trajectories** through system state space over time; importantly, it can be queried and re-constructed as needed to ensure currency
 
 **Deterministic vs. Probabilistic Reasoning:**
@@ -202,11 +219,11 @@ This complementary approach recognizes that:
 
 - Immediate action requires simple explanations—RCA provides this
 - Long-term prevention requires complex understanding—lattice analysis provides this
-- Effective reliability programs need both perspectives working in concert
+- Effective reliability programs need both perspectives working in concert, working fast and scalably enough to meet the demands of a dynamic operational environment
 
 Organizations that successfully integrate traditional and lattice approaches can:
 
-- Respond rapidly to immediate threats while building systemic understanding
+- Respond rapidly to immediate threats while building systemic understanding that's inculcated in operators whenever interacting with the lattice analysis system
 - Predict vulnerabilities before they manifest as failures
 - Design adaptive resilience as a fundamental system property
 - Learn systematically from both failures and near-misses

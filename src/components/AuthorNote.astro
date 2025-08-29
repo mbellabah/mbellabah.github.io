@@ -1,0 +1,66 @@
+---
+export interface Props {
+  title?: string;
+  class?: string;
+}
+
+const { title = "Author's Note", class: className = "" } = Astro.props;
+---
+
+<div class={`author-note bg-gray-100 rounded-xl px-5 pt-5 my-8 ${className}`}>
+  <h4 class="author-note-title font-bold text-gray-800 text-sm mb-3 tracking-wide uppercase">
+    {title}
+  </h4>
+  <div class="author-note-content text-gray-700 leading-relaxed">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .author-note {
+    font-family: var(--font-serif);
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .author-note-title {
+    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+  }
+  
+  .author-note-content {
+    font-size: 0.95rem;
+  }
+  
+  .author-note-content p {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+  }
+  
+  .author-note-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .author-note-content em {
+    font-style: italic;
+  }
+  
+  .author-note-content strong {
+    font-weight: 600;
+  }
+  
+  .author-note-content a {
+    color: #3b82f6;
+    text-decoration: none;
+    background: linear-gradient(120deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.15em;
+    background-position: 0 92%;
+    transition: all 0.2s ease;
+  }
+  
+  .author-note-content a:hover {
+    background-size: 100% 100%;
+    background: linear-gradient(120deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%);
+  }
+</style>
