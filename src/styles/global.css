@@ -11,6 +11,7 @@
 body {
   font-family: var(--font-serif);
   line-height: 1.6;
+  font-size: 1.125rem;
 }
 
 .post-content {
@@ -97,7 +98,7 @@ body {
   position: absolute;
   left: calc(100% + 2rem);
   width: 250px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #6b7280;
   line-height: 1.4;
   padding: 0.5rem;
@@ -128,12 +129,12 @@ body {
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #e5e7eb;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #6b7280;
 }
 
 .footnotes h2 {
-  font-size: 1.2rem;
+  font-size: 1.375rem;
   margin-bottom: 1rem;
 }
 
@@ -161,6 +162,15 @@ body {
 
 .footnotes a[href^="#fnref"]:hover {
   text-decoration: underline;
+}
+
+/* Math equation styling */
+.post-content .katex {
+  font-size: 1.0em;
+}
+
+.post-content .katex-display {
+  font-size: 1.0em;
 }
 
 @media (max-width: 1024px) {
