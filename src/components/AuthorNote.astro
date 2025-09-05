@@ -45,15 +45,30 @@ const { title = "Author's Note", class: className = "" } = Astro.props;
   }
   
   .author-note-content.collapsed {
-    max-height: 0;
-    opacity: 0;
-    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.6;
+    max-height: calc(2 * 1.6em);
+    opacity: 1;
+    margin-bottom: 1rem;
+    word-break: break-word;
+    hyphens: auto;
   }
   
+  
   .author-note-content.expanded {
-    max-height: 1000px;
+    display: block;
+    -webkit-line-clamp: none;
+    -webkit-box-orient: initial;
+    max-height: none;
     opacity: 1;
+    word-break: normal;
+    hyphens: none;
   }
+  
   
   .author-note-icon.rotated {
     transform: rotate(180deg);
