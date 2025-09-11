@@ -1,0 +1,112 @@
+---
+title: "Half are New"
+date: 2025-09-10
+tags: ["essay"]
+---
+
+import AuthorNote from '../../components/AuthorNote.astro';
+
+<AuthorNote>
+At a recent all-hands, our lead made an announcement to illustrate our growth in headcount: "Half of you joined in the last month! Look to your left and right—one of them is new!" It's one of those statements that's seemingly true but somehow feels off. And indeed, it doesn't take much to find cases where it fails more generally. The interesting question isn't whether the statement is wrong—it's exploring why, along with an inquiry into the conditions under which the statement **does** hold.
+</AuthorNote>
+
+## The Setup
+
+Consider a team of $n$ people (where $n$ is even), with exactly half wearing red shirts and half wearing blue. A leader, wanting to emphasize this 50/50 split, declares: "Look to your left and right—one of them is wearing red!"
+
+This sounds reasonable; after all, if we pick someone at random, they have a 50% chance of wearing red, combine this with the fact that you have two neighbors and presto! But therein lies the issue: we're conflating a **global property** (half the team wears red) with a **local guarantee** (one of your two neighbors wears red). These are fundamentally different claims.
+
+## The Deterministic Case: "Exactly One"
+
+Let's first interpret the statement strictly: **exactly one** of your neighbors wears red.
+
+We can model this as a vertex coloring problem on a graph $G = (V, E)$. People are vertices, neighborly relationships are edges, and shirt colors are given by a coloring function $c: V \rightarrow \{R, B\}$.
+
+Our constraints are:
+- **Global condition:** $|c^{-1}(R)| = |c^{-1}(B)| = n/2$ where $c^{-1}(R) = \{v \in V : c(v) = R\}$ is the preimage—the set of all vertices colored red
+- **Local condition:** For any vertex $v \in V$ with neighborhood $N(v) = \{u, w\}$, we require $c(u) \neq c(w)$
+
+Does the global condition imply the local one? As we'll see, the answer depends entirely on the graph's topology.
+
+### Case 1: Linear Arrangements (Path Graph $P_n$)
+
+In a line of $n$ people, the local condition applies to the $n-2$ internal vertices (the endpoints have only one neighbor each).
+
+Consider these colorings that satisfy the global condition:
+- Alternating: $RBRBRB...$
+- Segregated: $RRR...BBB...$
+
+Both achieve our 50/50 split, but let's check the local condition. In the alternating case, person 2 has neighbors colored $R$ and $R$ which is a violation. In the segregated case, person 2 (if red) has neighbors both red, also a violation.
+
+If, however, we enforce that the local condition holds for **all** vertices, we get overlapping constraints. Consider what happens at consecutive vertices $v_i$ and $v_{i+1}$:
+- **Condition at $v_i$:** $c(v_{i-1}) \neq c(v_{i+1})$
+- **Condition at $v_{i+1}$:** $c(v_i) \neq c(v_{i+2})$
+
+These two conditions working together constrain the coloring into a specific pattern.
+
+This cascading constraint forces the coloring into rigid periodicity: $RRBBRRBB...$. This is the *only* pattern that satisfies both conditions, and achieving it requires:
+1. $n$ must be divisible by 4 (to maintain the 50/50 split, two apiece for red and blue)
+2. People must be arranged in exactly this pattern
+
+The probability of this occurring by chance is small for any reasonable team size.
+
+### Case 2: Circular Arrangements (Cycle Graph $C_n$)
+
+A cycle presents an even more constrained scenario. Now all $n$ vertices have exactly two neighbors, and the constraints wrap around.
+
+Let's trace the local condition from $P_n$ around the cycle. If it holds everywhere, then:
+- $c(v_1) \neq c(v_3)$ (from the local condition at $v_2$)
+- $c(v_3) \neq c(v_5)$ (from the local condition at $v_4$)
+- And so on...
+
+**For odd $n$:** Following this chain with indices modulo $n$:
+$$c(v_1) \neq c(v_3) \neq c(v_5) \neq ... \neq c(v_{n-2}) \neq c(v_n) \neq c(v_2) \neq c(v_4) \neq ... \neq c(v_{n-1}) \neq c(v_1)$$
+
+But this gives us $c(v_1) \neq c(v_1)$—a contradiction! No valid coloring exists for odd $n$, even if we relax to $|c^{-1}(R)| = \lfloor n/2 \rfloor$.
+
+**For even $n$:** The constraint $c(v_i) \neq c(v_{i+2})$ creates two separate chains:
+- Odd indices: $v_1, v_3, v_5, ..., v_{n-1}$
+- Even indices: $v_2, v_4, v_6, ..., v_n$
+
+Each chain must alternate colors every two vertices, giving us the pattern $RRBB$. For this to tile properly around the cycle while maintaining $|c^{-1}(R)| = n/2$, we need the pattern to repeat an integer number of times. Since each $RRBB$ unit has length 4, we require $n \equiv 0 \pmod{4}$.
+
+**Sharp result:** A valid coloring exists if and only if $n = 4k$ for some positive integer $k$, and the coloring must be the periodic tiling of $RRBB$ units.
+
+## The Probabilistic Case: "At Least One"
+
+Perhaps we're being too literal. What if the leader meant that with high probability, at least one neighbor is red?
+
+Assume the $n$ individuals are arranged in a uniformly random permutation around a cycle. For a randomly chosen person, what's the probability that at least one neighbor is red?
+
+We calculate via the complement: the probability that both neighbors are blue:
+
+This requires the law of total probability, since the calculation depends on whether the person we're observing is red or blue.
+
+**If the person is red:** We choose 2 neighbors from $n-1$ remaining people, of which $n/2$ are blue.
+$$P(\text{both blue} | \text{person red}) = \frac{\binom{n/2}{2}}{\binom{n-1}{2}} = \frac{n}{4(n-1)}$$
+
+**If the person is blue:** We choose 2 neighbors from $n-1$ remaining people, of which $(n/2)-1$ are blue.
+$$P(\text{both blue} | \text{person blue}) = \frac{\binom{(n/2)-1}{2}}{\binom{n-1}{2}} = \frac{n-4}{4(n-1)}$$
+
+**Overall probability:** Since each person has a 50% chance of being red or blue:
+$$P(\text{both blue}) = \frac{1}{2} \cdot \frac{n}{4(n-1)} + \frac{1}{2} \cdot \frac{n-4}{4(n-1)} = \frac{n-2}{4(n-1)}$$
+
+Therefore:
+$$P(\text{at least one red}) = 1 - \frac{n-2}{4(n-1)}$$
+
+For large $n \rightarrow \infty$, this converges to $3/4$.
+
+So the leader's claim holds for approximately 75% of people—significant, but far from the universal truth implied by "look to your left and right; one of them is wearing red."
+
+## The Deeper Lesson
+
+This reveals a fundamental principle: **macrostates don't uniquely determine microstates**.
+
+Knowing that half your team is new (the macrostate) tells you surprisingly little about any individual's immediate neighbors (the microstate). The global statistic constrains the space of possible configurations but is compatible with $\binom{n}{n/2}$ different arrangements, the vast majority of which violate the leader's claim.
+
+This confusion between global averages and local guarantees appears everywhere:
+- "Half of marriages end in divorce" doesn't mean each marriage has independent 50% odds
+- "The average family has 2.5 kids" doesn't mean most families have 2-3 children
+- "Market returns average 7% annually" doesn't guarantee 7% in any given year
+
+In each case, we're mistaking an aggregate property for a structural guarantee about individual experiences.
