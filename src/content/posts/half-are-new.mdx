@@ -4,15 +4,7 @@ date: 2025-09-10
 tags: ["essay"]
 ---
 
-import AuthorNote from '../../components/AuthorNote.astro';
-
-<AuthorNote>
-At a recent all-hands, our lead made an announcement to illustrate our growth in headcount: "Like half of you joined very recently! Look to your left and right—one of them is new!" It's one of those statements that's seemingly true but somehow feels off. And indeed, it doesn't take much to find cases where it fails more generally. The interesting question isn't whether the statement is wrong—it's exploring why, along with an inquiry into the conditions under which the statement **does** hold.
-</AuthorNote>
-
-## The Setup
-
-Consider a team of $n$ people (where $n$ is even), with exactly half wearing red shirts and half wearing blue. A leader, wanting to emphasize this 50/50 split, declares: "Look to your left and right—one of them is wearing red!"
+Consider a team of $n$ people (where $n$ is even), with exactly half wearing red shirts and half wearing blue. A leader, wanting to illustrate this 50/50 split, declares: "Look to your left and right—one of them is wearing red!"
 
 This sounds reasonable; after all, if we pick someone at random, they have a 50% chance of wearing red, combine this with the fact that you have two neighbors and presto! But therein lies the issue: we're conflating a **global property** (half the team wears red) with a **local guarantee** (one of your two neighbors wears red). These are fundamentally different claims.
 
