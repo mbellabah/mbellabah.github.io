@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import TableOfContents from '../components/TableOfContents.astro';
 
 export interface Props {
   frontmatter: {
@@ -37,6 +38,7 @@ const { title, date, tags } = frontmatter;
     </header>
     
     <div class="post-content">
+      <TableOfContents />
       <slot />
     </div>
   </article>

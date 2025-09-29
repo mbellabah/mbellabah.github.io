@@ -1,0 +1,263 @@
+---
+// Table of Contents component that appears on the left side
+---
+
+<div id="toc-container" class="toc-container">
+  <nav id="table-of-contents" class="table-of-contents">
+    <div class="toc-content">
+      <!-- Will be populated by JavaScript -->
+    </div>
+  </nav>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const postContent = document.querySelector('.post-content');
+    if (!postContent) return;
+
+    // Find all headings (h1-h6) in the post content
+    const headings = Array.from(postContent.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+    if (headings.length === 0) return;
+
+    const tocContent = document.querySelector('.toc-content');
+    if (!tocContent) return;
+
+    // Build the TOC structure
+    const tocList = document.createElement('ul');
+    tocList.className = 'toc-list';
+
+    headings.forEach((heading, index) => {
+      // Ensure heading has an ID for linking
+      if (!heading.id) {
+        const id = heading.textContent
+          ?.toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/(^-|-$)/g, '') || `heading-${index}`;
+        heading.id = id;
+      }
+
+      const listItem = document.createElement('li');
+      // Add class based on heading level (h1, h2, h3, etc.)
+      const level = heading.tagName.toLowerCase();
+      listItem.className = `toc-item-${level}`;
+
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      link.textContent = heading.textContent;
+      link.className = 'toc-link';
+
+      // Smooth scroll on click
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Update URL without scrolling
+        history.pushState(null, '', `#${heading.id}`);
+      });
+
+      listItem.appendChild(link);
+      tocList.appendChild(listItem);
+    });
+
+    tocContent.appendChild(tocList);
+
+    // Position TOC at the top of the first paragraph
+    function positionTOC() {
+      const tocContainer = document.getElementById('toc-container');
+      if (!tocContainer || !postContent) return;
+
+      // Find the first paragraph after any AuthorNote
+      const firstPara = postContent.querySelector('h2') || postContent.querySelector('p');
+      if (!firstPara) return;
+
+      const postRect = postContent.getBoundingClientRect();
+      const paraRect = firstPara.getBoundingClientRect();
+
+      // Position relative to the post content container
+      const topOffset = paraRect.top - postRect.top;
+      tocContainer.style.top = `${topOffset}px`;
+    }
+
+    // Initial positioning
+    setTimeout(positionTOC, 200);
+
+    // Reposition on resize
+    window.addEventListener('resize', () => {
+      clearTimeout((window as any)._tocResizeTimer);
+      (window as any)._tocResizeTimer = setTimeout(positionTOC, 100);
+    });
+
+    // Highlight current section on scroll
+    function highlightCurrentSection() {
+      const scrollPosition = window.scrollY + 100;
+
+      let currentHeading = headings[0];
+      for (const heading of headings) {
+        const headingElement = heading as HTMLElement;
+        if (headingElement.offsetTop <= scrollPosition) {
+          currentHeading = heading;
+        } else {
+          break;
+        }
+      }
+
+      // Remove all active classes
+      document.querySelectorAll('.toc-link').forEach(link => {
+        link.classList.remove('toc-link-active');
+      });
+
+      // Add active class to current section
+      if (currentHeading && currentHeading.id) {
+        const activeLink = document.querySelector(`.toc-link[href="#${currentHeading.id}"]`);
+        if (activeLink) {
+          activeLink.classList.add('toc-link-active');
+        }
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      requestAnimationFrame(highlightCurrentSection);
+    });
+
+    // Initial highlight
+    highlightCurrentSection();
+  });
+</script>
+
+<style>
+  .toc-container {
+    position: absolute;
+    right: calc(100% + 2rem);
+    width: 250px;
+    z-index: 5;
+  }
+
+  .table-of-contents {
+    position: sticky;
+    top: 2rem;
+  }
+
+  .toc-content {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .toc-list {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Ensure no bullets for dynamically created list items (global selectors) */
+  :global(.toc-list) {
+    list-style: none !important;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  :global(.toc-list li) {
+    list-style: none !important;
+  }
+  :global(.toc-list li::marker) {
+    content: '' !important;
+  }
+  :global(.toc-list li::before) {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* Indentation based on heading level */
+  .toc-item-h1,
+  .toc-item-h2,
+  .toc-item-h3,
+  .toc-item-h4,
+  .toc-item-h5,
+  .toc-item-h6 {
+    list-style: none !important;
+    list-style-type: none !important;
+    display: block;
+  }
+
+  .toc-item-h1::marker,
+  .toc-item-h2::marker,
+  .toc-item-h3::marker,
+  .toc-item-h4::marker,
+  .toc-item-h5::marker,
+  .toc-item-h6::marker {
+    display: none !important;
+    content: none !important;
+  }
+
+  .toc-item-h1 {
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+  }
+
+  .toc-item-h2 {
+    margin-bottom: 0.5rem;
+    padding-left: 0.75rem;
+  }
+
+  .toc-item-h3 {
+    margin-bottom: 0.4rem;
+    padding-left: 1.5rem;
+  }
+
+  .toc-item-h4 {
+    margin-bottom: 0.4rem;
+    padding-left: 2.25rem;
+  }
+
+  .toc-item-h5 {
+    margin-bottom: 0.3rem;
+    padding-left: 3rem;
+  }
+
+  .toc-item-h6 {
+    margin-bottom: 0.3rem;
+    padding-left: 3.75rem;
+  }
+
+  /* Apply indentation globally for dynamically created items */
+  :global(.toc-item-h1) { margin-bottom: 0.5rem; padding-left: 0; }
+  :global(.toc-item-h2) { margin-bottom: 0.5rem; padding-left: 0.75rem; }
+  :global(.toc-item-h3) { margin-bottom: 0.4rem; padding-left: 1.5rem; }
+  :global(.toc-item-h4) { margin-bottom: 0.4rem; padding-left: 2.25rem; }
+  :global(.toc-item-h5) { margin-bottom: 0.3rem; padding-left: 3rem; }
+  :global(.toc-item-h6) { margin-bottom: 0.3rem; padding-left: 3.75rem; }
+
+  .toc-link {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: block;
+    line-height: 1.4;
+  }
+
+  .toc-link:hover {
+    color: #3b82f6;
+  }
+
+  .toc-link-active {
+    color: #1e40af;
+    font-weight: 500;
+  }
+
+  /* Ensure link styles apply to dynamically created anchors */
+  :global(.toc-link) { color: #6b7280; text-decoration: none; transition: color 0.2s ease; display: block; line-height: 1.4; }
+  :global(.toc-link:hover) { color: #3b82f6; }
+  :global(.toc-link-active) { color: #1e40af; font-weight: 500; }
+
+  /* Hide on tablet and mobile */
+  @media (max-width: 1280px) {
+    .toc-container {
+      display: none;
+    }
+  }
+
+  /* Adjust for larger screens */
+  @media (min-width: 1536px) {
+    .toc-container {
+      right: calc(100% + 3rem);
+      width: 280px;
+    }
+  }
+</style>

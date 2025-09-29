@@ -16,12 +16,12 @@ const { title = "Author's Note", class: className = "" } = Astro.props;
       class="author-note-toggle flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50"
       aria-label="Toggle author note"
     >
-      <svg class="author-note-icon w-3 h-3 text-gray-600 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="author-note-icon rotated w-3 h-3 text-gray-600 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </button>
   </div>
-  <div class="author-note-content text-gray-700 leading-relaxed collapsed">
+  <div class="author-note-content text-gray-700 leading-relaxed expanded">
     <slot />
   </div>
 </div>
@@ -140,7 +140,7 @@ const { title = "Author's Note", class: className = "" } = Astro.props;
       });
       
       // Set initial state
-      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-expanded', 'true');
     });
   });
 </script>
