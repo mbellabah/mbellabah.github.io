@@ -1,0 +1,70 @@
+---
+title: Gedanken-Spheres
+date: 2025-10-15
+tags: ["math"]
+---
+
+## Introduction
+
+I've never liked puzzles. That is, until I'read of Albert Einstein and his employ of *Gedankenexperimenten*–thought experiments–to shape his understanding of general and special relativity. Now I like puzzles, but only of the German variety.
+
+Lately, I've been assailed by the thought of spheres at the most random and inconvenient times, most recently after being knocked out of a friendly tennis tournament[^1]. On this blog, we've considered problems with spheres already. If you thought me done with the subject, think again.
+
+Below are several *Gedanken-spheres*: simple questions about simple shapes that refuse to stay simple. (You might find some of these problems *trivial* or *obvious*, but therein lies their charm. Oftentimes, we hide behind the excuse of "obviousness" to avoid confronting embarrassing gaps in our understanding; be brave my fellows!)
+
+[^1]: Unfortunately for my ousted doubles partner and another friend, who became victims to my questioning and prodding regarding these Gedanken-spheres.
+
+## Gedanken-Sphere I: Sphere on a floor
+
+**Problem.** A sphere of radius $r$ rests on a horizontal floor. How many points of the sphere's surface are touching the floor?
+
+Exactly one.
+
+To see why, recall that a sphere is defined as the set of all points at a fixed distance $r$ from a central point.
+
+Let's proceed by contradiction: suppose there exists a point $P_1$ on the sphere's surface touching the floor. Then $P_1$ is at distance $r$ from the sphere's center and lies on the floor plane.  Now assume there exists another distinct point $P_2$ on the sphere's surface that also touches the floor. Then both $P_1$ and $P_2$ are at distance $r$ from the center and lie on the same plane. However, the set of all points at distance $r$ from the center that lie on a given plane forms a circle (when the plane intersects the sphere), and for a sphere resting on a floor, this circle must degenerate to a single point—the point of tangency. This is our contradiction.
+
+Geometrically, if we take a cross-section of the sphere through its center perpendicular to the floor, we obtain a great circle. From elementary geometry, we know that a line (the floor) can intersect a circle at exactly one point when it is tangent to the circle.
+
+For an algebraic proof, place the sphere center at $(0, 0, r)$ and represent the floor as the plane $z=0$. Points on the sphere satisfy 
+
+$$
+x^2 + y^2 + (z-r)^2 = r^2
+$$
+
+and points on the floor satisfy $z=0$. Substituting $z=0$ into the sphere equation yields $x^2 + y^2 = 0$, which can only be satisfied by $x=0$ and $y=0$. Therefore, the only point of intersection is $(0, 0, 0)$.
+
+
+## Gedanken-Sphere II: Sphere and an intersecting plane
+
+**Problem.** What is the shape of the intersection of a sphere and a plane? How might this shape vary with the plane's orientation?
+
+We've seen this problem before in ["On Spheres, Shadows, and Certainty"](/posts/spheres-and-shadows). The answer: it's always a circle (or a single point in the degenerate case where the plane is tangent to the sphere).
+
+If the plane passes through the sphere's center, the intersection is a great circle. Otherwise, it's a smaller circle lying in a parallel plane. The orientation of the plane relative to the sphere does not change this–convince yourself that this is implied by the sphere's rotational symmetry.
+
+
+## Gedanken-Sphere III: Light rays and shadows
+
+**Problem.** Once again, a sphere of radius $r$ sits on a horizontal floor given by the $xy$ axis (on the $z=0$ plane). There is a light source infinitely far away from the sphere, such that all the light rays incident on the sphere's surface are parallel to the floor. (1) What is the shape of the shadow traced only on the $z=0$ plane? (2) What is the shape of the *projection* of the shadow onto the $xy$ plane as viewed from above, e.g. along the $z$-axis?
+
+We know from *Gedanken-Sphere II* that any cross-section of a sphere is a circle. When viewing a sphere head-on, its projection onto a flat surface behind it is also a circle–specifically, a great circle. Thus, we can surmise that the shadow of the sphere must be some geometric object with circular properties.
+
+It takes a little imagination to go from the 2D picture (the projection), to the 3D picture (the shadow). The key insight is that the volume of shadow trailing the sphere is but the 2D circular silhouette extended infinitely along the direction of the light rays. What do we obtain? A cylinder!
+
+The questions asks of us two things: (1) the shape of this cylindrical shadow as traced only on the $z=0$ plane, and (2) the shape of this cylindrical shadow as *projected* onto the $xy$-plane, when viewed from above.
+
+**(1) The intersection with the floor.** The floor is tangent to the sphere, so the cylinder of shadow meets it only along the single point of contact. Beyond that tangent point, however, the shadow extends as an infinite strip in the direction opposite the light. Thus, on the floor you see a single tangent point plus an infinitely long line of darkness stretching away from it.
+
+**(2) The projection from above.** Viewed from above, the shadow's projection is an infinite rectangle of width $2r$ (the sphere's diameter) extending along the direction of the rays. But its leading edge–the side closest the light–is not straight. From above, the front edge follows the semicircular outline of the sphere's projection. So the complete shape is an infinite rectangle capped with a semicircular front: concave from the rectangle's perspective.
+
+## Gedanken-Sphere IV: Sphere and its shadow, again
+
+**Problem.** Consider the same setup as in Gedanken-Sphere III, but now the light source is not infinitely far away. Rather, it's at a finite distance $d$ from the sphere at an angle of elevation $\phi$ from the horizontal plane. What is the shape of the shadow cast on the $xy$-plane? What is the shape of the shadow's projection as viewed from above?
+
+This one is difficult. After playing around with my phone's flashlight and a tennis ball, I have some intuition that the shape of the shadow is probably an ellipse or perhaps involves conic sections. I can also imagine that its exact shape is determined by both the angle of elevation $\phi$ and the distance $d$ from the sphere, given by some function $f(d, \phi)$. For large $d$ (light far away), the shape tends towards the cylinder of *Gedanken-Sphere III*. For smaller $d$, the shadow becomes a cone of darkness meeting the floor in an ellipse, parabola, or hyperbola, depending on the geometry (implied by the angle of elevation $\phi$).
+
+Formally determining which conic arises requires solving for the intersection of the light cone with the $z=0$ plane–a task left open for later.
+
+## Conclusion
+If you think these Gedanken-spheres are contrived, consider that the Earth is essentially a sphere and the sun a rather big light source; whose interplay casts day and night and eclipses. These Gedanken-spheres are thereby celestial in nature and, as such, should be held in high regard. Thinking about them is in certain respects a modest rehearsal for thinking about the universe.
