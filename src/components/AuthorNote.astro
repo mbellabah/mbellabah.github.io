@@ -28,7 +28,7 @@ const { title = "Author's Note", class: className = "" } = Astro.props;
 
 <style>
   .author-note {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     border: 1px solid #e5e7eb;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
@@ -91,19 +91,15 @@ const { title = "Author's Note", class: className = "" } = Astro.props;
     font-weight: 600;
   }
   
-  .author-note-content a {
-    color: #3b82f6;
+    color: #1a1a1a;
     text-decoration: none;
-    background: linear-gradient(120deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.15em;
-    background-position: 0 92%;
+    border-bottom: 1px solid #e5e7eb;
     transition: all 0.2s ease;
-  }
+    background: none;
   
   .author-note-content a:hover {
-    background-size: 100% 100%;
-    background: linear-gradient(120deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%);
+    border-bottom-color: #1a1a1a;
+    background: none;
   }
 </style>
 

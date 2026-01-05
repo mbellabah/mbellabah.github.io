@@ -6,12 +6,83 @@
 
 :root {
   --font-serif: 'Crimson Pro', serif;
+  --font-sans: 'Inter', sans-serif;
+  --color-accent: #4338ca; /* Indigo 700 */
 }
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   line-height: 1.6;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  /* Subtle paper grain texture */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Custom Selection Color - Soft premium gray */
+::selection {
+  background-color: #f3f4f6; /* Gray-100 */
+  color: #111827; /* Gray-900 */
+}
+
+/* Scrollbar refinement */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+}
+
+/* Smooth Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Pulse Animation for Status */
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(79, 70, 229, 0); }
+  100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(79, 70, 229, 0); }
+}
+
+.status-indicator {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  position: relative;
+}
+
+.status-dot::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 }
 
 .post-content {
@@ -22,23 +93,73 @@ body {
 
 .post-content p {
   margin-bottom: 1.5rem;
-  text-align: justify;
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #2e2e2e;
 }
 
+/* Typography refinements for "Publishing" feel */
 .post-content h1, .post-content h2, .post-content h3 {
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-family: var(--font-sans);
+  font-weight: 500; /* Slightly lighter for elegance */
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.025em;
+  color: #111827;
 }
 
 .post-content h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 1.2;
 }
 
 .post-content h2 {
   font-size: 1.5rem;
   line-height: 1.3;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f3f4f6; /* Subtle divider */
+}
+
+/* Code block styling - Minimalist Mac-like */
+.post-content pre {
+  background-color: #f9fafb; /* Very light gray instead of harsh black */
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace; /* Classic clean mono */
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.post-content code {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+  background-color: #f3f4f6;
+  border-radius: 0.25em;
+  color: #1f2937;
+}
+
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+}
+
+/* Poetry/Quote styling */
+.post-content blockquote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #4b5563;
+  border-left: 3px solid #e5e7eb;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
 }
 
 /* List styling for post content */
@@ -64,19 +185,17 @@ body {
 }
 
 /* Subtle link styling for post content */
+/* Subtle link styling for post content */
 .post-content a:not(.footnote-ref) {
-  color: #3b82f6;
+  color: #1a1a1a;
   text-decoration: none;
-  background: linear-gradient(120deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: all 0.25s ease;
+  border-bottom: 1px solid #e5e7eb;
+  transition: border-color 0.2s ease;
 }
 
 .post-content a:not(.footnote-ref):hover {
-  background-size: 100% 100%;
-  background: linear-gradient(120deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.15) 100%);
+  border-bottom-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 /* Footnote positioning system */
@@ -129,8 +248,9 @@ body {
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #e5e7eb;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #6b7280;
+  font-family: var(--font-sans);
 }
 
 .footnotes h2 {

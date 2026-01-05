@@ -137,8 +137,9 @@
   }
 
   .toc-content {
-    font-size: 0.875rem;
-    line-height: 1.5;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    font-family: var(--font-sans);
   }
 
   .toc-list {
@@ -233,18 +234,18 @@
   }
 
   .toc-link:hover {
-    color: #3b82f6;
+    color: #111;
   }
 
   .toc-link-active {
-    color: #1e40af;
+    color: #000;
     font-weight: 500;
   }
 
   /* Ensure link styles apply to dynamically created anchors */
   :global(.toc-link) { color: #6b7280; text-decoration: none; transition: color 0.2s ease; display: block; line-height: 1.4; }
-  :global(.toc-link:hover) { color: #3b82f6; }
-  :global(.toc-link-active) { color: #1e40af; font-weight: 500; }
+  :global(.toc-link:hover) { color: #111; }
+  :global(.toc-link-active) { color: #000; font-weight: 500; }
 
   /* Hide on tablet and mobile */
   @media (max-width: 1280px) {

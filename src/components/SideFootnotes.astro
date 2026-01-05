@@ -42,7 +42,7 @@ const cleanContent = content.replace(/<div[^>]*class="footnote-definition"[^>]*>
     <div class="footnotes">
       {footnoteRefs.map(({ id, number }) => (
         <div class="footnote-item" id={`footnote-${id}`}>
-          <sup class="text-blue-600 font-semibold mr-1">{number}</sup>
+          <sup class="text-gray-500 font-semibold mr-1">{number}</sup>
           <span set:html={footnoteContent[id]} />
         </div>
       ))}

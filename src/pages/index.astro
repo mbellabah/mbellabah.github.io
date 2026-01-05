@@ -48,55 +48,113 @@ function createExcerpt(content: string, maxLength: number = 200): string {
 ---
 
 <BaseLayout title="Mohamadou Bella Bah">
-  <div class="max-w-4xl mx-auto">
-    <div class="space-y-8">
+  <div class="py-12">
+    <!-- Hero Section -->
+    <section class="mb-16 pt-4">
+      <p class="font-serif text-lg text-gray-600 leading-relaxed max-w-2xl">
+        Founder of <a href="https://www.auxmachines.com" class="font-medium text-gray-900 hover:text-indigo-700 transition-colors">Auxiliary Machines</a>. Building <a href="https://www.runlattice.com" class="font-medium text-gray-900 hover:text-indigo-700 transition-colors">Lattice</a>, an investigation platform for complex defects.
+      </p>
+    </section>
+
+    <!-- Section Header -->
+    <div class="flex items-center justify-between mb-8 border-b border-gray-200 pb-4">
+      <h3 class="text-xs font-bold tracking-widest text-gray-400 uppercase">Featured</h3>
+    </div>
+
+    <!-- Featured Articles -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+      {sortedPosts.filter(post => ['gedanken-spheres', 'factories-without-pause'].includes(post.slug)).map(post => {
+        const excerpt = createExcerpt(post.body);
+        return (
+          <article class="group relative flex flex-col h-full">
+            <header>
+              <h2 class="text-2xl font-serif font-medium mb-3 text-gray-900 group-hover:text-indigo-700 transition-colors leading-tight">
+                <a href={`/posts/${post.slug}`}>
+                  <span class="absolute inset-0"></span>
+                  {post.data.title}
+                </a>
+              </h2>
+            </header>
+            
+            <div class="mb-4 flex-grow">
+              <p class="text-gray-500 text-[1.05rem] leading-relaxed font-serif antialiased line-clamp-3">
+                {excerpt}
+              </p>
+            </div>
+            
+            <footer class="flex items-center text-xs text-gray-400 font-medium font-sans mt-auto pt-2">
+              <span>{Math.ceil(post.body.split(/\s+/).length / 200)} min read</span>
+              
+              {post.data.tags && post.data.tags.length > 0 && (
+                <>
+                  <span class="mx-2">·</span>
+                  <div class="flex gap-2 relative z-10">
+                    {post.data.tags.slice(0, 1).map(tag => (
+                      <span class="uppercase tracking-wider hover:text-indigo-600 transition-colors cursor-pointer">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </>
+              )}
+            </footer>
+          </article>
+        );
+      })}
+    </div>
+
+    <!-- Section Header -->
+    <div class="flex items-center justify-between mb-12 border-b border-gray-200 pb-4">
+      <h3 class="text-xs font-bold tracking-widest text-gray-400 uppercase">Latest</h3>
+    </div>
+
+    <!-- Articles List -->
+    <div class="space-y-16">
       {sortedPosts.map(async (post) => {
         const { remarkPluginFrontmatter } = await post.render();
         const rawContent = post.body;
         const excerpt = createExcerpt(rawContent);
         
         return (
-          <article class="border-gray-200 pb-8 last:border-b-0">
+          <article class="group relative">
             <header class="mb-3">
-              <h2 class="text-2xl font-semibold mb-2">
-                <a href={`/posts/${post.slug}`} class="hover:text-gray-600">
+              <h2 class="text-2xl font-serif font-medium mb-3 text-gray-900 group-hover:text-gray-600 transition-colors">
+                <a href={`/posts/${post.slug}`}>
+                  <span class="absolute inset-0"></span>
                   {post.data.title}
                 </a>
               </h2>
-              <time class="text-gray-600 text-sm">
-                {post.data.date.toLocaleDateString('en-US', { 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
-                })}
-              </time>
             </header>
             
             <div class="mb-4">
-              <p class="text-gray-700 leading-relaxed max-w-2xl">{excerpt}</p>
+              <p class="text-gray-500 text-[1.05rem] leading-relaxed font-serif antialiased">{excerpt}</p>
             </div>
             
-            <div class="flex items-center justify-between">
-              <a href={`/posts/${post.slug}`} class="text-blue-600 hover:underline text-sm">
-                [read more]
-              </a>
+            <footer class="flex items-center text-xs text-gray-400 font-medium font-sans mt-auto">
+              <time datetime={post.data.date.toString()}>
+                {post.data.date.toLocaleDateString('en-US', { 
+                  year: 'numeric', 
+                  month: 'short', 
+                  day: 'numeric' 
+                })}
+              </time>
+              
+              <span class="mx-2">·</span>
+              <span>{Math.ceil(post.body.split(/\s+/).length / 200)} min read</span>
               
               {post.data.tags && post.data.tags.length > 0 && (
-                <div class="flex items-center">
-                  <span class="text-sm text-gray-500 mr-2">tags:</span>
-                  <div class="flex gap-1">
-                    {post.data.tags.map(tag => (
-                      <a 
-                        href={`/tags/${tag}`}
-                        class="inline-block bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded hover:bg-gray-200 transition-colors"
-                      >
+                <>
+                  <span class="mx-2">·</span>
+                  <div class="flex gap-2 relative z-10">
+                    {post.data.tags.slice(0, 1).map(tag => (
+                      <span class="uppercase tracking-wider hover:text-indigo-600 transition-colors cursor-pointer">
                         {tag}
-                      </a>
+                      </span>
                     ))}
                   </div>
-                </div>
+                </>
               )}
-            </div>
+            </footer>
           </article>
         );
       })}
