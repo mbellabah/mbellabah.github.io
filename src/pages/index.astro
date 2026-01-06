@@ -48,12 +48,22 @@ function createExcerpt(content: string, maxLength: number = 200): string {
 ---
 
 <BaseLayout title="Mohamadou Bella Bah">
-  <div class="py-12">
+  <div class="py-8 sm:py-12">
     <!-- Hero Section -->
     <section class="mb-16 pt-4">
-      <p class="font-serif text-lg text-gray-600 leading-relaxed max-w-2xl">
-        Founder of <a href="https://www.auxmachines.com" class="font-medium text-gray-900 hover:text-indigo-700 transition-colors">Auxiliary Machines</a>. Building <a href="https://www.runlattice.com" class="font-medium text-gray-900 hover:text-indigo-700 transition-colors">Lattice</a>, an investigation platform for complex defects.
-      </p>
+      <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+        <div class="shrink-0 overflow-hidden rounded-full w-24 h-24 sm:w-28 sm:h-28">
+          <img 
+            src="/bella_fullbackground.PNG" 
+            alt="Mohamadou Bella Bah" 
+            class="w-full h-full object-cover scale-[1.4] origin-center"
+          />
+        </div>
+        <p class="font-serif text-lg text-gray-600 leading-relaxed max-w-2xl text-center sm:text-left">
+          Founder of <a href="https://www.auxmachines.com" class="font-medium text-gray-900 hover:text-accent transition-colors">Auxiliary Machines</a>. Building <a href="https://www.runlattice.com" class="font-medium text-gray-900 hover:text-accent transition-colors">Lattice</a>, an investigation platform for complex manufacturing defects.
+          This is a collection of my notes and essays on mathematics, philosophy, and the systems we build.
+        </p>
+      </div>
     </section>
 
     <!-- Section Header -->
@@ -68,7 +78,7 @@ function createExcerpt(content: string, maxLength: number = 200): string {
         return (
           <article class="group relative flex flex-col h-full">
             <header>
-              <h2 class="text-2xl font-serif font-medium mb-3 text-gray-900 group-hover:text-indigo-700 transition-colors leading-tight">
+              <h2 class="text-xl sm:text-2xl font-serif font-medium mb-3 text-gray-900 group-hover:text-accent transition-colors leading-tight">
                 <a href={`/posts/${post.slug}`}>
                   <span class="absolute inset-0"></span>
                   {post.data.title}
@@ -90,7 +100,7 @@ function createExcerpt(content: string, maxLength: number = 200): string {
                   <span class="mx-2">·</span>
                   <div class="flex gap-2 relative z-10">
                     {post.data.tags.slice(0, 1).map(tag => (
-                      <span class="uppercase tracking-wider hover:text-indigo-600 transition-colors cursor-pointer">
+                      <span class="uppercase tracking-wider hover:text-accent transition-colors cursor-pointer">
                         {tag}
                       </span>
                     ))}
@@ -118,7 +128,7 @@ function createExcerpt(content: string, maxLength: number = 200): string {
         return (
           <article class="group relative">
             <header class="mb-3">
-              <h2 class="text-2xl font-serif font-medium mb-3 text-gray-900 group-hover:text-gray-600 transition-colors">
+              <h2 class="text-xl sm:text-2xl font-serif font-medium mb-3 text-gray-900 group-hover:text-gray-600 transition-colors">
                 <a href={`/posts/${post.slug}`}>
                   <span class="absolute inset-0"></span>
                   {post.data.title}
@@ -147,7 +157,7 @@ function createExcerpt(content: string, maxLength: number = 200): string {
                   <span class="mx-2">·</span>
                   <div class="flex gap-2 relative z-10">
                     {post.data.tags.slice(0, 1).map(tag => (
-                      <span class="uppercase tracking-wider hover:text-indigo-600 transition-colors cursor-pointer">
+                      <span class="uppercase tracking-wider hover:text-accent transition-colors cursor-pointer">
                         {tag}
                       </span>
                     ))}

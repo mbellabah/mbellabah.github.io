@@ -91,14 +91,17 @@ const { title = "Author's Note", class: className = "" } = Astro.props;
     font-weight: 600;
   }
   
+  .author-note-content a {
     color: #1a1a1a;
     text-decoration: none;
     border-bottom: 1px solid #e5e7eb;
     transition: all 0.2s ease;
     background: none;
+  }
   
   .author-note-content a:hover {
-    border-bottom-color: #1a1a1a;
+    border-bottom-color: var(--color-accent);
+    color: var(--color-accent);
     background: none;
   }
 </style>

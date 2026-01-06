@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-accent: #004225;
+  --color-accent-hover: #005932;
+  --color-accent-soft: rgba(0, 66, 37, 0.05);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +14,9 @@
 :root {
   --font-serif: 'Crimson Pro', serif;
   --font-sans: 'Inter', sans-serif;
-  --color-accent: #4338ca; /* Indigo 700 */
+  --color-accent: #004225; /* British Racing Green */
+  --color-accent-hover: #005932;
+  --color-accent-soft: rgba(0, 66, 37, 0.1);
 }
 
 body {
@@ -54,9 +63,9 @@ body {
 
 /* Pulse Animation for Status */
 @keyframes pulse-ring {
-  0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(79, 70, 229, 0); }
-  100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(79, 70, 229, 0); }
+  0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(0, 66, 37, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(0, 66, 37, 0); }
+  100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(0, 66, 37, 0); }
 }
 
 .status-indicator {
@@ -110,15 +119,27 @@ body {
 }
 
 .post-content h1 {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
   line-height: 1.2;
 }
 
+@media (min-width: 640px) {
+  .post-content h1 {
+    font-size: 2.25rem;
+  }
+}
+
 .post-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.3;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #f3f4f6; /* Subtle divider */
+}
+
+@media (min-width: 640px) {
+  .post-content h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Code block styling - Minimalist Mac-like */
@@ -185,12 +206,11 @@ body {
 }
 
 /* Subtle link styling for post content */
-/* Subtle link styling for post content */
 .post-content a:not(.footnote-ref) {
   color: #1a1a1a;
   text-decoration: none;
   border-bottom: 1px solid #e5e7eb;
-  transition: border-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .post-content a:not(.footnote-ref):hover {
@@ -203,7 +223,7 @@ body {
   position: relative;
   top: -0.5em;
   font-size: 0.75em;
-  color: #3b82f6;
+  color: var(--color-accent);
   text-decoration: none;
   font-weight: 600;
 }
@@ -236,7 +256,7 @@ body {
 }
 
 .footnote-side .footnote-number {
-  color: #3b82f6;
+  color: var(--color-accent);
   font-weight: 500;
   margin-right: 0.25rem;
   font-size: 0.7rem;
@@ -269,13 +289,13 @@ body {
 }
 
 .footnotes li::marker {
-  color: #3b82f6;
+  color: var(--color-accent);
   font-weight: 600;
 }
 
 /* Ensure footnote back links are visible */
 .footnotes a[href^="#fnref"] {
-  color: #3b82f6;
+  color: var(--color-accent);
   text-decoration: none;
   margin-left: 0.25rem;
 }
@@ -317,7 +337,7 @@ body {
   
   .footnote-side .footnote-number {
     font-size: 0.75rem !important;
-    color: #3b82f6 !important;
+    color: var(--color-accent) !important;
     font-weight: 500 !important;
     margin-right: 0.25rem !important;
   }
