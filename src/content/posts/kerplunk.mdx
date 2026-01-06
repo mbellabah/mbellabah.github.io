@@ -9,7 +9,7 @@ import kerplunkImg from '../../assets/posts/kerplunk/kerplunk.png';
 
 ## Introduction
 
-I was recently (mildly) bullied by a 9-year-old while playing Kerplunk this past winter holiday. To cope with said bullying, my mind went to the math of the game before me.
+I was recently (mildly) bullied by a 7-year-old while playing Kerplunk this past winter holiday. To cope with said bullying, my mind went to the math of the game before me.
 
 Kerplunk is a game with an open cylinder whose midsection is perforated with holes. For the game's setup, you thread thin plastic straws through these holes, criss-crossing them to form a haphazard web, atop which you pour marbles. (The web should be dense enough that no marbles can yet fall through.) Players, sitting in a circle, take turns pulling out straws with each removal risking to send some marbles tumbling down. The goal is to have the fewest marbles once all the straws have been removed[^1].
 
@@ -72,7 +72,7 @@ Of course, in the actual game, marbles are spheres, straws have thickness, the s
 
 ## Back to the Game
 
-It goes without saying that none of this will help you beat a 9-year-old. The practical strategy in Kerplunk isn't about minimum configurations so much as it is in identifying straws and other marbles that are *not* load-bearing given the current marble positions. That's a different algorithmic and physical problem: given a configuration of $K$ straws and $M$ marbles, which straws can be removed without any marble falling through?
+It goes without saying that none of this will help you beat a 7-year-old. The practical strategy in Kerplunk isn't about minimum configurations so much as it is in identifying straws and other marbles that are *not* load-bearing given the current marble positions. That's a different algorithmic and physical problem: given a configuration of $K$ straws and $M$ marbles, which straws can be removed without any marble falling through?
 
 This is computationally harder. Each marble is suspended by some subset of straws, and in turn potentially in contact with other marbles and the sides of the cylinder. In this setup, it is quite difficult to ascertain definitively whether a straw is safe to remove if no marble depends on it solely. The dependency graph drawn out by these relationships (the marble graph) is what you're intuitively constructing as you play the game, deliberating, looking for easy, safe pulls.
 
