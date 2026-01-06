@@ -1,0 +1,79 @@
+---
+title: Kerplunk!
+date: 2026-01-05
+tags: ["math"]
+---
+
+import { Image } from 'astro:assets';
+import kerplunkImg from '../../assets/posts/kerplunk/kerplunk.png';
+
+## Introduction
+
+I was recently (mildly) bullied by a 9-year-old while playing Kerplunk this past winter holiday. To cope with said bullying, my mind went to the math of the game before me.
+
+Kerplunk is a game with an open cylinder whose midsection is perforated with holes. For the game's setup, you thread thin plastic straws through these holes, criss-crossing them to form a haphazard web, atop which you pour marbles. (The web should be dense enough that no marbles can yet fall through.) Players, sitting in a circle, take turns pulling out straws with each removal risking to send some marbles tumbling down. The goal is to have the fewest marbles once all the straws have been removed[^1].
+
+[^1]: Kerplunk is very much like Jenga in its progressive difficulty and incentive to structure your turn so as to put the person after you at a severe disadvantage. But given that the universe insists that circles wrap around, aggressive players would do well to remember karmic justice: what you do unto others may eventually come back to you.
+
+So: what's the minimum number of straws needed to suspend a marble?
+
+<div class="flex justify-center my-8">
+  <Image src={kerplunkImg} alt="Kerplunk game setup" width={400} class="rounded-xl shadow-md" />
+</div>
+
+## Setup
+We'll work in two dimensions first––the cross-section of the cylinder––then note where three dimensions matter.
+
+Let $C_R$ be a ring of radius $R$, and let $\mathcal{C}$ denote the set of all chords of $C_R$. A *configuration* is a finite subset $\mathcal{C}_K \subset \mathcal{C}$ of $K$ chords. Think of these as our straws, which when viewed from above, criss-cross $C_R$.
+
+Suppose now, we place a disc $D_r$ of radius $r < R$ somewhere within and atop the web of $\mathcal{C}_K$. We assume gravity acts downward, the straws are infinitely strong and infinitely thin, and the disc has uniform density (so its center of mass is its geometric center).
+
+**Question.** What is the minimum collection of chords $\mathcal{C}_n \subset \mathcal{C}_K$ needed to suspend $D_r$ such that $\mathcal{C}_n \setminus \{c\}$ is unstable for all $c \in \mathcal{C}_n$? Otherwise stated as: were we to remove even one chord $c \in \mathcal{C}_n$, then $D_r$ falls through $C_R$.
+
+## The Two-Chord Conjecture
+Given the formulation, it's easy to overthink this problem[^2]. We should realize that this is really a geometry problem playing dress-up as a physics problem, which itself is masquerading as an algorithmic problem. Given we see past these theatrics, we can take a shortcut via physical intuition.
+
+[^2]: Which is a good reminder to be careful of your formulations and problem design. Pick the formulation that best captures the essence of the problem while still permitting yourself some extant intuitions/familiarity. If you're good at hammering, turn the problem into a nail.
+
+### Intuition, a Detour
+
+From physical experience, we can quite easily devise ways to suspend $D_r$ with two chords. Pull out a coin[^3] and notice that you can balance it between two fingers. But given that the width of your fingers is substantial relative to that of the coin, an argument can be made that really it's the relative widths of the contact regions that determine the coin's stability. But consider now your fingers are made of raw spaghetti. I think here too you can quite easily convince yourself that so long as the tensile strength of your spaghetti fingers can withstand the coin's weight, then it will be suspended.
+
+What this should tell us is that the *number* of contact regions is more important than the *size* of said regions. This in turn implies that there is some number $i$ of contact points that is necessary and sufficient for suspension.
+
+[^3]: It was quite difficult for me to find one. Coins in the world of Bella are effectively extinct so as to be mythical, so until I was finally able to scrounge one, I *imagined* a coin.
+
+## Claim & Proof Sketch
+
+**Claim.** Two chords are necessary and sufficient.
+
+*Necessity* is immediate: a single chord contacts $D_r$ along a line. If the centroid lies directly above this line, the disc is in unstable equilibrium—any infinitesimal perturbation creates a lever arm that rotates the disc off the chord. If the centroid does not lie directly above the contact line, the configuration is not an equilibrium at all; gravity exerts an immediate torque.
+
+*Sufficiency* follows from a geometric observation. Two chords divide the interior of $C_R$ into regions. For intersecting chords, there are four regions, two of which form a lens-shaped pair; for parallel chords, three regions, the middle one being a strip. Define $\Omega$ as the union of regions bounded by both chords—that is, regions from which crossing *either* chord moves you outside $\Omega$. For intersecting chords, $\Omega = \Omega_1 \cup \Omega_2$ (the two lens regions); for parallel chords, $\Omega$ is the strip.
+
+**Theorem.** Two chords $c_1, c_2 \in \mathcal{C}$ can suspend $D_r$ if and only if there exists a placement of $D_r$ (fully contained in $C_R$) with centroid $\mathbf{x} \in \Omega$.
+
+*Proof.* If $\mathbf{x} \in \Omega$, the centroid lies between both chords. Under gravity, the disc descends until it contacts the chords. Since $\Omega$ is bounded by $c_1$ and $c_2$ from opposite sides, the disc must contact both to be blocked—and once it does, the centroid remains between the contact points, satisfying torque balance.
+
+*Remark.* For a given chord-pair, such a placement exists if and only if the gap is bridgeable by a disc of radius $r$. Two intersecting chords can always suspend a disc of any size (place the centroid at the intersection). For parallel chords separated by distance $d$, we require $d < 2r$.
+
+### Intuition, a Retour
+A physical conclusion for a different problem here is interesting. Suppose we have a see-saw system with a pivot at exactly the center of mass. The above proof-sketch then implies that we can add two more pivots and remove the original pivot and preserve stability so long as the inner region of the two new pivots contains the original pivot, i.e. the center of mass. 
+
+## Three Dimensions
+
+Of course, in the actual game, marbles are spheres, straws have thickness, the sides of the cylinder are potential contact points, as too are other marbles. The analysis changes:
+
+1. **Spheres vs. discs:** A sphere of radius $r$ resting on two parallel straws (lines in 3D) contacts each along a point. While the center of mass must lie above the interior of the convex hull of the contact points, there is an added degree of freedom. In 2D, the disc is locked; in 3D, a sphere on parallel rails is free to translate (roll) along the gap. Thus, 2 parallel chords are not strictly stable in 3D without friction or non-parallel geometry.
+
+2. **Three points suffice generically:** Three non-collinear contact points define a triangle. If the center of mass projects into this triangle, the configuration is stable. This is why three straws, well-placed, can robustly hold a marble–and partly why the game is interesting.
+
+3. **Straw thickness matters:** Real straws have nonzero diameter, creating contact *regions* rather than points. This enlarges the effective stability region, making configurations more forgiving than the idealized model suggests.
+
+## Back to the Game
+
+It goes without saying that none of this will help you beat a 9-year-old. The practical strategy in Kerplunk isn't about minimum configurations so much as it is in identifying straws and other marbles that are *not* load-bearing given the current marble positions. That's a different algorithmic and physical problem: given a configuration of $K$ straws and $M$ marbles, which straws can be removed without any marble falling through?
+
+This is computationally harder. Each marble is suspended by some subset of straws, and in turn potentially in contact with other marbles and the sides of the cylinder. In this setup, it is quite difficult to ascertain definitively whether a straw is safe to remove if no marble depends on it solely. The dependency graph drawn out by these relationships (the marble graph) is what you're intuitively constructing as you play the game, deliberating, looking for easy, safe pulls.
+
+The human mind is marvelous in its ability to intuit these structures.
