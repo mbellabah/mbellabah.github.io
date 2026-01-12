@@ -14,31 +14,31 @@ This essay argues that GIGO is not a universal law, but a boundary condition. In
 
 ## The Article of Faith
 
-If you spend enough time around complex systems and their practitioners, you’ll eventually experience the following interaction: when proposing methods of wrangling with such systems, a seasoned practitioner will lean back, fold their arms with a specific kind of weary skepticism—the posture of someone who has seen a thousand "innovative" systems die on the altar of a single noisy sensor—and declare: "Garbage in, garbage out."
+If you spend enough time around complex systems and their practitioners, you’ll eventually experience the following interaction: after proposing methods of wrangling with such systems, a seasoned practitioner will lean back, fold their arms with a specific kind of weary skepticism—the posture of someone who has seen a thousand "innovative" systems die on the altar of a single noisy sensor—and declare: "Garbage in, garbage out."
 
 This skepticism is the dominant posture among professionals. However historically justified, GIGO has shifted from healthy caution into dogma—a view that assumes "good data" is a prerequisite for "good reasoning" and that "bad data" precludes it. To be clear, GIGO is not wrong. It is a characteristic of non-adaptive estimators operating under fixed input distributions. It is **not**, however, a statement about inference in general.
 
-Look no further than the human expert. Experts work regularly with "garbage." They inhabit the same noisy, incomplete, contradictory data environment that supposedly renders reasoning impossible. If humans can reason successfully in high-entropy environments, the curious must ask: what enables this? And can that capability be replicated by systems that aren't wholesale allergic to noise?
+Look no further than the human expert. Experts work regularly with "garbage" in high-entropy environments. They inhabit the same noisy, incomplete, contradictory data environment that supposedly renders reasoning impossible, yet still deliver state-of-the-art results. This raises two questions: what enables this success, and can systems replicate it without being overwhelmed by noise?
 
 ## How Experts Navigate the Mess
 
 Experienced systems engineers survive "garbage" environments through three specific mechanisms of inference.
 
-The first is the **reduction of epistemic uncertainty**. Experts distinguish between **aleatoric uncertainty** (the intrinsic, irreducible randomness of a system, like thermal noise) and **epistemic uncertainty** (uncertainty stemming from a lack of knowledge). While aleatoric noise is a floor you learn to live with, epistemic uncertainty is a variable to be reduced through better observation[^1]. When an expert sees a nonsensical sensor reading, they don't treat it as "bad data" for their model; they treat it as "good data" for a diagnosis of sensor failure. In their finite yet awesome human wisdom, they move the garbage from the *input* of their reasoning to the *object* of their investigation.
+The first is the **reduction of epistemic uncertainty**. There is a distinction between **aleatoric uncertainty** (the intrinsic, irreducible randomness of a system, like thermal noise) and **epistemic uncertainty** (uncertainty stemming from a lack of knowledge). While aleatoric noise is a floor you learn to live with, epistemic uncertainty is a variable to be reduced through better observation[^1]. When an expert sees a nonsensical sensor reading, they don't treat it as "bad data" for their model; they treat it as "good data" for a diagnosis of sensor failure. In their finite yet awesome human wisdom, they move the garbage from the *input* of their reasoning to the *object* of their investigation.
 
-[^1]: Consider the canonical case of a coin flip. There is aleatoric uncertainty in the physical mechanics of the toss itself, that either heads or tails will appear with probability $p$. The epistemic uncertainty lies in our doubts as to whether the coin is fair ($p = \frac{1}{2}$). This uncertainty asymptotically tends to 0 with $k \rightarrow \infty$ coin flips.  
+[^1]: Consider the canonical case of a coin flip. There is aleatoric uncertainty in the physical mechanics of the toss itself, whereby either heads or tails will appear with probability $p$. The epistemic uncertainty lies in our doubts as to whether the coin is fair ($p = \frac{1}{2}$). This uncertainty asymptotically tends to 0 with $k \rightarrow \infty$ coin flips and thus can be actively reduced.
 
-The second mechanism is the **governance of priors**. No expert enters a war room as a *tabula rasa*, naturally they bring with them physical laws, process constraints, and failure mode libraries. These priors constrain the hypothesis space before a single data point even arrives. This is where legacy "Expert Systems" failed—they required humans to manually encode every "if-then" rule. Modern agentic systems, by contrast, leverage latent world-models to apply these priors dynamically, identifying what is physically possible versus what is merely recorded.
+The second mechanism is the **governance of priors**. No expert enters a war room as a *tabula rasa*; they bring with them physical laws, process constraints, and failure mode libraries. These priors constrain the hypothesis space before a single data point even arrives. This is where legacy "Expert Systems" failed—they required humans to manually encode every "if-then" rule. Modern agentic systems, by contrast, leverage latent world-models to apply these priors dynamically, identifying what is physically possible versus what is merely recorded.
 
-The third, and most critical, is **active inference**. Investigations are not passive. An expert treats data quality as an endogenous variable to be improved, not merely tolerated. If a report is vague, they query the database; if a timeline has gaps, they interview operators. This is the search for structured noise. In industrial contexts, "garbage" is rarely white noise; it is usually biased by social incentives or mechanical constraints. A missing log entry is superficially a void; but underlying it is signal, e.g. that the operator was likely overwhelmed or the process was bypassed. To an intelligent agent, the *structure* of the garbage can be as informative as the data itself.
+The third, and most critical, is **active inference**. Investigations are not passive. An expert treats data quality as an endogenous variable to be improved, not merely tolerated. If a report is vague, they query the database; if a timeline has gaps, they interview operators. In industrial contexts, "garbage" is rarely white noise; it is usually biased by social incentives or mechanical constraints. A missing log entry is superficially a void, but underlying it is signal, e.g., that the operator was likely overwhelmed or the process was bypassed. To an intelligent agent, the *structure* of the garbage can be as informative as the data itself.
 
 ## Why Agents Change the Equation
 
-**The GIGO dogma frequently stems from a confusion between training and inference.**
+**GIGO dogma often arises from a confusion between training and inference.**
 
 If you attempt to train a model on garbage data to learn the laws of physics, you will indeed obtain garbage. But that is not our project. We are deploying agents—already trained on the 'clear' logic of causal reasoning—into high-entropy environments at runtime.
 
-Think of the agent as a detective walking into a ransacked room. The mess doesn't make the detective less intelligent; the mess is simply the evidence they are trained to untangle. To the detective, the broken vase isn't 'garbage'—it's the first step in collapsing the space of possible suspects.
+Think of the agent as a detective walking into a ransacked room. The mess doesn't make the detective less intelligent; the mess is simply the evidence they are trained to untangle. To the detective, the broken vase isn't "garbage"—it's the first clue needed to collapse the space of possible suspects.
 
 When seen this way, moving from static models to reasoning agents isn't a change in degree so much as a change in kind.
 
@@ -47,9 +47,9 @@ In a static system, the mapping function $f(x) = y$ treats input $x$ as ontologi
 This attacks the "GIGO" problem through volume and discernment:
 
 1. **Statistical Drowning:** Where a human holds a dozen cases in memory, an agent processes thousands. Across a sufficient volume, signal dominates noise via the law of large numbers.
-2. **Manifold Maneuvering:** An agent can recognize when uncertainty exceeds acceptable bounds and act to find a lower stochastic floor, e.g. adjusting a camera angle or modifying the lighting in the case of unacceptable noise in a defect classification system.
+2. **Maneuvering with Discernment:** An agent can recognize when uncertainty exceeds acceptable bounds and act to find a lower stochastic floor, e.g., adjusting a camera angle or lighting when a defect classification system encounters unacceptable noise.
 
-The value is in **collapsing the hypothesis space** faster than human attention permits.
+The value lies in **collapsing the hypothesis space** faster than human attention permits.
 
 ### A Minimal Formalism
 
@@ -60,7 +60,7 @@ Let:
 - $q$ an intervention or query (sensor check, database query, human interview)
 - $C(q)$ the cost (time, money, risk) of performing that query
 
-Investigation is the process of collapsing $H$ efficiently. Formally, the agent seeks a query $q^*$ that maximizes information gain per unit of cost:
+Investigation is the process of collapsing $H$ efficiently. We represent our uncertainty about the true cause using Shannon Entropy $H(H)$, which quantifies the average amount of information missing to identify the truth. Formally, the agent selects a query $q^*$ (from a set of available tools or actions) that maximizes information gain relative to the cost of obtaining it:
 
 $$q^* = \arg\max_q \left[ (H(H) - H(H \mid q)) - \lambda C(q) \right]$$
 
@@ -68,22 +68,22 @@ Human experts approximate this greedily and implicitly, balancing curiosity agai
 
 A system that identifies anomalous variables and presents a pre-filtered hypothesis set allows human judgment to prevail where it is most efficient: deciding among five possibilities rather than five hundred[^2].
 
-[^2]: I assert that advanced manufacturing and the interpretability of complex systems is constrained by the economics of human attention and contextual judgment. See [Factories Without Pause](/posts/factories-without-pause).
+[^2]: Advanced manufacturing and interpretability of complex systems are constrained by the economics of human attention and contextual judgment. See [Factories Without Pause](/posts/factories-without-pause) (discussion on attention economics).
 
 ## The Apophenia Trap
 
-The primary risk of a system designed to "find signal in garbage" is not GIGO, but **apophenia**—the tendency to perceive patterns in random noise. A sufficiently "smart" model can construct a beautifully logical, mechanistically plausible explanation for what is actually a random fluke[^3].
+The primary risk of a system designed to find signal in garbage is not GIGO, but **apophenia**—the tendency to perceive patterns in random noise. A sufficiently "smart" model can construct a beautifully logical, mechanistically plausible explanation for what is actually a fluke[^3].
 
-[^3]: This is not a rhetorical dodge. In deterministic physical systems, "randomness" is often epistemic, i.e. we call something a fluke when the causal chain is too long or too sensitive to initial conditions for us to trace. A defect caused by a micron-scale contaminant interacting with humidity variations and tool wear is not uncaused; it's just caused in ways that exceed our observational resolution. The line between "root cause found" and "random fluke" is often a function of investigative budget.
+[^3]: In deterministic physical systems, “randomness” is often epistemic—what appears as a fluke may result from causal chains too long or sensitive to trace. A defect caused by micron-scale contamination interacting with humidity and tool wear is not uncaused; it simply exceeds observational resolution. Thus, the boundary between “root cause found” and “random fluke” is often a function of investigative budget.
 
-To avoid becoming a conspiracy theorist, an agentic system must prioritize separability. It is not enough to seek data that supports a lead; the agent must actively identify the specific data point that best distinguishes between competing hypotheses. If a high-vibration reading supports both "bearing failure" $h_1$ and "loose mounting" $h_2$, then observing that reading adds zero information regarding the specific root cause. It is merely confirmation bias disguised as data. A robust agent must instead seek the variable that is orthogonal to the current evidence which might appear in $h_1$ but not $h_2$.
+To avoid rationalizing noise, an agentic system must prioritize separability with respect to synthesizing the causal narrative and the "null hypothesis". It is not enough to seek data that supports a lead; the agent must actively identify the specific data point that best distinguishes between competing hypotheses. If a high-vibration reading supports both "bearing failure" $h_1$ and "loose mounting" $h_2$, then observing that reading adds zero information regarding the specific root cause. A robust agent must instead seek the variable that is orthogonal to the current evidence, which might appear in $h_1$ but not $h_2$.
 
-This prevents "rationalizing the noise" by forcing the system to prune the decision tree rather than just climbing it. The goal is not just to build a case, but to maximize the distance between the surviving hypothesis and the null set.
+This prevents rationalizing the noise by forcing the system to prune the decision tree rather than just climbing it. The goal is to build the case **and** maximize the distance between the surviving hypothesis and the null set. The symmetry of the task suggests that the same agentic system dedicated to causal synthesis can be applied to its falsification.
 
 ## The Real Competition
 
-The ultimate flaw in the Data Quality Objection is its hidden assumption: that the alternative to a reasoning system is a world with *perfect* data. That world does not exist. The alternative is the status quo. The status quo is a human investigator working with the *same* bad data, under the *same* time pressure, with a *smaller* memory for patterns, and with *implicit* rather than explicit priors. The pursuit of "perfect data" is often a stalling tactic—an "infinite prep" phase that prevents actual resolution. The question is not whether an AI system can work with bad data. It's whether it can work with bad data *better than the current approach*.
+The ultimate flaw in the Data Quality Objection is its hidden assumption: that the alternative to a reasoning system is a world with *perfect* data. That world does not exist. The alternative is the status quo. The status quo is a human investigator working with the *same* bad data, under the *same* time pressure, with a *smaller* memory for patterns, and with *implicit* rather than explicit priors. The pursuit of "perfect data" is often a stalling tactic—an "infinite prep" phase that prevents actual resolution. The question is not whether an AI system can work with bad data but whether it can work with bad data better than the current approach.
 
-We are building [Lattice](https://runlattice.com) as a test of this premise: that the "Data Quality Objection" is an architectural challenge, not a fundamental limit. When a non-conformance appears in manufacturing, the space of possible causes is vast. Every upstream process, input material, environmental variable, human action, and equipment state is a candidate.
+We are building [Lattice](https://runlattice.com)[^4] as a test of this premise: that this data quality objection is really an architectural challenge, not a fundamental limit. If the theory holds—if statistical aggregation plus active inference can outperform human-only investigation even with noisy inputs—then a system designed for the mess should demonstrate measurable advantages. The test is whether such a system can collapse the hypothesis space faster than human attention permits, via superior mechanisms for navigating the mess. It competes not against some imaginary world of perfect data, but against human cognition *plus* the mess. That's the only competition that matters.
 
-If the theory holds—if statistical aggregation plus active inference can outperform human-only investigation even with noisy inputs—then a system designed for the mess should demonstrate measurable advantages. The test is whether such a system can collapse the hypothesis space faster than human attention permits. Not by having cleaner data, but by having better mechanisms for navigating the mess. It competes not against some imaginary world of perfect data, but against human cognition *plus* the mess. That's the only competition that matters.
+[^4]: For more technical discussion, see [Lattice, Not Roots: A Perspective on Industrial Reliability](/posts/root-cause-analysis).
