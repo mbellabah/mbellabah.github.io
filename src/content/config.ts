@@ -21,7 +21,7 @@ const booksCollection = defineCollection({
   }),
 });
 
-const problemsCollection = defineCollection({
+const toPondersCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
@@ -35,5 +35,5 @@ const problemsCollection = defineCollection({
 export const collections = {
   posts: postsCollection,
   books: booksCollection,
-  problems: problemsCollection,
+  'to-ponders': toPondersCollection,
 };

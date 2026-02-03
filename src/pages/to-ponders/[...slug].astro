@@ -4,24 +4,24 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 
 export async function getStaticPaths() {
-  const problems = await getCollection('problems');
-  return problems.map(problem => ({
-    params: { slug: problem.slug },
-    props: { problem },
+  const items = await getCollection('to-ponders');
+  return items.map(item => ({
+    params: { slug: item.slug },
+    props: { item },
   }));
 }
 
-const { problem } = Astro.props;
-const { Content } = await problem.render();
+const { item } = Astro.props;
+const { Content } = await item.render();
 
-const allProblems = await getCollection('problems');
-const sortedProblems = allProblems.sort((a, b) => {
+const allItems = await getCollection('to-ponders');
+const sortedItems = allItems.sort((a, b) => {
   if (a.data.status === 'open' && b.data.status !== 'open') return -1;
   if (a.data.status !== 'open' && b.data.status === 'open') return 1;
   return b.data.date.getTime() - a.data.date.getTime();
 });
-const problemIndex = sortedProblems.findIndex(p => p.slug === problem.slug);
-const problemNumber = (sortedProblems.length - problemIndex).toString().padStart(2, '0');
+const itemIndex = sortedItems.findIndex(p => p.slug === item.slug);
+const itemNumber = (sortedItems.length - itemIndex).toString().padStart(2, '0');
 
 const statusColors = {
   'open': 'bg-green-100 text-green-800 border-green-200',
@@ -30,15 +30,15 @@ const statusColors = {
 };
 ---
 
-<BaseLayout title={`${problem.data.title} - To-Ponders`}>
+<BaseLayout title={`${item.data.title} - To-Ponders`}>
   <article class="prose prose-lg max-w-none">
     <header class="mb-12 border-b border-gray-100 pb-8">
       <div class="flex items-center gap-4 mb-4">
-        <span class={`flex items-center gap-2 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-widest border rounded-md ${statusColors[problem.data.status] || 'bg-gray-100'}`}>
-          {problem.data.status}
+        <span class={`flex items-center gap-2 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-widest border rounded-md ${statusColors[item.data.status] || 'bg-gray-100'}`}>
+          {item.data.status}
         </span>
-        <time class="text-gray-400 text-sm font-sans" datetime={problem.data.date.toISOString()}>
-          {problem.data.date.toLocaleDateString('en-US', { 
+        <time class="text-gray-400 text-sm font-sans" datetime={item.data.date.toISOString()}>
+          {item.data.date.toLocaleDateString('en-US', { 
             year: 'numeric', 
             month: 'long', 
             day: 'numeric' 
@@ -47,19 +47,19 @@ const statusColors = {
       </div>
       
       <div class="text-gray-200 font-sans text-xl mb-2 font-medium tracking-widest">
-        {problemNumber}
+        {itemNumber}
        </div>
       <h1 class="text-4xl md:text-5xl font-serif font-medium mb-6 text-gray-900 tracking-tight leading-tight">
-        {problem.data.title}
+        {item.data.title}
       </h1>
       
       <div class="flex flex-wrap items-center gap-x-8 gap-y-4">
 
-        {problem.data.tags && problem.data.tags.length > 0 && (
+        {item.data.tags && item.data.tags.length > 0 && (
           <div class="flex flex-col">
             <span class="text-[0.65rem] uppercase tracking-widest text-gray-400 font-bold mb-1">Categories</span>
             <div class="flex gap-2">
-              {problem.data.tags.map(tag => (
+              {item.data.tags.map(tag => (
                 <span class="text-gray-600 font-medium font-sans text-sm">{tag}</span>
               ))}
             </div>
