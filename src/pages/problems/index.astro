@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const problems = await getCollection('problems');
+
+// Sort problems by status (open first) then by date
+const sortedProblems = problems.sort((a, b) => {
+  if (a.data.status === 'open' && b.data.status !== 'open') return -1;
+  if (a.data.status !== 'open' && b.data.status === 'open') return 1;
+  return b.data.date.getTime() - a.data.date.getTime();
+});
+
+const statusColors = {
+  'open': 'bg-green-100 text-green-800 border-green-200',
+  'in-progress': 'bg-blue-100 text-blue-800 border-blue-200',
+  'solved': 'bg-gray-100 text-gray-800 border-gray-200',
+};
+---
+
+<BaseLayout title="To-Ponders - Mohamadou Bella Bah">
+  <div class="py-8">
+    <header class="mb-12">
+      <h1 class="text-4xl md:text-5xl font-serif font-medium mb-6 text-gray-900 tracking-tight">To-Ponders</h1>
+      <p class="text-lg font-serif text-gray-600 leading-relaxed max-w-2xl">
+        A collection of personal problems and curiosities encountered in life and work. These are things I have yet to give a good ol' pondering. I put them here to return to later, and you are more than welcome to think on them and send me your solutions.
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {sortedProblems.map((problem, index) => (
+        <a href={`/problems/${problem.slug}`} class="group block">
+          <article class="h-full border border-gray-100 rounded-xl p-6 hover:shadow-xl hover:border-accent/20 transition-all duration-300 bg-white flex flex-col relative overflow-hidden">
+            <div class={`absolute top-0 right-0 px-3 py-1 text-[0.65rem] font-bold uppercase tracking-widest border-l border-b rounded-bl-lg flex items-center gap-2 ${statusColors[problem.data.status] || 'bg-gray-100'}`}>
+              {problem.data.status}
+            </div>
+            
+            <header class="mb-4">
+              <div class="text-gray-200 font-sans text-sm mb-1 font-medium tracking-wider">
+                {(sortedProblems.length - index).toString().padStart(2, '0')}
+              </div>
+              <h2 class="text-xl font-serif font-medium text-gray-900 group-hover:text-accent transition-colors leading-tight mb-2">
+                {problem.data.title}
+              </h2>
+              <div class="flex items-center gap-3 text-xs font-sans text-gray-400">
+                <time datetime={problem.data.date.toISOString()}>
+                  {problem.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </time>
+              </div>
+            </header>
+            
+            <div class="mb-6 flex-grow">
+              <p class="text-gray-500 text-sm leading-relaxed font-serif line-clamp-3">
+                {problem.data.description}
+              </p>
+            </div>
+            
+            <footer class="flex flex-wrap gap-2 mt-auto">
+              {problem.data.tags?.map(tag => (
+                <span class="text-[0.65rem] uppercase tracking-wider font-medium text-gray-400 bg-gray-50 px-2 py-0.5 rounded">
+                  {tag}
+                </span>
+              ))}
+            </footer>
+          </article>
+        </a>
+      ))}
+    </div>
+    
+    {sortedProblems.length === 0 && (
+      <div class="text-center py-20 bg-gray-50 rounded-xl border border-dashed border-gray-200">
+        <p class="text-gray-400 font-serif italic">No problems listed yet. Check back soon.</p>
+      </div>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  }
+</style>

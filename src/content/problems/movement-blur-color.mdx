@@ -1,0 +1,73 @@
+---
+title: "Formalizing how Movement Affects Color Vision"
+date: 2026-02-02
+status: "open"
+tags: ["Signal Processing", "Vision", "Kinematics"]
+description: "Is color vision a static luxury? Formalizing the trade-off between chromatic signal-to-noise ratio and sensor velocity in moving observers."
+---
+
+### Motivation
+
+Humans possibly evolved trichromacy to distinguish red/yellow targets (edible fruit) against a green backdrop, or to detect camouflaged predators in visually busy environments. In a static image, the red and green channels are effectively orthogonal, providing maximal separation for camouflage-breaking.
+
+However, biological sensors are rarely static; they operate under some trajectory $v(t)$—the simplest of which is a constant lateral velocity vector $v$. This raises a question: how does motion affect our ability to exploit those color contours? If we are moving quickly through a forest, does the "Red-Green" advantage persist, or does the signal decorrelate into noise?
+
+### Preliminary thoughts
+
+Humans have three cone classes:
+
+- **L cones**: Long-wavelength sensitive ("red")  
+- **M cones**: Medium-wavelength sensitive ("green")  
+- **S cones**: Short-wavelength sensitive ("blue")  
+
+By themselves, cones do not directly encode luminance or color. These channels arise from **linear combinations of cone responses**. The **luminance channel** is roughly the sum of L and M cones, which makes it sensitive to flicker, motion, and high contrast—in other words, its role is both timing and contour detection. The **chromatic channels** are formed by differences between cone responses, and they encode color perception along the Red-Green and Blue-Yellow axes. In simple terms, luminance answers "how much light is there?" while chromatic channels ask "what kind of light is it?"
+
+Because luminance is a sum of responses and chromaticity is a difference, the two channels have very different noise properties. Intuitively:
+
+- **Summation**: Random fluctuations partly cancel, so the signal-to-noise ratio (SNR) is relatively high.  
+- **Subtraction**: The underlying signal may largely cancel while noise does not, leaving a lower SNR.  
+
+Formally, if $x_1 = s + n_1$ and $x_2 = s + n_2$ are two noisy responses with zero-mean independent noise $n_1, n_2$, then:
+
+$$
+x_{\text{sum}} = x_1 + x_2 = 2s + (n_1 + n_2), \quad
+\sigma_{\text{sum}} = \sqrt{\mathrm{Var}(n_1 + n_2)} = \sqrt{2}\,\sigma
+$$
+
+while
+
+$$
+x_{\text{diff}} = x_1 - x_2 = (s - s) + (n_1 - n_2) = n_1 - n_2, \quad
+\sigma_{\text{diff}} = \sqrt{\mathrm{Var}(n_1 - n_2)} = \sqrt{2}\,\sigma
+$$
+
+Thus, summation preserves signal while partially cancelling noise, whereas differencing amplifies the effect of noise relative to the signal.
+
+### Motion and temporal filtering
+
+Consider a vision system as a **multi-channel sensor array**. As the sensor moves with velocity $v$, spatial detail in the environment is converted into temporal fluctuations at the sensor:
+
+$$
+f_t = v \cdot f_s
+$$
+
+where $f_s$ is the spatial frequency.
+
+From experience, motion reduces the usefulness of color contrast. At high speeds, the very feature that evolved to break camouflage may fail first, leaving the observer to rely on luminance alone (the very channel that camouflage likely evolved to exploit).
+
+### Formal challenge
+
+1. **The Distinguishability Function**  
+   Define the expression for $D(v)$: the measure of distinguishability between a target $T$ and background $B$ in the chromatic domain, where $v$ is the lateral velocity of the sensor.
+
+2. **The Critical Velocity**  
+   Identify the limit $v_c$ where:
+
+$$
+SNR_c(v) < \tau < SNR_l(v)
+$$
+
+Here, $\tau$ is the detection threshold. This defines the **Chromacy Blindness** regime—the velocity at which motion effectively "re-camouflages" the target by overwhelming the chromatic channel.
+
+3. **Answer the following**  
+   Is color-based camouflage breaking a "static luxury"? Does a moving predator lose the evolutionary advantage of trichromacy exactly when it matters most, i.e., during a high-speed pursuit?

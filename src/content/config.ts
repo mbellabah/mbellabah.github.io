@@ -21,7 +21,19 @@ const booksCollection = defineCollection({
   }),
 });
 
+const problemsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+    status: z.enum(['open', 'solved', 'in-progress']).default('open'),
+    tags: z.array(z.string()).optional(),
+    description: z.string().optional(),
+  }),
+});
+
 export const collections = {
   posts: postsCollection,
   books: booksCollection,
+  problems: problemsCollection,
 };

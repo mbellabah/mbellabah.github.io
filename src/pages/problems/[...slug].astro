@@ -1,0 +1,93 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+
+export async function getStaticPaths() {
+  const problems = await getCollection('problems');
+  return problems.map(problem => ({
+    params: { slug: problem.slug },
+    props: { problem },
+  }));
+}
+
+const { problem } = Astro.props;
+const { Content } = await problem.render();
+
+const allProblems = await getCollection('problems');
+const sortedProblems = allProblems.sort((a, b) => {
+  if (a.data.status === 'open' && b.data.status !== 'open') return -1;
+  if (a.data.status !== 'open' && b.data.status === 'open') return 1;
+  return b.data.date.getTime() - a.data.date.getTime();
+});
+const problemIndex = sortedProblems.findIndex(p => p.slug === problem.slug);
+const problemNumber = (sortedProblems.length - problemIndex).toString().padStart(2, '0');
+
+const statusColors = {
+  'open': 'bg-green-100 text-green-800 border-green-200',
+  'in-progress': 'bg-blue-100 text-blue-800 border-blue-200',
+  'solved': 'bg-gray-100 text-gray-800 border-gray-200',
+};
+---
+
+<BaseLayout title={`${problem.data.title} - To-Ponders`}>
+  <article class="prose prose-lg max-w-none">
+    <header class="mb-12 border-b border-gray-100 pb-8">
+      <div class="flex items-center gap-4 mb-4">
+        <span class={`flex items-center gap-2 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-widest border rounded-md ${statusColors[problem.data.status] || 'bg-gray-100'}`}>
+          {problem.data.status}
+        </span>
+        <time class="text-gray-400 text-sm font-sans" datetime={problem.data.date.toISOString()}>
+          {problem.data.date.toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+          })}
+        </time>
+      </div>
+      
+      <div class="text-gray-200 font-sans text-xl mb-2 font-medium tracking-widest">
+        {problemNumber}
+       </div>
+      <h1 class="text-4xl md:text-5xl font-serif font-medium mb-6 text-gray-900 tracking-tight leading-tight">
+        {problem.data.title}
+      </h1>
+      
+      <div class="flex flex-wrap items-center gap-x-8 gap-y-4">
+
+        {problem.data.tags && problem.data.tags.length > 0 && (
+          <div class="flex flex-col">
+            <span class="text-[0.65rem] uppercase tracking-widest text-gray-400 font-bold mb-1">Categories</span>
+            <div class="flex gap-2">
+              {problem.data.tags.map(tag => (
+                <span class="text-gray-600 font-medium font-sans text-sm">{tag}</span>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </header>
+    
+    <div class="post-content">
+      <TableOfContents />
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
+
+<style is:global>
+  /* Custom prose styles for problems */
+  .prose h2 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  
+  .prose blockquote {
+    border-left-color: #004225; /* Match theme color if possible */
+    font-style: italic;
+    color: #4b5563;
+  }
+</style>

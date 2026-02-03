@@ -157,6 +157,7 @@ const { title } = Astro.props;
           <div class="flex items-center space-x-4 sm:space-x-8">
             <a href="/" class={`text-sm transition-colors py-1 ${Astro.url.pathname === '/' ? 'text-gray-900 border-b border-gray-900' : 'text-gray-600 hover:text-gray-900'}`}>Main</a>
             <a href="/bookshelf" class={`text-sm transition-colors py-1 ${Astro.url.pathname.startsWith('/bookshelf') ? 'text-gray-900 border-b border-gray-900' : 'text-gray-600 hover:text-gray-900'}`}>Bookshelf</a>
+            <a href="/problems" class={`text-sm transition-colors py-1 ${Astro.url.pathname.startsWith('/problems') ? 'text-gray-900 border-b border-gray-900' : 'text-gray-600 hover:text-gray-900'}`}>To-Ponders</a>
             <a href="/tags" class={`text-sm transition-colors py-1 ${Astro.url.pathname.startsWith('/tags') ? 'text-gray-900 border-b border-gray-900' : 'text-gray-600 hover:text-gray-900'}`}>Tags</a>
             
             <!-- Subscribe Dropdown -->
