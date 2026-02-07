@@ -1,0 +1,116 @@
+---
+title: "The Sum of Digits Divisible by 3?"
+date: 2026-02-07
+tags: ["math"]
+---
+
+## Motivation
+
+My friends invited me to lunch at the Google office today (very fortunate for a man who's fending on his own). While eating, we somehow ended up debating the supposed superiority of the dragon over the hare in the Chinese zodiac. As a loyal hare, I came to the defense of hares everywhere by claiming that 1999 is a far more interesting number than the boring 2000. For whatever reason, this led me to ask whether 1999 is divisible by 3. It *felt* like it should be. (Of course it isn’t—1999 is prime and the concatenation of three 9s, a number which is the square of another great prime. What a fantastic number!)
+
+Two friends at the table immediately said no, and I was impressed by how quickly they answered. When I asked how they knew, they replied, “Didn’t you ever learn the trick where you sum the digits and check whether that sum is divisible by 3?” I hadn’t. To test it, I tried 201: $2+0+1=3$, and indeed it’s divisible by 3. Same with 2001. The rule seemed to work, but when I asked *why*—*warum muss das sein?*—no one at the table had an answer.
+
+We must roll up our sleeves so as to determine **why is must be**.
+
+## Proof
+
+We will show that a number is divisible by 3 if and only if the sum of its digits is divisible by 3. We begin with the two-digit case and then generalize. (We ignore the one-digit case because it is trivial.)
+
+### Two-Digit Number
+
+Let a two-digit number be written as $d_1d_0$ in base-10, meaning
+
+$$
+10d_1 + d_0.
+$$
+
+Let
+
+$$
+x = d_1 + d_0,
+\qquad
+y = 10d_1 + d_0.
+$$
+
+Assume that $x$ is divisible by 3, so $x = 3k$ for some integer $k$. Then we may rewrite
+
+$$
+d_0 = x - d_1.
+$$
+
+Substituting into the expression for $y$, we obtain
+
+$$
+\begin{aligned}
+y &= 10d_1 + (x - d_1) \\
+  &= 9d_1 + x.
+\end{aligned}
+$$
+
+Both terms on the right-hand side are divisible by 3: $x = 3k$ by assumption, and $9d_1 = 3(3d_1)$. Therefore,
+
+$$
+y = 3(k + 3d_1),
+$$
+
+which shows that $y$ is divisible by 3.
+
+Thus, for a two-digit number, divisibility by 3 is equivalent to the divisibility by 3 of the sum of its digits.
+
+### The General Case
+
+Now consider an $n$-digit number written as
+
+$$
+d_{n-1}d_{n-2}\ldots d_0,
+$$
+
+which represents the integer
+
+$$
+y = \sum_{i=0}^{n-1} 10^i d_i.
+$$
+
+Let the sum of its digits be
+
+$$
+x = \sum_{i=0}^{n-1} d_i.
+$$
+
+Assume that $x$ is divisible by 3, so $x = 3k$ for some integer $k$.
+
+We separate the $i=0$ term in the expression for $y$:
+
+$$
+y = d_0 + \sum_{i=1}^{n-1} 10^i d_i.
+$$
+
+From the definition of $x$, we have
+
+$$
+d_0 = x - \sum_{i=1}^{n-1} d_i.
+$$
+
+Substituting this into the expression for $y$ yields
+
+$$
+\begin{aligned}
+y
+&= x - \sum_{i=1}^{n-1} d_i + \sum_{i=1}^{n-1} 10^i d_i \\
+&= x + \sum_{i=1}^{n-1} (10^i - 1)d_i.
+\end{aligned}
+$$
+
+For each $i \ge 1$, we may write
+
+$$
+10^i - 1 = 9(10^{i-1} + 10^{i-2} + \cdots + 1),
+$$
+
+which is a multiple of 9 and therefore a multiple of 3. Hence, each term $(10^i - 1)d_i$ is divisible by 3, and so is their sum.
+
+Since $x = 3k$ is also divisible by 3, it follows that $3 \mid y$, another notation to say "3 divides $y$". This completes the proof for the general case.
+
+## Conclusion
+
+I am now rather satisfied with this answer, and it will be a technique I use to quickly check divisibility by 3. Naturally, I am now curious what other similar shortcuts exist, besides the obvious divisibility by 2 or 5 where we need only check the last digit.
