@@ -1,0 +1,25 @@
+---
+title: "Minimum Physical Frames for Smooth Motion"
+date: 2026-02-24
+status: "open"
+tags: ["Animation", "Sampling Theory", "Perception"]
+description: "How few distinct objects do you need to manufacture the illusion of fluid movement?"
+---
+
+### Motivation
+
+At the Exploratorium in San Francisco, there's an exhibit (refer to the figure below) where a horse gallops across etched glass panels, animated by strobing LEDs.
+
+To make a digital GIF of a horse galloping at 60 fps for one second, you need 60 frames. Each frame costs essentially nothing—it's just bytes. But in a physical zoetrope (what this is), each frame is a hand-etched mirror or a sculpted object. The cost per frame is presumably enormous.
+
+<div align="center">
+  <img src="/zoetrope-horse.jpg" alt="A physical zoetrope exhibit at the Exploratorium" width="400" />
+  <p style="font-style: italic; font-size: 0.9em; color: #666; margin-top: 8px;">
+    I captured this at the Exploratorium along the Pier in San Francisco. Ghost Horse, by Michael Brown 2024. Inspired by the Muybridge racehorse.
+  </p>
+</div>
+
+
+### Formal challenge
+
+Are there configurations of geometry, lighting, or optics that let you achieve $k$ fps perceived motion with fewer than $k$ physical frames? What's the theoretical minimum? What does it depend on—the symmetry of the motion, the number of light sources, the observer's perceptual system, some combination?
