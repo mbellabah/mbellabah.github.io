@@ -1,0 +1,647 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import characters from '../data/chinese_characters.json';
+import radicals from '../data/chinese_radicals.json';
+
+const title = "Learn Chinese Characters";
+
+// Group characters by category
+const categories = [...new Set(characters.map(c => c.category))];
+const groupedCharacters = categories.map(cat => ({
+  name: cat,
+  chars: characters.filter(c => c.category === cat)
+}));
+
+// Group radicals
+const radicalGroups = [...new Set(radicals.map(r => r.group))];
+const groupedRadicals = radicalGroups.map(g => ({
+  name: g,
+  items: radicals.filter(r => r.group === g)
+}));
+---
+
+<BaseLayout title={title}>
+  <div class="max-w-4xl mx-auto py-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+      <div>
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">Chinese Character Flashcards</h1>
+        <p class="text-gray-600">Master {characters.length} basic characters with mnemonics & {radicals.length} radicals.</p>
+      </div>
+      
+      <!-- Mode Switcher -->
+      <div class="flex p-1 bg-gray-100 rounded-xl w-fit">
+        <button
+          id="show-flashcards"
+          class="px-4 py-2 text-sm font-medium rounded-lg transition-all shadow-sm bg-white text-gray-900"
+        >
+          Flashcards
+        </button>
+        <button
+          id="show-reference"
+          class="px-4 py-2 text-sm font-medium rounded-lg transition-all text-gray-500 hover:text-gray-700"
+        >
+          Reference
+        </button>
+        <button
+          id="show-radicals"
+          class="px-4 py-2 text-sm font-medium rounded-lg transition-all text-gray-500 hover:text-gray-700"
+        >
+          Radicals
+        </button>
+      </div>
+    </div>
+
+    <!-- FLASHCARD MODE -->
+    <div id="flashcard-mode" class="block animate-fade-in">
+      <!-- Controls Bar -->
+      <div class="bg-gray-50 rounded-2xl p-4 mb-8 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-3">
+            <label for="pinyin-opacity" class="text-xs font-bold text-gray-400 uppercase tracking-widest">Pinyin Fade</label>
+            <input 
+              type="range" 
+              id="pinyin-opacity" 
+              min="0" 
+              max="100" 
+              value="100" 
+              class="w-24 h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-accent"
+            />
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <button 
+            id="toggle-grid"
+            class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-200 text-xs font-bold uppercase tracking-wider text-gray-500 hover:bg-white hover:text-gray-900 transition-all"
+          >
+            Quick Index
+          </button>
+          <div class="flex items-center gap-2 border-l border-gray-200 pl-4">
+            <label for="jump-input" class="text-xs font-bold text-gray-400 uppercase tracking-widest">Jump to</label>
+            <input 
+              type="number" 
+              id="jump-input" 
+              min="1" 
+              max={characters.length} 
+              class="w-14 px-2 py-1 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-accent"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Flashcard Container -->
+      <div class="relative perspective-1000 h-[34rem] w-full cursor-pointer group" id="flashcard-container">
+        <div class="relative w-full h-full transition-transform duration-500 transform-style-3d shadow-xl rounded-3xl border border-gray-100 bg-white" id="flashcard">
+          <!-- Front -->
+          <div class="absolute inset-0 flex flex-col items-center justify-center backface-hidden rounded-3xl p-12">
+            <div id="front-pinyin-container" class="absolute top-16 text-3xl font-bold transition-opacity flex items-center gap-3">
+              <span id="front-pinyin" class="tone-pinyin">yī</span>
+              <button id="play-audio-front" class="audio-btn" title="Play pronunciation" aria-label="Play pronunciation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+              </button>
+            </div>
+            <span class="text-[14rem] font-serif text-gray-800 leading-none" id="hanzi-display">一</span>
+            <div class="absolute bottom-12 text-gray-300 text-xs font-bold uppercase tracking-[0.3em]">Click to Flip · Press Space</div>
+          </div>
+          
+          <!-- Back -->
+          <div class="absolute inset-0 flex flex-col backface-hidden rounded-3xl bg-gray-50 transform rotate-y-180 p-10 overflow-y-auto">
+            <div class="flex items-start justify-between mb-10">
+              <div class="text-left">
+                <span class="text-6xl font-serif text-gray-300 mb-2 block" id="back-hanzi">一</span>
+                <div class="flex items-center gap-3">
+                  <span class="text-4xl font-bold tone-pinyin" id="pinyin-display">yī</span>
+                  <button id="play-audio-back" class="audio-btn" title="Play pronunciation" aria-label="Play pronunciation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="text-right">
+                <h3 class="text-3xl font-bold text-gray-900 mb-1" id="meaning-display">one</h3>
+                <span class="text-xs text-gray-400 font-bold uppercase tracking-[0.2em]">English Meaning</span>
+              </div>
+            </div>
+
+            <div class="space-y-10">
+              <section>
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="h-px flex-1 bg-gray-200"></div>
+                  <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">Mnemonic Strategy</h4>
+                  <div class="h-px flex-1 bg-gray-200"></div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                  <p class="text-lg text-gray-700 leading-relaxed italic" id="mnemonic-display">
+                    A single horizontal stroke representing one.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="h-px flex-1 bg-gray-200"></div>
+                  <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">Contextual Example</h4>
+                  <div class="h-px flex-1 bg-gray-200"></div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                  <p class="text-2xl text-gray-900 mb-3 font-serif leading-tight" id="sentence-cn-display">我有一个哥哥。</p>
+                  <p class="text-gray-500 italic text-lg" id="sentence-en-display">I have one older brother.</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex items-center justify-center gap-8 mt-12">
+        <button 
+          id="prev-btn"
+          class="p-5 rounded-full border border-gray-200 text-gray-400 hover:bg-white hover:text-gray-900 hover:border-gray-900 shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-accent"
+          title="Previous (Left Arrow)"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        
+        <div class="flex flex-col items-center gap-1">
+          <div class="text-2xl font-mono font-black text-gray-900" id="counter">1 / {characters.length}</div>
+          <div class="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Progress</div>
+        </div>
+
+        <button 
+          id="next-btn"
+          class="p-5 rounded-full bg-gray-900 text-white hover:bg-gray-800 shadow-xl transition-all focus:outline-none focus:ring-2 focus:ring-gray-900"
+          title="Next (Right Arrow)"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+
+        <button 
+          id="shuffle-btn"
+          class="p-5 rounded-full border border-gray-100 text-gray-300 hover:text-gray-900 transition-colors focus:outline-none"
+          title="Shuffle Deck"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h2c1.1 0 2.1-.4 2.8-1.2L13 7.2c.7-.8 1.7-1.2 2.8-1.2h6"/><path d="m17 2 4 4-4 4"/><path d="m3 10c0-2.2 1.8-4 4-4h2"/><path d="m21 22-4-4 4-4"/><path d="M2 6h2c1.1 0 2.1.4 2.8 1.2l6.2 6.6c.7.8 1.7 1.2 2.8 1.2h6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- REFERENCE MODE -->
+    <div id="reference-mode" class="hidden animate-fade-in">
+      <!-- TOC -->
+      <div class="bg-gray-50 rounded-3xl p-8 mb-12">
+        <h2 class="text-sm font-bold text-gray-400 uppercase tracking-[0.2em] mb-6 text-center">Reference Index</h2>
+        <div class="flex flex-wrap justify-center gap-3">
+          {categories.map(cat => (
+            <a 
+              href={`#category-${cat.toLowerCase().replace(/\s+/g, '-')}`}
+              class="px-4 py-2 bg-white border border-gray-100 rounded-xl text-sm font-medium text-gray-600 hover:border-accent hover:text-accent transition-all shadow-sm"
+            >
+              {cat}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Grouped List -->
+      <div class="space-y-16">
+        {groupedCharacters.map(group => (
+          <section id={`category-${group.name.toLowerCase().replace(/\s+/g, '-')}`} class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+              <h3 class="text-xl font-bold text-gray-900">{group.name}</h3>
+              <div class="h-px flex-1 bg-gray-100"></div>
+              <span class="text-xs font-mono text-gray-400">{group.chars.length} chars</span>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              {group.chars.map(char => (
+                <button
+                  class="reference-card text-left p-5 bg-white border border-gray-100 rounded-2xl hover:border-accent hover:shadow-md transition-all group"
+                  data-id={char.id}
+                >
+                  <div class="text-3xl font-serif text-gray-800 mb-2 group-hover:text-accent transition-colors">{char.hanzi}</div>
+                  <div class="text-sm font-bold tone-pinyin" data-pinyin={char.pinyin}>{char.pinyin}</div>
+                  <div class="text-xs text-gray-500 line-clamp-1">{char.meaning}</div>
+                </button>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+
+    <!-- RADICALS MODE -->
+    <div id="radicals-mode" class="hidden animate-fade-in">
+      <!-- Intro -->
+      <div class="bg-gray-50 rounded-3xl p-8 mb-12">
+        <h2 class="text-sm font-bold text-gray-400 uppercase tracking-[0.2em] mb-4 text-center">What are radicals?</h2>
+        <p class="text-center text-gray-700 max-w-2xl mx-auto leading-relaxed">
+          Radicals are the building blocks of Chinese characters — like Latin roots in English.
+          Most characters are made of 2-3 of these pieces. Learn ~50 radicals and you'll be able to
+          decode the meaning of hundreds of unfamiliar characters at a glance.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          {radicalGroups.map(g => (
+            <a
+              href={`#rgroup-${g.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+              class="px-4 py-2 bg-white border border-gray-100 rounded-xl text-sm font-medium text-gray-600 hover:border-accent hover:text-accent transition-all shadow-sm"
+            >
+              {g}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="space-y-16">
+        {groupedRadicals.map(group => (
+          <section id={`rgroup-${group.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+              <h3 class="text-xl font-bold text-gray-900">{group.name}</h3>
+              <div class="h-px flex-1 bg-gray-100"></div>
+              <span class="text-xs font-mono text-gray-400">{group.items.length} radicals</span>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2">
+              {group.items.map(rad => (
+                <article class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+                  <header class="flex items-start gap-5 mb-4">
+                    <div class="flex flex-col items-center justify-center w-20 h-20 rounded-2xl bg-gray-50 border border-gray-100 flex-shrink-0">
+                      <span class="text-4xl font-serif text-gray-900 leading-none">{rad.radical}</span>
+                      {rad.variants && (
+                        <span class="text-xs text-gray-400 font-mono mt-1">/ {rad.variants}</span>
+                      )}
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-baseline gap-2 mb-1">
+                        <span class="text-lg font-bold tone-pinyin" data-pinyin={rad.name}>{rad.name}</span>
+                        <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">Radical</span>
+                      </div>
+                      <h4 class="text-xl font-bold text-gray-900">{rad.meaning}</h4>
+                    </div>
+                  </header>
+
+                  <div class="space-y-4 text-sm">
+                    <div>
+                      <div class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-1">Shape</div>
+                      <p class="text-gray-700 leading-relaxed">{rad.mnemonic}</p>
+                    </div>
+                    <div>
+                      <div class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-1">What it signals</div>
+                      <p class="text-gray-700 leading-relaxed">{rad.signals}</p>
+                    </div>
+                    <div>
+                      <div class="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-2">In your deck — click to study</div>
+                      <div class="flex flex-wrap gap-2">
+                        {rad.examples.map(ex => (
+                          <button
+                            class="radical-example px-3 py-1.5 text-base font-serif bg-gray-50 border border-gray-100 rounded-lg hover:border-accent hover:bg-white hover:text-accent transition-all"
+                            data-hanzi={ex}
+                          >{ex}</button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+
+    <!-- Quick Index Overlay (for flashcard mode) -->
+    <div id="grid-view" class="fixed inset-0 z-50 bg-white overflow-y-auto hidden">
+      <div class="max-w-4xl mx-auto px-6 py-12">
+        <div class="flex items-center justify-between mb-12">
+          <h2 class="text-2xl font-bold">Quick Character Index</h2>
+          <button id="close-grid" class="p-3 hover:bg-gray-100 rounded-full transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+        <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3">
+          {characters.map((char, index) => (
+            <button
+              class="grid-item aspect-square flex flex-col items-center justify-center border border-gray-100 rounded-xl hover:border-accent hover:bg-accent/5 transition-all"
+              data-index={index}
+            >
+              <span class="text-2xl font-serif">{char.hanzi}</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter tone-pinyin" data-pinyin={char.pinyin}>{char.pinyin}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .perspective-1000 { perspective: 1000px; }
+  .transform-style-3d { transform-style: preserve-3d; }
+  .backface-hidden { backface-visibility: hidden; }
+  .rotate-y-180 { transform: rotateY(180deg); }
+  .flipped { transform: rotateY(180deg); }
+
+  /* Tone colors (Pleco standard) */
+  .tone-1 { color: #ED1C24; }    /* high flat — red */
+  .tone-2 { color: #F39C12; }    /* rising — orange */
+  .tone-3 { color: #16A34A; }    /* dipping — green */
+  .tone-4 { color: #2563EB; }    /* falling — blue */
+  .tone-5 { color: #6B7280; }    /* neutral — gray */
+
+  /* Audio button */
+  .audio-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    color: #9CA3AF;
+    background: transparent;
+    border: 1px solid #E5E7EB;
+    transition: all 0.15s ease;
+    cursor: pointer;
+  }
+  .audio-btn:hover { color: #111827; background: #F9FAFB; border-color: #111827; }
+  .audio-btn.playing { color: #FFFFFF; background: #111827; border-color: #111827; }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+  }
+
+  /* Custom scrollbar */
+  #grid-view::-webkit-scrollbar, .overflow-y-auto::-webkit-scrollbar { width: 6px; }
+  #grid-view::-webkit-scrollbar-track, .overflow-y-auto::-webkit-scrollbar-track { background: transparent; }
+  #grid-view::-webkit-scrollbar-thumb, .overflow-y-auto::-webkit-scrollbar-thumb { background: #f3f4f6; border-radius: 10px; }
+  #grid-view::-webkit-scrollbar-thumb:hover, .overflow-y-auto::-webkit-scrollbar-thumb:hover { background: #e5e7eb; }
+
+  input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; margin: 0; 
+  }
+</style>
+
+<script define:vars={{ characters }}>
+  let currentIndex = 0;
+  let isFlipped = false;
+  let characterList = [...characters];
+
+  // DOM Elements
+  const flashcardMode = document.getElementById('flashcard-mode');
+  const referenceMode = document.getElementById('reference-mode');
+  const btnFlashcards = document.getElementById('show-flashcards');
+  const btnReference = document.getElementById('show-reference');
+  const btnRadicals = document.getElementById('show-radicals');
+  const radicalsMode = document.getElementById('radicals-mode');
+
+  const card = document.getElementById('flashcard');
+  const cardContainer = document.getElementById('flashcard-container');
+  const hanziDisplay = document.getElementById('hanzi-display');
+  const backHanzi = document.getElementById('back-hanzi');
+  const pinyinDisplay = document.getElementById('pinyin-display');
+  const frontPinyin = document.getElementById('front-pinyin');
+  const pinyinContainer = document.getElementById('front-pinyin-container');
+  const meaningDisplay = document.getElementById('meaning-display');
+  const mnemonicDisplay = document.getElementById('mnemonic-display');
+  const sentenceCnDisplay = document.getElementById('sentence-cn-display');
+  const sentenceEnDisplay = document.getElementById('sentence-en-display');
+  const counter = document.getElementById('counter');
+  
+  const nextBtn = document.getElementById('next-btn');
+  const prevBtn = document.getElementById('prev-btn');
+  const shuffleBtn = document.getElementById('shuffle-btn');
+  const pinyinSlider = document.getElementById('pinyin-opacity');
+  const jumpInput = document.getElementById('jump-input');
+  
+  const gridOverlay = document.getElementById('grid-view');
+  const toggleGridBtn = document.getElementById('toggle-grid');
+  const closeGridBtn = document.getElementById('close-grid');
+  const gridItems = document.querySelectorAll('.grid-item');
+  const referenceCards = document.querySelectorAll('.reference-card');
+  const radicalExamples = document.querySelectorAll('.radical-example');
+  const playAudioFront = document.getElementById('play-audio-front');
+  const playAudioBack = document.getElementById('play-audio-back');
+
+  // ---- Tone-colored pinyin ----
+  const TONE_MAP = {
+    'āēīōūǖĀĒĪŌŪǕ': 1,
+    'áéíóúǘÁÉÍÓÚǗ': 2,
+    'ǎěǐǒǔǚǍĚǏǑǓǙ': 3,
+    'àèìòùǜÀÈÌÒÙǛ': 4,
+  };
+  function getTone(syl) {
+    for (const ch of syl) {
+      for (const [vowels, tone] of Object.entries(TONE_MAP)) {
+        if (vowels.includes(ch)) return tone;
+      }
+    }
+    return 5; // neutral
+  }
+  // Splits a pinyin string into syllables. Each syllable = optional initial + vowel cluster + optional n/ng/r ending.
+  const SYL_REGEX = /(zh|ch|sh|[bpmfdtnlgkhjqxrzcswy])?([aeiouüāēīōūǖáéíóúǘǎěǐǒǔǚàèìòùǜAEIOUÜĀĒĪŌŪǕÁÉÍÓÚǗǍĚǏǑǓǙÀÈÌÒÙǛ]+)(ng|n|r)?/gi;
+  function colorPinyin(pinyin) {
+    if (!pinyin) return '';
+    const parts = [];
+    let lastEnd = 0;
+    const matches = [...pinyin.matchAll(SYL_REGEX)];
+    for (const m of matches) {
+      if (m.index > lastEnd) parts.push(escapeHtml(pinyin.slice(lastEnd, m.index)));
+      const syl = m[0];
+      const tone = getTone(syl);
+      parts.push(`<span class="tone-${tone}">${escapeHtml(syl)}</span>`);
+      lastEnd = m.index + syl.length;
+    }
+    if (lastEnd < pinyin.length) parts.push(escapeHtml(pinyin.slice(lastEnd)));
+    return parts.join('');
+  }
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  // Apply tone coloring to any static .tone-pinyin element on the page
+  function applyTonesToStatic() {
+    document.querySelectorAll('.tone-pinyin').forEach(el => {
+      const text = el.getAttribute('data-pinyin') || el.textContent;
+      el.innerHTML = colorPinyin(text);
+    });
+  }
+
+  // ---- Audio (browser SpeechSynthesis) ----
+  let currentUtter = null;
+  function speak(text, btn) {
+    if (!('speechSynthesis' in window)) return;
+    if (currentUtter) window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'zh-CN';
+    u.rate = 0.85;
+    const voices = window.speechSynthesis.getVoices();
+    const zh = voices.find(v => v.lang && v.lang.toLowerCase().startsWith('zh'));
+    if (zh) u.voice = zh;
+    if (btn) {
+      btn.classList.add('playing');
+      u.onend = () => btn.classList.remove('playing');
+      u.onerror = () => btn.classList.remove('playing');
+    }
+    currentUtter = u;
+    window.speechSynthesis.speak(u);
+  }
+
+  // ---- Mode Switching ----
+  const modeButtons = [btnFlashcards, btnReference, btnRadicals];
+  const modePanels = [flashcardMode, referenceMode, radicalsMode];
+  function setActiveMode(idx) {
+    modePanels.forEach((p, i) => p.classList.toggle('hidden', i !== idx));
+    modeButtons.forEach((b, i) => {
+      if (i === idx) {
+        b.classList.add('bg-white', 'text-gray-900', 'shadow-sm');
+        b.classList.remove('text-gray-500');
+      } else {
+        b.classList.remove('bg-white', 'text-gray-900', 'shadow-sm');
+        b.classList.add('text-gray-500');
+      }
+    });
+  }
+  btnFlashcards.addEventListener('click', () => setActiveMode(0));
+  btnReference.addEventListener('click', () => setActiveMode(1));
+  btnRadicals.addEventListener('click', () => setActiveMode(2));
+
+  function updateCard() {
+    const char = characterList[currentIndex];
+    if (isFlipped) {
+      card.classList.remove('flipped');
+      isFlipped = false;
+      setTimeout(() => setContent(char), 250);
+    } else {
+      setContent(char);
+    }
+    counter.textContent = `${currentIndex + 1} / ${characterList.length}`;
+    jumpInput.value = currentIndex + 1;
+  }
+
+  function setContent(char) {
+    hanziDisplay.textContent = char.hanzi;
+    backHanzi.textContent = char.hanzi;
+    const coloredPinyin = colorPinyin(char.pinyin);
+    pinyinDisplay.innerHTML = coloredPinyin;
+    frontPinyin.innerHTML = coloredPinyin;
+    meaningDisplay.textContent = char.meaning;
+    mnemonicDisplay.textContent = char.mnemonic;
+    sentenceCnDisplay.textContent = char.sentence_cn || 'No example available.';
+    sentenceEnDisplay.textContent = char.sentence_en || '';
+  }
+
+  function flipCard() {
+    isFlipped = !isFlipped;
+    card.classList.toggle('flipped', isFlipped);
+  }
+
+  function nextCard() {
+    currentIndex = (currentIndex + 1) % characterList.length;
+    updateCard();
+  }
+
+  function prevCard() {
+    currentIndex = (currentIndex - 1 + characterList.length) % characterList.length;
+    updateCard();
+  }
+
+  function shuffleCards() {
+    for (let i = characterList.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [characterList[i], characterList[j]] = [characterList[j], characterList[i]];
+    }
+    currentIndex = 0;
+    updateCard();
+  }
+
+  // Event Listeners
+  cardContainer.addEventListener('click', flipCard);
+  nextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextCard(); });
+  prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevCard(); });
+  shuffleBtn.addEventListener('click', (e) => { e.stopPropagation(); shuffleCards(); });
+
+  pinyinSlider.addEventListener('input', (e) => {
+    pinyinContainer.style.opacity = e.target.value / 100;
+  });
+
+  jumpInput.addEventListener('change', (e) => {
+    let val = parseInt(e.target.value);
+    if (isNaN(val)) return;
+    val = Math.max(1, Math.min(characterList.length, val));
+    currentIndex = val - 1;
+    updateCard();
+  });
+
+  toggleGridBtn.addEventListener('click', () => gridOverlay.classList.remove('hidden'));
+  closeGridBtn.addEventListener('click', () => gridOverlay.classList.add('hidden'));
+  
+  gridItems.forEach(item => {
+    item.addEventListener('click', () => {
+      currentIndex = parseInt(item.getAttribute('data-index'));
+      updateCard();
+      gridOverlay.classList.add('hidden');
+    });
+  });
+
+  referenceCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const id = parseInt(card.getAttribute('data-id'));
+      currentIndex = characterList.findIndex(c => c.id === id);
+      updateCard();
+      btnFlashcards.click();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // Radical example chars jump to that character's flashcard
+  radicalExamples.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const hanzi = btn.getAttribute('data-hanzi');
+      const idx = characterList.findIndex(c => c.hanzi === hanzi);
+      if (idx < 0) return;
+      currentIndex = idx;
+      updateCard();
+      btnFlashcards.click();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // Audio buttons
+  function setupAudioBtn(btn) {
+    if (!btn) return;
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const char = characterList[currentIndex];
+      speak(char.hanzi, btn);
+    });
+  }
+  setupAudioBtn(playAudioFront);
+  setupAudioBtn(playAudioBack);
+  // Warm up the voice list (some browsers need this triggered async)
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT') return;
+    // Only respond to shortcuts while flashcard mode is active
+    if (flashcardMode.classList.contains('hidden')) return;
+    if (e.code === 'Space') {
+      e.preventDefault();
+      flipCard();
+    } else if (e.code === 'ArrowRight') {
+      nextCard();
+    } else if (e.code === 'ArrowLeft') {
+      prevCard();
+    } else if (e.key === 'p' || e.key === 'P') {
+      // Press P to play audio
+      const char = characterList[currentIndex];
+      speak(char.hanzi, isFlipped ? playAudioBack : playAudioFront);
+    }
+  });
+
+  // Initial set
+  applyTonesToStatic();
+  setContent(characterList[currentIndex]);
+</script>

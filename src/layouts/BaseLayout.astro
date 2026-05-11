@@ -114,37 +114,46 @@ const { title } = Astro.props;
           requestAnimationFrame(positionFootnotes);
         });
         // Dropdown toggle logic
-        const toggle = document.getElementById('subscribe-toggle');
-        const dropdown = document.getElementById('subscribe-dropdown');
+        const subscribeToggle = document.getElementById('subscribe-toggle');
+        const subscribeDropdown = document.getElementById('subscribe-dropdown');
+        const toolsToggle = document.getElementById('tools-toggle');
+        const toolsDropdown = document.getElementById('tools-dropdown');
 
-        if (toggle && dropdown) {
+        function setupDropdown(toggle: HTMLElement | null, dropdown: HTMLElement | null) {
+          if (!toggle || !dropdown) return;
+
           toggle.addEventListener('click', (e) => {
             e.stopPropagation();
             const isShowing = dropdown.classList.contains('show');
             
-            if (isShowing) {
-              dropdown.classList.remove('show');
-              toggle.classList.remove('active');
-              toggle.setAttribute('aria-expanded', 'false');
-            } else {
+            // Close other dropdowns
+            [subscribeDropdown, toolsDropdown].forEach(d => d?.classList.remove('show'));
+            [subscribeToggle, toolsToggle].forEach(t => t?.classList.remove('active'));
+
+            if (!isShowing) {
               dropdown.classList.add('show');
               toggle.classList.add('active');
               toggle.setAttribute('aria-expanded', 'true');
+            } else {
+              toggle.setAttribute('aria-expanded', 'false');
             }
           });
 
-          // Close when clicking outside
-          document.addEventListener('click', () => {
-            dropdown.classList.remove('show');
-            toggle.classList.remove('active');
-            toggle.setAttribute('aria-expanded', 'false');
-          });
-
-          // Prevent dropdown collapse when clicking inside
           dropdown.addEventListener('click', (e) => {
             e.stopPropagation();
           });
         }
+
+        setupDropdown(subscribeToggle, subscribeDropdown);
+        setupDropdown(toolsToggle, toolsDropdown);
+
+        // Close when clicking outside
+        document.addEventListener('click', () => {
+          [subscribeDropdown, toolsDropdown].forEach(d => d?.classList.remove('show'));
+          [subscribeToggle, toolsToggle].forEach(t => t?.classList.remove('active'));
+          if (subscribeToggle) subscribeToggle.setAttribute('aria-expanded', 'false');
+          if (toolsToggle) toolsToggle.setAttribute('aria-expanded', 'false');
+        });
       });
     </script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="564e2507-633a-4533-850c-8b3c1bc33774"></script>
@@ -160,6 +169,30 @@ const { title } = Astro.props;
             <a href="/to-ponders" class={`text-sm transition-colors py-1 ${Astro.url.pathname.startsWith('/to-ponders') ? 'text-gray-900 border-b border-gray-900' : 'text-gray-600 hover:text-gray-900'}`}>To-Ponders</a>
             <a href="/tags" class={`text-sm transition-colors py-1 ${Astro.url.pathname.startsWith('/tags') ? 'text-gray-900 border-b border-gray-900' : 'text-gray-600 hover:text-gray-900'}`}>Tags</a>
             
+            <!-- Tools Dropdown -->
+            <div class="relative group">
+              <button 
+                id="tools-toggle"
+                class={`text-sm transition-colors flex items-center gap-1 py-1 focus:outline-none ${Astro.url.pathname.startsWith('/learn-chinese') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Tools
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dropdown-arrow transition-transform duration-200"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              
+              <div 
+                id="tools-dropdown"
+                class="absolute left-0 sm:right-0 sm:left-auto top-full pt-1 opacity-0 invisible sm:group-hover:opacity-100 sm:group-hover:visible transition-all duration-200 transform origin-top-right z-50 pointer-events-none sm:pointer-events-auto"
+              >
+                <div class="bg-white border border-gray-100 rounded-lg shadow-lg w-32 overflow-hidden flex flex-col py-1">
+                  <a href="/learn-chinese" class="px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-accent transition-colors text-left block">
+                    Chinese
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <!-- Subscribe Dropdown -->
             <div class="relative group">
               <button 

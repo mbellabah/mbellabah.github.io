@@ -1,0 +1,968 @@
+[
+  {
+    "id": 1,
+    "radical": "亻",
+    "variants": "人",
+    "name": "rén",
+    "meaning": "person",
+    "group": "People & Body",
+    "mnemonic": "A pictograph of a person walking — two legs striding forward. As a left-side radical it contracts to 亻 (a slimmer standing figure).",
+    "signals": "Most characters with 亻 relate to people: their roles, actions, or kinds of person.",
+    "examples": [
+      "人",
+      "你",
+      "他",
+      "们",
+      "做",
+      "信",
+      "件",
+      "位",
+      "倍",
+      "借",
+      "假"
+    ]
+  },
+  {
+    "id": 2,
+    "radical": "女",
+    "variants": "",
+    "name": "nǚ",
+    "meaning": "woman",
+    "group": "People & Body",
+    "mnemonic": "A pictograph of a woman kneeling with her arms gracefully crossed.",
+    "signals": "Characters with 女 relate to women, family members, gentleness, and (in old usage) certain social qualities.",
+    "examples": [
+      "女",
+      "妈妈",
+      "姐姐",
+      "妹妹",
+      "好",
+      "安",
+      "妈妈",
+      "她",
+      "始",
+      "奶"
+    ]
+  },
+  {
+    "id": 3,
+    "radical": "子",
+    "variants": "",
+    "name": "zǐ",
+    "meaning": "child",
+    "group": "People & Body",
+    "mnemonic": "A pictograph of a baby in swaddling clothes — arms waving out, legs wrapped.",
+    "signals": "Indicates children, descendants, seeds, or small things. Also a frequent diminutive suffix in nouns like 桌子.",
+    "examples": [
+      "子",
+      "学",
+      "字",
+      "孩",
+      "儿子",
+      "椅子",
+      "桌子",
+      "杯子",
+      "本子"
+    ]
+  },
+  {
+    "id": 4,
+    "radical": "心",
+    "variants": "忄",
+    "name": "xīn",
+    "meaning": "heart",
+    "group": "People & Body",
+    "mnemonic": "A pictograph of the heart's chambers and blood vessels. As a left-side radical it becomes 忄 (a vertical heart).",
+    "signals": "Found in emotion and thought words — anything involving feeling, thinking, or attitude.",
+    "examples": [
+      "心",
+      "想",
+      "怕",
+      "忙",
+      "快",
+      "慢",
+      "懂",
+      "感觉",
+      "情况",
+      "心情",
+      "急"
+    ]
+  },
+  {
+    "id": 5,
+    "radical": "扌",
+    "variants": "手",
+    "name": "shǒu",
+    "meaning": "hand",
+    "group": "People & Body",
+    "mnemonic": "A pictograph of a hand with five fingers. As a left-side radical it becomes 扌 — a vertical hand reaching.",
+    "signals": "Almost always means an action done with the hand: hitting, grabbing, pushing, holding.",
+    "examples": [
+      "手",
+      "打电话",
+      "拿",
+      "把",
+      "找",
+      "推",
+      "拉",
+      "接",
+      "搬家",
+      "刷牙"
+    ]
+  },
+  {
+    "id": 6,
+    "radical": "口",
+    "variants": "",
+    "name": "kǒu",
+    "meaning": "mouth",
+    "group": "People & Body",
+    "mnemonic": "A square — an open mouth (also doorway/opening). One of the most common radicals.",
+    "signals": "Found in characters about speaking, eating, sounds, particles, and openings.",
+    "examples": [
+      "口",
+      "吃",
+      "喝",
+      "叫",
+      "唱歌",
+      "哭",
+      "告诉",
+      "吗",
+      "吧",
+      "呢",
+      "啊",
+      "嘴巴",
+      "听"
+    ]
+  },
+  {
+    "id": 7,
+    "radical": "目",
+    "variants": "",
+    "name": "mù",
+    "meaning": "eye",
+    "group": "People & Body",
+    "mnemonic": "A rectangle with two horizontal strokes inside — iris and pupil of an eye, drawn vertically.",
+    "signals": "Found in characters about seeing, watching, sleeping (closed eyes), and observation.",
+    "examples": [
+      "目",
+      "看",
+      "睡觉",
+      "眼睛",
+      "真",
+      "直",
+      "相机"
+    ]
+  },
+  {
+    "id": 8,
+    "radical": "耳",
+    "variants": "",
+    "name": "ěr",
+    "meaning": "ear",
+    "group": "People & Body",
+    "mnemonic": "A pictograph of the ear with its outer ridges.",
+    "signals": "Found in characters about hearing, taking (ancient warriors took ears as trophies), and quietness.",
+    "examples": [
+      "耳",
+      "听",
+      "耳朵",
+      "取",
+      "聪明"
+    ]
+  },
+  {
+    "id": 9,
+    "radical": "月",
+    "variants": "肉",
+    "name": "yuè / ròu",
+    "meaning": "moon / flesh",
+    "group": "People & Body",
+    "mnemonic": "Two meanings collapsed into one shape! 月 'moon' looks like a crescent. 肉 'flesh' simplified to the same 月 form when used as a left-side radical.",
+    "signals": "Right-side 月 = moon/time (明, 朋, 期). Left-side 月 = body parts/flesh (脸, 脚, 腿, 肚子, 背). Context tells you which.",
+    "examples": [
+      "肉",
+      "月",
+      "明天",
+      "朋友",
+      "脸",
+      "脚",
+      "腿",
+      "肚子",
+      "背",
+      "脏",
+      "胖",
+      "肩膀"
+    ]
+  },
+  {
+    "id": 10,
+    "radical": "足",
+    "variants": "",
+    "name": "zú",
+    "meaning": "foot",
+    "group": "People & Body",
+    "mnemonic": "Top is 口 (a body) over 止 (a foot/stop). The leg-and-foot combined.",
+    "signals": "Indicates actions of the foot: walking, running, kicking, stepping.",
+    "examples": [
+      "跑步",
+      "跳舞",
+      "路",
+      "跟",
+      "踢足球"
+    ]
+  },
+  {
+    "id": 11,
+    "radical": "日",
+    "variants": "",
+    "name": "rì",
+    "meaning": "sun / day",
+    "group": "Nature & Elements",
+    "mnemonic": "A rectangle with a line across the middle — the sun disk with its features.",
+    "signals": "Found in characters about the sun, brightness, time of day, and dates.",
+    "examples": [
+      "日",
+      "明天",
+      "早",
+      "晚",
+      "时候",
+      "晴",
+      "暗",
+      "暖和",
+      "星星",
+      "春天",
+      "是"
+    ]
+  },
+  {
+    "id": 12,
+    "radical": "氵",
+    "variants": "水",
+    "name": "shuǐ",
+    "meaning": "water",
+    "group": "Nature & Elements",
+    "mnemonic": "A central stream with splashes on both sides. As a left-side radical it becomes 氵 — three falling drops.",
+    "signals": "EXTREMELY common. Almost always means liquid: water, drink, river, ocean, washing, alcohol.",
+    "examples": [
+      "水",
+      "江",
+      "河",
+      "海",
+      "湖",
+      "洗",
+      "酒",
+      "汤",
+      "油",
+      "没",
+      "活",
+      "游泳"
+    ]
+  },
+  {
+    "id": 13,
+    "radical": "火",
+    "variants": "灬",
+    "name": "huǒ",
+    "meaning": "fire",
+    "group": "Nature & Elements",
+    "mnemonic": "A flame with sparks on either side. At the bottom of characters it becomes 灬 — four dots representing embers/smoke.",
+    "signals": "Found in characters about fire, heat, cooking, and (with 灬) things involving fire or animal-roasting.",
+    "examples": [
+      "火",
+      "热",
+      "黑",
+      "灯",
+      "灰色",
+      "然后",
+      "照顾",
+      "点"
+    ]
+  },
+  {
+    "id": 14,
+    "radical": "土",
+    "variants": "",
+    "name": "tǔ",
+    "meaning": "earth / soil",
+    "group": "Nature & Elements",
+    "mnemonic": "A plant or cross marking horizontal ground — the foundation of the earth.",
+    "signals": "Found in characters about soil, ground, places, and earthen things (cities, blocks).",
+    "examples": [
+      "土",
+      "地方",
+      "在",
+      "城",
+      "坐",
+      "块",
+      "堵车",
+      "走",
+      "去"
+    ]
+  },
+  {
+    "id": 15,
+    "radical": "木",
+    "variants": "",
+    "name": "mù",
+    "meaning": "tree / wood",
+    "group": "Nature & Elements",
+    "mnemonic": "A central trunk with branches reaching up and roots going down.",
+    "signals": "Found in characters about trees, wooden items, and furniture. Doubled is 林 (woods), tripled is 森 (forest).",
+    "examples": [
+      "木",
+      "林",
+      "树",
+      "桌子",
+      "椅子",
+      "校",
+      "梨",
+      "桃子",
+      "床",
+      "本",
+      "楼"
+    ]
+  },
+  {
+    "id": 16,
+    "radical": "山",
+    "variants": "",
+    "name": "shān",
+    "meaning": "mountain",
+    "group": "Nature & Elements",
+    "mnemonic": "Three peaks rising from the horizon — the central one tallest.",
+    "signals": "Found in characters about mountains, height, peaks, and elevation.",
+    "examples": [
+      "山",
+      "出",
+      "岁"
+    ]
+  },
+  {
+    "id": 17,
+    "radical": "雨",
+    "variants": "",
+    "name": "yǔ",
+    "meaning": "rain",
+    "group": "Nature & Elements",
+    "mnemonic": "A flat sky/cloud with raindrops falling through underneath.",
+    "signals": "Found in weather characters — rain, snow, thunder, dew, fog.",
+    "examples": [
+      "雨",
+      "雪",
+      "云",
+      "零"
+    ]
+  },
+  {
+    "id": 18,
+    "radical": "田",
+    "variants": "",
+    "name": "tián",
+    "meaning": "field",
+    "group": "Nature & Elements",
+    "mnemonic": "A square plot divided into four sections by paths between crops.",
+    "signals": "Indicates fields, farming, grids, and (because the brain was once drawn like a field) thinking.",
+    "examples": [
+      "田",
+      "男",
+      "思",
+      "累",
+      "富",
+      "电",
+      "果"
+    ]
+  },
+  {
+    "id": 19,
+    "radical": "石",
+    "variants": "",
+    "name": "shí",
+    "meaning": "stone",
+    "group": "Nature & Elements",
+    "mnemonic": "厂 (cliff) over 口 (a rock) — a stone fallen from a cliff.",
+    "signals": "Indicates stones, minerals, and hard things.",
+    "examples": [
+      "石",
+      "碗",
+      "硬",
+      "密码"
+    ]
+  },
+  {
+    "id": 20,
+    "radical": "冫",
+    "variants": "",
+    "name": "bīng",
+    "meaning": "ice",
+    "group": "Nature & Elements",
+    "mnemonic": "Two ice crystals stacked. Distinguish from 氵 (water): 冫 has only two drops, 氵 has three.",
+    "signals": "Found in cold-temperature characters.",
+    "examples": [
+      "冷",
+      "凉快",
+      "冬天",
+      "冰",
+      "次"
+    ]
+  },
+  {
+    "id": 21,
+    "radical": "艹",
+    "variants": "",
+    "name": "cǎo",
+    "meaning": "grass / plant",
+    "group": "Plants & Grain",
+    "mnemonic": "Two stalks of grass sprouting upward — the 'grass head' that sits on top of characters.",
+    "signals": "VERY common. Nearly always means a plant, herb, flower, or vegetable.",
+    "examples": [
+      "花",
+      "草",
+      "菜",
+      "茶",
+      "药",
+      "苹果",
+      "苦",
+      "蓝色",
+      "蘑菇"
+    ]
+  },
+  {
+    "id": 22,
+    "radical": "⺮",
+    "variants": "竹",
+    "name": "zhú",
+    "meaning": "bamboo",
+    "group": "Plants & Grain",
+    "mnemonic": "Two stalks of bamboo with hanging leaves. The 'bamboo head'.",
+    "signals": "Indicates things made of bamboo: writing implements (pens were brushes), instruments, baskets, counting.",
+    "examples": [
+      "笔",
+      "笑",
+      "第",
+      "等",
+      "筷子",
+      "签证",
+      "简单"
+    ]
+  },
+  {
+    "id": 23,
+    "radical": "米",
+    "variants": "",
+    "name": "mǐ",
+    "meaning": "rice grain",
+    "group": "Plants & Grain",
+    "mnemonic": "A single grain of rice with its husk strands sticking out in four directions.",
+    "signals": "Found in characters about grains, powder, and rice-based foods.",
+    "examples": [
+      "米",
+      "粉色",
+      "糖",
+      "数学"
+    ]
+  },
+  {
+    "id": 24,
+    "radical": "禾",
+    "variants": "",
+    "name": "hé",
+    "meaning": "grain stalk",
+    "group": "Plants & Grain",
+    "mnemonic": "A grain stalk drooping over from a heavy head of grain at the top — picture wheat or rice ready for harvest.",
+    "signals": "Indicates cereal crops and harvest-related concepts (autumn, peace through full bellies).",
+    "examples": [
+      "香",
+      "秋天",
+      "和",
+      "季"
+    ]
+  },
+  {
+    "id": 25,
+    "radical": "犭",
+    "variants": "犬",
+    "name": "quǎn",
+    "meaning": "dog / beast",
+    "group": "Animals",
+    "mnemonic": "A dog on its hind legs. As a left-side radical it becomes 犭 — the 'beast' radical.",
+    "signals": "Found in characters about dogs and other four-legged animals.",
+    "examples": [
+      "狗",
+      "猫",
+      "猪"
+    ]
+  },
+  {
+    "id": 26,
+    "radical": "鸟",
+    "variants": "",
+    "name": "niǎo",
+    "meaning": "bird",
+    "group": "Animals",
+    "mnemonic": "A pictograph of a bird in profile — head with eye (the dot), body, tail.",
+    "signals": "Found in names of birds.",
+    "examples": [
+      "鸟",
+      "鸡",
+      "鸭"
+    ]
+  },
+  {
+    "id": 27,
+    "radical": "虫",
+    "variants": "",
+    "name": "chóng",
+    "meaning": "insect / reptile",
+    "group": "Animals",
+    "mnemonic": "A pictograph of a coiled worm or insect.",
+    "signals": "Found in characters about insects, reptiles, sea creatures (anything cold-blooded or creepy-crawly).",
+    "examples": [
+      "虫",
+      "蛇",
+      "螃蟹",
+      "龙虾",
+      "虽然"
+    ]
+  },
+  {
+    "id": 28,
+    "radical": "牛",
+    "variants": "",
+    "name": "niú",
+    "meaning": "cow / ox",
+    "group": "Animals",
+    "mnemonic": "A cow's head seen straight-on: horns and ears at the top, face below.",
+    "signals": "Found in characters about cattle and (because oxen were key to property) sometimes things/objects.",
+    "examples": [
+      "牛",
+      "牛奶",
+      "件",
+      "告诉"
+    ]
+  },
+  {
+    "id": 29,
+    "radical": "羊",
+    "variants": "",
+    "name": "yáng",
+    "meaning": "sheep",
+    "group": "Animals",
+    "mnemonic": "A sheep's face from the front: two curved horns on top, then the face.",
+    "signals": "Sheep symbolized good things in ancient China. Found in characters about sheep and goodness/beauty.",
+    "examples": [
+      "羊",
+      "美",
+      "洋葱",
+      "海洋"
+    ]
+  },
+  {
+    "id": 30,
+    "radical": "马",
+    "variants": "",
+    "name": "mǎ",
+    "meaning": "horse",
+    "group": "Animals",
+    "mnemonic": "A simplified horse: mane on top, body, four legs (now one sweep) at the bottom.",
+    "signals": "Found in characters about horses, and as a phonetic in many words (because 'mǎ' is a common sound).",
+    "examples": [
+      "妈妈",
+      "吗",
+      "马"
+    ]
+  },
+  {
+    "id": 31,
+    "radical": "讠",
+    "variants": "言",
+    "name": "yán",
+    "meaning": "speech / words",
+    "group": "Communication & Action",
+    "mnemonic": "Originally 言 — a mouth with sound waves coming out. As a left-side radical it contracts to 讠.",
+    "signals": "VERY common. Almost always means an act involving speech or written words.",
+    "examples": [
+      "说",
+      "话",
+      "谢谢",
+      "请",
+      "语",
+      "读",
+      "课",
+      "谁",
+      "讲",
+      "讨厌"
+    ]
+  },
+  {
+    "id": 32,
+    "radical": "见",
+    "variants": "",
+    "name": "jiàn",
+    "meaning": "see",
+    "group": "Communication & Action",
+    "mnemonic": "Top is 目 (eye), bottom is 儿 (legs) — an eye walking around to see.",
+    "signals": "Found in characters about seeing and visual recognition.",
+    "examples": [
+      "见",
+      "看",
+      "现在",
+      "视频",
+      "觉得"
+    ]
+  },
+  {
+    "id": 33,
+    "radical": "力",
+    "variants": "",
+    "name": "lì",
+    "meaning": "strength / power",
+    "group": "Communication & Action",
+    "mnemonic": "A pictograph of a powerful flexed arm.",
+    "signals": "Indicates force, effort, ability, and exertion.",
+    "examples": [
+      "力",
+      "男",
+      "加班",
+      "努力",
+      "助",
+      "别",
+      "压力",
+      "边"
+    ]
+  },
+  {
+    "id": 34,
+    "radical": "又",
+    "variants": "",
+    "name": "yòu",
+    "meaning": "hand / again",
+    "group": "Communication & Action",
+    "mnemonic": "A pictograph of a right hand with three fingers showing.",
+    "signals": "An older 'hand' radical (different from 扌). Appears in characters about grasping, hand-actions, and repetition.",
+    "examples": [
+      "又",
+      "友",
+      "双",
+      "取",
+      "对",
+      "发"
+    ]
+  },
+  {
+    "id": 35,
+    "radical": "刂",
+    "variants": "刀",
+    "name": "dāo",
+    "meaning": "knife",
+    "group": "Communication & Action",
+    "mnemonic": "刀 is a knife with a handle. On the right side of characters it becomes 刂 — a vertical blade.",
+    "signals": "Found in characters about cutting, separating, and decisive actions.",
+    "examples": [
+      "刀",
+      "别",
+      "到",
+      "刚才",
+      "剪刀",
+      "前",
+      "刻",
+      "分"
+    ]
+  },
+  {
+    "id": 36,
+    "radical": "攵",
+    "variants": "",
+    "name": "pū",
+    "meaning": "tap / strike",
+    "group": "Communication & Action",
+    "mnemonic": "A hand holding a stick — the 'rap with a stick' radical, often used for forceful action.",
+    "signals": "Found in characters about correction, discipline, action with force, and 'making something happen'.",
+    "examples": [
+      "教",
+      "收",
+      "放",
+      "做",
+      "故事",
+      "数学"
+    ]
+  },
+  {
+    "id": 37,
+    "radical": "钅",
+    "variants": "金",
+    "name": "jīn",
+    "meaning": "metal / gold",
+    "group": "Materials",
+    "mnemonic": "金 is a roof over 王 (precious things). As a left-side radical it becomes 钅 — a slim 'metal' marker.",
+    "signals": "Indicates metals, metal tools, coins, and modern technology made of metal.",
+    "examples": [
+      "金",
+      "钱",
+      "银",
+      "铁",
+      "钟",
+      "错",
+      "锻炼",
+      "钥匙",
+      "镜子",
+      "铅笔"
+    ]
+  },
+  {
+    "id": 38,
+    "radical": "贝",
+    "variants": "",
+    "name": "bèi",
+    "meaning": "shell / money",
+    "group": "Materials",
+    "mnemonic": "A stylized cowrie shell — the earliest form of currency in China.",
+    "signals": "Found in characters about money, wealth, value, buying, and selling.",
+    "examples": [
+      "贝",
+      "买",
+      "卖",
+      "贵",
+      "购物",
+      "账号"
+    ]
+  },
+  {
+    "id": 39,
+    "radical": "纟",
+    "variants": "",
+    "name": "sī",
+    "meaning": "silk / thread",
+    "group": "Materials",
+    "mnemonic": "Twisted strands of silk thread — a coiled bundle.",
+    "signals": "Indicates silk, thread, fabric, and (by extension) connection, lineage, and continuity.",
+    "examples": [
+      "红色",
+      "绿色",
+      "给",
+      "经常",
+      "终于",
+      "纸"
+    ]
+  },
+  {
+    "id": 40,
+    "radical": "衤",
+    "variants": "衣",
+    "name": "yī",
+    "meaning": "clothing",
+    "group": "Materials",
+    "mnemonic": "衣 is a robe with sleeves. As a left-side radical it becomes 衤. Distinguish from 礻 (altar): 衤 has TWO dots at the bottom of the right side, 礻 has ONE.",
+    "signals": "Found in characters about clothing and fabric.",
+    "examples": [
+      "衣服",
+      "衬衫",
+      "裤子",
+      "裙子",
+      "被"
+    ]
+  },
+  {
+    "id": 41,
+    "radical": "饣",
+    "variants": "食",
+    "name": "shí",
+    "meaning": "food / eat",
+    "group": "Materials",
+    "mnemonic": "食 is a lidded jar of food. As a left-side radical it becomes 饣 — a vertical food container.",
+    "signals": "Found in characters about eating, food preparation, and hunger/fullness.",
+    "examples": [
+      "饭",
+      "饱",
+      "饿"
+    ]
+  },
+  {
+    "id": 42,
+    "radical": "王",
+    "variants": "玉",
+    "name": "yù",
+    "meaning": "jade",
+    "group": "Materials",
+    "mnemonic": "玉 has a dot showing it's distinct jade; 王 (no dot) means 'king'. As a radical, they share the same form 王.",
+    "signals": "Found in characters about jade, gems, and (since jade represented royalty) precious round objects like balls and beads.",
+    "examples": [
+      "玉",
+      "王",
+      "玩",
+      "现在",
+      "环境"
+    ]
+  },
+  {
+    "id": 43,
+    "radical": "宀",
+    "variants": "",
+    "name": "bǎo",
+    "meaning": "roof",
+    "group": "Structures & Movement",
+    "mnemonic": "A roof with a vertical post — sometimes called the 'roof radical' or 'baby roof' (because of its small house shape).",
+    "signals": "Found in characters about buildings, family, and being indoors/safe.",
+    "examples": [
+      "家",
+      "安",
+      "它",
+      "字",
+      "客人",
+      "完"
+    ]
+  },
+  {
+    "id": 44,
+    "radical": "厂",
+    "variants": "",
+    "name": "hǎn",
+    "meaning": "cliff",
+    "group": "Structures & Movement",
+    "mnemonic": "A cliff face — a horizontal stroke with a vertical face dropping down.",
+    "signals": "Found in characters about cliffs, factories, and structures built against a wall.",
+    "examples": [
+      "厨房",
+      "厕所",
+      "压力",
+      "灰色"
+    ]
+  },
+  {
+    "id": 45,
+    "radical": "门",
+    "variants": "",
+    "name": "mén",
+    "meaning": "gate / door",
+    "group": "Structures & Movement",
+    "mnemonic": "A swinging double-leaf gate viewed from the front. The single-leaf version 户 is a different radical.",
+    "signals": "Indicates doors, gates, and being inside/between.",
+    "examples": [
+      "门",
+      "们",
+      "间",
+      "问题"
+    ]
+  },
+  {
+    "id": 46,
+    "radical": "户",
+    "variants": "",
+    "name": "hù",
+    "meaning": "single door",
+    "group": "Structures & Movement",
+    "mnemonic": "Half of a 门 — a single-leaf door, like the door of a hut.",
+    "signals": "Found in characters about doors, households, and a few related concepts (writing brush, protection).",
+    "examples": [
+      "房",
+      "所以",
+      "肩膀",
+      "护照"
+    ]
+  },
+  {
+    "id": 47,
+    "radical": "阝",
+    "variants": "",
+    "name": "fù / yì",
+    "meaning": "hill (left) / city (right)",
+    "group": "Structures & Movement",
+    "mnemonic": "TWO different radicals collapsed to the same shape! 阝 on the LEFT side = 阜 (hill/mound). 阝 on the RIGHT side = 邑 (city/region).",
+    "signals": "Left 阝 = terrain/elevation (hills, descent, shade). Right 阝 = places/regions/cities.",
+    "examples": [
+      "阴",
+      "院",
+      "那",
+      "都",
+      "邻居"
+    ]
+  },
+  {
+    "id": 48,
+    "radical": "辶",
+    "variants": "",
+    "name": "chuò",
+    "meaning": "walk / movement",
+    "group": "Structures & Movement",
+    "mnemonic": "Three dots above + a foot/path stroke — a foot moving along a road. Always wraps around the bottom-left of a character.",
+    "signals": "EXTREMELY common. Indicates movement, going somewhere, walking, or paths.",
+    "examples": [
+      "这",
+      "那",
+      "还",
+      "进",
+      "过",
+      "送",
+      "远",
+      "近",
+      "道",
+      "退休"
+    ]
+  },
+  {
+    "id": 49,
+    "radical": "疒",
+    "variants": "",
+    "name": "nè",
+    "meaning": "sickness",
+    "group": "People & Body",
+    "mnemonic": "A person lying on a bed propped up under a roof — the 'sickness' radical.",
+    "signals": "Found exclusively in characters about illness, pain, and disease.",
+    "examples": [
+      "病",
+      "痛",
+      "疼",
+      "瘦"
+    ]
+  },
+  {
+    "id": 50,
+    "radical": "礻",
+    "variants": "示",
+    "name": "shì",
+    "meaning": "altar / spirit",
+    "group": "Communication & Action",
+    "mnemonic": "示 is an altar with offerings hanging from it. As a left-side radical it becomes 礻 — looks like 衤(clothing) but with only ONE dot on the bottom right.",
+    "signals": "Found in characters about gods, spirits, religion, ritual, and blessings.",
+    "examples": [
+      "神",
+      "祝",
+      "礼物",
+      "祖国"
+    ]
+  },
+  {
+    "id": 51,
+    "radical": "走",
+    "variants": "",
+    "name": "zǒu",
+    "meaning": "walk / run",
+    "group": "Structures & Movement",
+    "mnemonic": "Top is a person leaning forward, bottom is 止 (a foot) — striding forward at speed.",
+    "signals": "Distinct from 辶 — 走 indicates more deliberate or fast motion (running, getting up).",
+    "examples": [
+      "走",
+      "起来",
+      "超市",
+      "越"
+    ]
+  },
+  {
+    "id": 52,
+    "radical": "车",
+    "variants": "",
+    "name": "chē",
+    "meaning": "vehicle",
+    "group": "Structures & Movement",
+    "mnemonic": "A top-down pictograph of a chariot: two wheels (horizontal lines), an axle, and a yoke.",
+    "signals": "Found in characters about vehicles, transport, and (since chariots were heavy) weight/lightness.",
+    "examples": [
+      "车",
+      "公交车",
+      "自行车",
+      "出租车",
+      "火车站",
+      "轻松"
+    ]
+  }
+]
