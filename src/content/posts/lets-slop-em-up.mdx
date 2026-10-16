@@ -1,0 +1,237 @@
+---
+title: "Let's Slop 'Em Up"
+date: 2026-10-15
+tags: ["technical", "history"]
+draft: false
+---
+
+import { Image } from 'astro:assets';
+import overviewImg from '../../assets/posts/lets-slop-em-up/map-overview.webp';
+import topographyImg from '../../assets/posts/lets-slop-em-up/map-terrain.webp';
+import overlaysImg from '../../assets/posts/lets-slop-em-up/staff-overlays.webp';
+import fogImg from '../../assets/posts/lets-slop-em-up/fog-of-war.webp';
+import opordImg from '../../assets/posts/lets-slop-em-up/opord-composer.webp';
+import attritionImg from '../../assets/posts/lets-slop-em-up/attrition-panel.webp';
+import aarImg from '../../assets/posts/lets-slop-em-up/after-action-review.webp';
+import textsImg from '../../assets/posts/lets-slop-em-up/slop-em-up-texts.webp';
+
+## Dear Lord, I Have Slopped...
+
+...and I will continue to slop.
+
+"Let's slop 'em up, boys!" is the refrain in my friend group whenever one of us gets AI to make something, for work or for fun. It comes from [this video](https://youtu.be/buK45NW_ikI?t=275), and will likely never stop being hilarious.
+
+<figure class="my-8">
+  <Image src={textsImg} alt="Group chat screenshot: a friend writes 'Let's slop em up boys' above a photo of three laptops open on airplane tray tables" width={360} densities={[1.5, 2]} class="rounded-xl shadow-md mx-auto" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">The refrain in its natural habitat.</figcaption>
+</figure>
+
+With that said and in the spirit of full disclosure, here are my paid AI subscriptions:
+
+* **Google AI Pro:** Gemini is my LLM of choice for personal use. Some of what used to be Google searches now goes to Gemini, particularly when I'm trying to learn something. This SF Fleet Week, for instance, a friend and I got curious about how stealth fighters actually beat radar. I knew it had something to do with radar-absorbent coatings and the plane's geometry, but couldn't quite remember the actual physics. Gemini filled in the gap[^1]. The plan also bundles in Antigravity usage and ad-free YouTube Premium Lite, which suits me perfectly (I finally watch YouTube videos again).
+* **Gemini via Google Workspace:** For work. We're a Google Workspace shop, so Gemini comes with the territory. I rarely use it directly, but it earns its keep through the API, where we use the Flash models for inference tasks on [Lattice](https://runlattice.com). It is sometimes useful for doing things across Gmail or Google Sheets.
+* **Claude:** I recently upgraded to the 200 USD a month plan. Ridiculous. But it's what I use for work, and since moving from Claude Code in the terminal to Claude Desktop and fully embracing agentic browser use, I legitimately feel like a superhero and Lattice has improved tremendously for it.
+* **Codex:** Just the 20 USD a month plan, honestly just for fun and as a "just-in-case" in the event I exhaust my Claude usage and desperately need to get a hotfix out and would like assistance. I also sometimes think the ChatGPT models are the better writers, so they get the classic copywriting and email jobs.
+
+[^1]: The short version, for the similarly curious: a conventional airframe is full of curved surfaces and right angles that bounce radar energy straight back toward the transmitter, whereas a stealth airframe is faceted and angled such that incoming energy is reflected *away* from the receiver. Whatever isn't deflected, the radar-absorbent coating partially soaks up and converts into heat. Neither trick makes the plane invisible; together they shrink its radar cross-section until it's lost in the clutter, at least until it's rather too late to matter. 
+
+## Game Clones
+
+One of my favorite uses of all this has been rebuilding, and expanding on, the games I played as a kid[^2]: [Capitalism Lab](https://www.capitalismlab.com), Empire: Total War, and Napoleon: Total War. The Capitalism Lab clone will get its own post.
+
+[^2]: Which makes me exhibit A for the "clones of games from my childhood whose principal purpose would be to amuse me for an afternoon" I mentioned in [Musings on AI](/posts/musings-on-ai). The afternoon has, at the time of writing, stretched to several weeks.
+
+Napoleon: Total War is, as the name suggests, a game about fighting Napoleon's wars. You pick one of the era's familiar factions (France, Austria, Russia, Britain, etc.) and spend your time shuffling armies and money around a map of Europe; when two armies meet, the game drops you onto the battlefield in real time, where you array your units and commit them against your enemies.
+
+I own a couple of books on Napoleon and watch a lot of YouTube about his campaigns, mostly from [HistoryMarche](https://www.youtube.com/@HistoryMarche), [Epic History](https://www.youtube.com/watch?v=bhQe2cjr5XQ), and [Kings and Generals](https://www.youtube.com/watch?v=OaoNMLKDCQU&t=59s). If you know one Napoleonic battle, it's probably Austerlitz (or maybe Waterloo), also called the Battle of the Three Emperors starring Emperor Napoleon, Tsar Alexander I of Russia, and Holy Roman Emperor Francis II of Austria. My favorite part of these videos is the battle maps: blue and red blocks inching across contoured terrain, arrows sweeping around a flank, an army reduced to a handful of shapes you can reason about. So I set out to build my own, somewhere between those video explainer maps and Napoleon: Total War.
+
+## The Battle of Austerlitz
+
+First, some very brief context.
+
+By the autumn of 1805, Britain, Austria, and Russia had formed the Third Coalition against France. Napoleon, who had spent much of the year assembling an army on the Channel coast to invade England, abandoned that plan, swung the newly christened *Grande Armée* east across Germany, and in October encircled an entire Austrian army at Ulm, forcing its capitulation. Vienna fell in November. But the Russians under General Mikhail Kutuzov were still in the field, and had joined what remained of the Austrians in Moravia (today's Czech Republic), with both the Tsar and the Emperor riding along. Napoleon was by then deep in hostile territory with a tired army at the terminus of long supply lines, and Prussia was making noises about joining the coalition. He needed to invite a decisive battle.
+
+He chose his ground west of the village of Austerlitz and feigned weakness: he sought an armistice, abandoned the commanding Pratzen Heights at the center of the field, and thinned out his right flank along the Goldbach stream. The allies, some 85,000 strong against Napoleon's roughly 73,000, took the bait. On the morning of 2 December 1805 (the first anniversary of Napoleon's coronation), they came down off the Pratzen and threw the weight of their army at the French right around the villages of Telnitz and Sokolnitz, hoping to cut Napoleon off from Vienna and roll into his center.
+
+That flank held, albeit barely, thanks largely to Davout, the *Iron Marshal*, whose leading division under Friant had force-marched something like 110 km from Vienna in two days to arrive in time. Meanwhile, as the allies emptied out their center, Marshal Soult's two divisions waited in the fog of the valley below. When Napoleon asked Soult how long he needed to take the heights, Soult reportedly answered "twenty minutes, sire." His men climbed out of the mist into the famous *soleil d'Austerlitz*, the "sun of Austerlitz", and took the Pratzen. The allied army was cut in two. By afternoon its southern wing was being driven back across the frozen Satschan ponds and the rest was in retreat. Napoleon's army bombarded the pond in an attempt to drown the routing Austro-Russians (with less success than he later claimed[^4]).
+
+The allies lost something like a third of their army, roughly 27,000 killed, wounded, or captured, against around 9,000 French. Austria sued for peace and signed the Treaty of Pressburg later that month; the Third Coalition collapsed; and within a year the thousand-year-old Holy Roman Empire had been dissolved. Austerlitz is generally regarded as Napoleon's masterpiece, and it's still taught as a near-perfect example of luring an enemy into a mistake and then punishing it. Conveniently for my purposes, it also has a clean shape: a bait, a trap, a hill that matters, and a fog that matters. It's a battle where the map *is* the story.
+
+## Kriegsspiel
+
+The game I made is called *Kriegsspiel*, German for "wargame"[^3]. I say "made" in the modern sense, which is to say I prompted it into existence.
+
+[^3]: The name is a nod to the original *Kriegsspiel*, the tabletop wargame developed by the von Reisswitz father and son in the 1810s and 1820s and later adopted by the Prussian army to train its officers. It was played on a map table with blocks for units, an umpire, and dice to model the uncertainty of combat, and it's an ancestor of essentially every wargame since, the military kind and the computer kind alike.
+
+Some of my software engineer friends no longer touch code day to day. At Lattice we sell to high-stakes engineering and manufacturing teams, so I don't have that luxury: our code is heavily AI-assisted, as all modern software is, but I still read it. For a personal project, though, I wondered whether I could get away with never looking at the code at all and just prompting. So that's what I did, first with Antigravity, then switching to Claude and rebuilding the whole thing from scratch.
+
+I wanted it to feel like something NATO could use for wargaming, hence the NATO symbols, drawn to the APP-6 standard: friendly units are light-blue rectangles and hostile units light-red diamonds, with an X for infantry, a slash for cavalry, and a dot for artillery, an echelon mark above (XX for a division, XXX for a corps), and a small bar underneath showing the unit's condition. There are phase lines, objectives, and target reference points (TRPs) scattered across the field, and the whole thing should resemble a staff officer's map table (although I wouldn't know for certain, having never been in the military). The dream is that we can pass in a JSON (or some other structure) that defines a historical battle, anywhere from Napoleonic times to World War II, and play it out.
+
+You play Napoleon. The battle opens at 07:00 with the armies in position and ends at 16:00; at normal speed one real second is half a battle-minute, so the whole day plays out in about eighteen minutes, or rather less if you're impatient and crank it to 5x (I am, and I do). Some screenshots and clips follow.
+
+<figure class="my-8">
+  <Image src={overviewImg} alt="Kriegsspiel at 07:00 with both armies in position, NATO unit symbols on a contoured map of Austerlitz" class="rounded-xl shadow-md" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">07:00, armies in position. The French in blue on the left, the allies in red on and around the Pratzen.</figcaption>
+</figure>
+
+### The Map
+
+The terrain mattered most to me, because the battle doesn't make sense without it: the whole story turns on the Pratzen Heights in the middle, the Goldbach stream running along the French front, and Santon Hill anchoring the north. So the elevation is modeled: the Pratzen plateau with its Staré Vinohrady crest, Santon with its steep western face, Žuráň where Napoleon watched the battle, the Goldbach valley and the ravines feeding it, and the Satschan ponds to the south. From that the map draws hillshading, contour lines every ten meters, and hachures on the steepest slopes, in the manner of an old survey map.
+
+Nor is it decorative. Climbing is slow and descending fast; the Goldbach is a genuine obstacle unless you find a bridge or a ford (wade it and you're crawling along at a quarter speed and prone to taking extra casualties); roads speed you up; villages can be garrisoned and are miserable to assault. High ground lets you see further, and a hill between you and the enemy blinds you entirely.
+
+<figure class="my-8">
+  <Image src={topographyImg} alt="Close-up of the Pratzen Heights and Goldbach stream with contour lines and hillshading" class="rounded-xl shadow-md" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">The Pratzen Heights, with the Goldbach running down the French front on the left.</figcaption>
+</figure>
+
+### Staff Overlays
+
+Since I wanted this to feel like a staff tool first and a game second, there's a set of planning overlays you can toggle on top of the map, each on its own key: range rings showing how far each unit can shoot, artillery kill zones, corps boundaries and the command links back to each corps headquarters, and a 1 km military grid. A measuring tool gives distance, bearing (in degrees and in mils), and how long infantry, cavalry, and artillery would each take to march it, and the result can be dropped straight into an order. You can draw your own phase lines, boundaries, and objectives, drag the target reference points around, and the status bar always shows the grid reference under your cursor. None of it changes the simulation, but it does change how you think about the battle: with the kill zones on, it's immediately obvious why you'd rather not march a column across the front of the Santon battery.
+
+<figure class="my-8">
+  <Image src={overlaysImg} alt="Range rings, artillery kill zones, and corps boundaries overlaid on the map" class="rounded-xl shadow-md" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">Range rings, kill zones, corps boundaries, and the grid, plus a measurement from Vandamme to the Pratzen: 1.59 km, bearing 092°, 34 minutes for infantry.</figcaption>
+</figure>
+
+### Giving Orders
+
+This is the bit I was most curious about and the largest departure from the Total War series. Napoleon didn't click on a regiment; he dictated orders, a courier galloped them across the field, and the recipient interpreted them, more or less faithfully. So in Kriegsspiel you write orders, and there are two ways to do it.
+
+The default is the five-paragraph order (an OPORD), the format NATO armies still use: Situation, Mission, Execution, Sustainment, and Command and Signal. The game fills in the situation for you (what's been reported, where the recipient is, the fog in the valley) and you fill in the rest from dropdowns: who, what task (attack, seize, defend, screen, move, fire on, withdraw), which objective, to what purpose, when to start, how long to hold, in what formation, at what pace, and whether to send the courier at normal speed or urgently. It even writes the mission statement back to you.
+
+<figure class="my-8">
+  <Image src={opordImg} alt="The five-paragraph order composer with a mission for Vandamme to seize Staré Vinohrady at 0845" class="rounded-xl shadow-md" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">"Vandamme (XX, IV) seizes Staré Vinohrady at 0845 in order to split the allied army in two." The order Napoleon actually gave, more or less.</figcaption>
+</figure>
+
+The other way, and the one I was most curious about, is free text: type the order in plain English, addressed to a commander, much as you'd message a friend:
+
+> @Friant, advance to Telnitz and hold the Goldbach stream at all costs until 09:00 AM
+
+An LLM (a small Gemma model running locally via Ollama) turns the dispatch into a structured order: who, what, where, and in what formation. If the model isn't running, a rule-based parser takes over, so the game works fully offline, if a little more literal-minded. Orders can be:
+
+1. **Time-based:** "at 08:30", "in 20 minutes", "hold until 09:00", "for half an hour". The unit waits on standby and moves when the time comes. Pending orders are marked on the map.
+2. **Spatial:** to a named landmark ("take the Pratzen"), to a TRP ("TRP 3"), to a set of coordinates, toward or away from an enemy, along a compass heading, or wheeling along an arc.
+3. **Conditional:** "if attacked, form square", "if enemy cavalry within 300m, fall back to Kobelnitz", "if morale drops below 40%, retreat", "if outflanked, hold". These are checked continuously as the battle runs.
+
+They can also be chained with "then", e.g., "@Vandamme, assault the Pratzen at 08:30, then hold." Under the hood, the timing, conditions, and chaining are pulled out with plain old regex rather than left to the model, which is the right call: I want the LLM interpreting intent, not deciding whether an order fires at exactly 08:30.
+
+Either way, orders don't arrive instantly. A courier carries them from headquarters, with a delay that grows with distance (halved if you mark it urgent), and the order shows as "delivering" until it gets there. When it lands, the unit acknowledges ("WILCO") with an ETA, reports in with its grid, strength, and ammunition when it arrives, and each corps sends up a SITREP every half hour. The delays are short for now (a few battle-minutes), but the friction is there.
+
+<figure class="my-8">
+  <img src="/posts/lets-slop-em-up/free-text-dispatch.webp" alt="Typing a conditional order to Vandamme into the dispatch desk and receiving an acknowledgement with a courier ETA" loading="lazy" class="rounded-xl shadow-md mx-auto" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">A free-text dispatch to Vandamme: advance, form square if attacked, then hold. The courier takes a minute or so to arrive.</figcaption>
+</figure>
+
+### Dragging Troops
+
+When you want something done *now*, you can also command the Total War way, which your hands will already know if you've played it. Left-click (or box-select) your units, then right-click and drag on the ground to lay them out along a line with a facing; alt-drag to trace a freehand path; right-click an enemy to attack it. Drag the facing roughly toward an enemy and it locks on, so the line wheels to face them when it arrives. These are your own hands on the map table, so unlike typed dispatches they skip the courier and execute immediately. It is an affordance I consider "cheating" but one I provide nonetheless (since it made testing easier).
+
+<figure class="my-8">
+  <img src="/posts/lets-slop-em-up/drag-line.webp" alt="Box-selecting two divisions and dragging out a battle line facing the Pratzen" loading="lazy" class="rounded-xl shadow-md mx-auto" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">Box-select, right-drag a line (the preview shows its true frontage), and St-Hilaire and Vandamme march into it, sped up.</figcaption>
+</figure>
+
+### Fog of War
+
+Fog of war is on by default, so you start without omniscience. Each enemy unit is either hidden, a vague contact (a red diamond with an estimated strength like "~4,000–7,000"), or properly identified. How far you can see depends on who's looking (cavalry see furthest), where they're standing (high ground helps a great deal), whether a hill is in the way, and whether the enemy is tucked into a village or a wood. And, true to history, there's morning mist in the Goldbach valley until about 08:30, so troops down in the valley can barely see a thing while the heights loom above them. That, of course, is exactly how Soult got two divisions to the foot of the Pratzen unseen. Intelligence also goes stale: when you lose contact with a unit, a dashed ghost stays where you last saw it, stamped with the time ("Last seen 0727"), and fades away over the next hour and a half.
+
+<figure class="my-8">
+  <Image src={fogImg} alt="Fog of war shrouding the Pratzen, with uncertain enemy contacts and a last-seen ghost" class="rounded-xl shadow-md" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">07:28 with fog of war on. Contacts are a question mark and a strength guess; on the Pratzen, a ghost marked "Last seen 0727".</figcaption>
+</figure>
+
+### Casualties
+
+Casualties are where the Total War influence shows most. Muskets lose effectiveness with range, and a volley held until point-blank hits much harder. Flanking fire hurts more, fire into the rear more still, and crossfire from two directions is devastating. Cover matters; firing downhill helps; charging downhill helps a great deal; charging uphill is a bad idea. And the rock-paper-scissors of the era holds: columns move fast and hit hard in melee but get torn apart by musketry, lines are the reverse, and cavalry that charges a square largely bounces off it, whereas cavalry that catches infantry in line very much does not. Every exchange is drawn on the map, too, as a dashed line from shooter to target with the volley travelling down it.
+
+Getting the numbers right took a few goes. An early version was a bloodbath: a single battery firing on a column could kill thousands of men an hour, and the French lost eleven thousand men in the first thirty minutes without doing anything at all. After some rebalancing it's closer to a thousand, which still feels like a lot but at least resembles the history books. To keep score there's an attrition panel in the top bar, with casualties, loss rates, and formations routed or destroyed for each side, and a running chart.
+
+<figure class="my-8">
+  <Image src={attritionImg} alt="Attrition panel showing French and allied casualties, loss rates, and a cumulative casualty chart" class="rounded-xl shadow-md" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">The attrition panel at 10:30, with nobody giving the French any orders. Napoleon would not have been pleased.</figcaption>
+</figure>
+
+Men also get tired and run out of things to shoot. Every unit has a fatigue level that climbs as it marches (faster uphill, and much faster on a forced march "at the double") and recovers only when it stops to rest; past a certain point, tired troops slow to a trudge. Ammunition is finite, too: an infantry unit carries enough for a limited spell of firing, after which it's down to cold steel until it gets back within reach of a supply wagon (located all the way to the west). A brigade that has spent the morning marching up the Pratzen and blazing away at the top of it is, by noon, a much less useful brigade, which gives the reserves a reason to exist.
+
+<figure class="my-8">
+  <img src="/posts/lets-slop-em-up/firefight.webp" alt="Time-lapse of the fight below the Pratzen with French and allied loss counters rising" loading="lazy" class="rounded-xl shadow-md mx-auto" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">A time-lapse of 07:22 to 07:37 below the Pratzen. Watch the losses counter in the top bar.</figcaption>
+</figure>
+
+### The Enemy
+
+The allied AI is a mix of script and judgment. At the start it follows the historical plan, more or less: the columns come down off the Pratzen and go after your right around Telnitz and Sokolnitz. In practice it's rather more enthusiastic than Kutuzov ever was; leave the French to their own devices and by eight o'clock the entire allied army, Russian Guard and both emperors included, has rolled off the heights and into the Goldbach valley. Which, to be fair, is exactly what Napoleon was hoping for. Beyond that, each unit fends for itself: forming square when it sees cavalry coming, deploying from column into line when it comes into range, and otherwise marching on whichever objective looks most valuable and most threatened, while the reserves hang back until a sector starts to buckle. It isn't always clever, but it's plausible, which, given the allied staff work at Austerlitz, is arguably more historical anyway.
+
+<figure class="my-8">
+  <img src="/posts/lets-slop-em-up/allied-advance.webp" alt="Time-lapse of the allied army descending from the Pratzen toward the Goldbach" loading="lazy" class="rounded-xl shadow-md mx-auto" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">The first three-quarters of an hour, with nobody giving the French any orders at all.</figcaption>
+</figure>
+
+### Artillery
+
+Artillery is the game's other love letter to the period (my mammalian brain, as ever, finds explosions deeply satisfying). Batteries reach out to a kilometer or so. Shot scatters more at range or when the gunners can't see what they're hitting, and less when a forward observer can or the target is a pre-registered TRP. Mass two batteries on the same point and you get a grand battery, Napoleon's specialty, which hits harder and rattles morale more. Solid shot on firm ground ricochets and skips forward twice, which is murderous against a column. Hit a battery and you might set off a caisson. And if you shell the frozen Satschan ponds while the enemy is crossing, the ice cracks beneath them[^4].
+
+[^4]: The ponds are the most famous image of Austerlitz: Napoleon's bulletin claimed thousands of Russians drowned when French guns broke the ice. When the ponds were drained some days later, they reportedly turned up two or three bodies and some 150 horses. Napoleon never let accuracy get in the way of a good bulletin.
+
+<figure class="my-8">
+  <img src="/posts/lets-slop-em-up/pond-bombardment.webp" alt="A French horse battery shelling the frozen Satschan pond, cracking the ice under an Austrian brigade" loading="lazy" class="rounded-xl shadow-md mx-auto" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">Shelling the Satschan pond. I cheated slightly and wheeled a horse battery down to Telnitz for the shot.</figcaption>
+</figure>
+
+### Wavering and Routing
+
+Finally, morale, which is what actually decides Napoleonic battles. Units rarely die to the last man; they break. Every unit bleeds morale from casualties, from being under fire, from being flanked, from being shot at from behind, and from being enveloped with no friendly support nearby. Below half it starts wavering, which is flagged on the map and in your SITREP (Situation Report); below a quarter it routs, drops whatever it was ordered to do, and streams to the rear, no longer able to fire. Continue taking losses, and the unit will shatter completely, disappearing from the map. Morale also comes back: a unit that goes a few minutes without fresh casualties slowly steadies, and a routed unit that gets clear of the enemy can rally and re-form, which is the only way out of a rout.
+
+<figure class="my-8">
+  <img src="/posts/lets-slop-em-up/santon-rout.webp" alt="Russian cavalry overrunning the French battery on Santon Hill as units waver and rout" loading="lazy" class="rounded-xl shadow-md mx-auto" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">Santon Hill, 07:13 to 07:28: Russian cavalry charge (CHG) Caffarelli's division below the redoubt until it wavers (WVR) and routs (RTG), taking the battery with it.</figcaption>
+</figure>
+
+### Reviewing the Battle
+
+Real wargames end with an after-action review, so this one does too. It opens on its own at 16:00 (or whenever you ask): duration, casualties, the exchange ratio, formations destroyed, objectives held, losses broken down by half hour alongside the key events and orders of each, and a replay that runs the whole battle back on the map. Click any half hour and the map jumps to it.
+
+<figure class="my-8">
+  <Image src={aarImg} alt="After-action review panel with casualty totals, exchange ratio, losses by phase, and key events" class="rounded-xl shadow-md" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">The after-action review at 10:30. The exchange ratio is not in France's favor.</figcaption>
+</figure>
+
+<figure class="my-8">
+  <img src="/posts/lets-slop-em-up/aar-replay.webp" alt="Replaying the first hour of the battle on the map from the after-action review" loading="lazy" class="rounded-xl shadow-md mx-auto" />
+  <figcaption class="text-center text-sm opacity-70 mt-2">Replaying the first hour, 07:05 to 08:03.</figcaption>
+</figure>
+
+## Very Fun, Still Not Done
+
+It's been quite fun building this, and nearly as fun playing it. I first started it on the flight to Hawaii with some friends. I had good Wi-Fi and time to burn, so "slop it up" I did.
+
+What surprised me most was how much of the work could happen at the level of behavior rather than implementation. I could describe when a unit should start wavering, how flank fire and fatigue should interact, why an enveloped formation with no support nearby should slowly lose its nerve, and Claude would usually turn that into something that behaved roughly the way I had in mind. Where it didn't, I'd play, notice that something felt wrong—a battalion fording a stream as quickly as it marched down a road, say—and complain about that instead. At no point did I open a file. Eventually I realized browser use was cheap enough that I could also just let Claude play the game itself and fix what it found.
+
+That said, it's very much not done. In no particular order:
+
+1. **Other battles.** The dream of passing in a JSON and playing out any battle isn't yet real. The units, terrain features, objectives, and historical dispatches are all data, but the shape of the land, the course of the Goldbach, the roads, and the mist are still baked into the engine. Austerlitz is, for now, the only battle in the world.
+    
+2. **Panic is too polite.** Units can rally now, but a routing unit still doesn't spread its panic to its neighbors, which in reality happened constantly.
+    
+3. **A cheating chief of staff.** The LLM interpreting your orders currently gets to see every enemy unit on the field, fog of war or not, a luxury no real staff officer has ever enjoyed.
+    
+4. **More friction.** Couriers arrive a little too quickly and a little too reliably. Orders should sometimes arrive late, garbled, or not at all, and subordinates should occasionally decide they know better.
+    
+5. **Playing the other side.** You can only be Napoleon. I'd like to see whether I could do better than Kutuzov and Weyrother (a low bar).
+    
+6. **Voice dictation.** Napoleon was a prolific writer and an even more prolific dictator, in both senses. I'd like to make the game unpausable once it starts: you dictate your opening orders, and after that every new order has to be spoken.
+    
+
+One other thing surprised me: how little care the prompting itself required. Some actual prompts, spelling preserved:
+
+> Flank lef and flank right should be intelligent enough to discover the closest enemery in the units sight range and flank them
+
+> yes make them use the same calculation. It'd also be good if we couild have more advanced engagment options like pursue enemy, or press until a point. What generals would actually do
+
+> I notice that it sometimes seems liek the AI commands or sends directives to my own troops. This is good, but they should never countermand me if theyv ebeen given orders. The AI for my own troops should be intelligent enough to act independntly but NOT countermand
+
+A friend looked over my shoulder while I was working and was astonished that this produced anything useful at all. I think that surprised me too. Somewhere along the way I'd absorbed the idea that these models had to be handled rather delicately: careful prompts, precise instructions, all the right context. Apparently not. You can type "Flank lef" and, with enough back-and-forth, eventually get Austerlitz.
+
+Let's slop 'em up.
